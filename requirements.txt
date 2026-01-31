@@ -1,0 +1,6 @@
+pdfminer.six
+pdfplumber
+pytesseract
+opencv-python
+surya-ocr
+pillow

@@ -1,0 +1,1789 @@
+CURRENT DUPLICATES (FINAL - after all merges)
+====================================================================================================
+Total entries: 32051
+Duplicate names: 162
+Note: These are ALL LEGITIMATE - different Sanskrit words with same romanized name
+====================================================================================================
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: ākarṣaka                       COUNT: 2
+SANSKRIT VALUES: आकर्ष, आकर्षक
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 3765 | SANSKRIT: आकर्ष
+  DEF: ākarṣaka₁ [ka] m. expert en dés....
+
+  INDEX: 3768 | SANSKRIT: आकर्षक
+  DEF: ākarṣaka₂ [agt. ākṛṣ] a. m. n. f. ākarṣikā attrayant, plaisant — f. ākarşikā "Plaisante" (nom de vil...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: sūta                           COUNT: 2
+SANSKRIT VALUES: आख्या, सूत
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 3843 | SANSKRIT: आख्या
+  DEF: sūta | ākhyāhi kathāsāram | | O barde! Raconte nous l'essentiel de l'histoire....
+
+  INDEX: 30586 | SANSKRIT: सूत
+  DEF: Sūta₁ [pp. sū₁] a. m. n. f. sūtā né, engendré | incité; émis | qui a engendré — m. mercure....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: ācchad                         COUNT: 2
+SANSKRIT VALUES: आच्छर्, आच्छद्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 3934 | SANSKRIT: आच्छर्
+  DEF: ācchad₁ [āchad₁] v. [10] pr. (ācchadati) pp. (ācchanna) pf. (sam) couvrir, vêtir ca. (ācchādayati) p...
+
+  INDEX: 3935 | SANSKRIT: आच्छद्
+  DEF: ācchad₁ [agt. ācchad₁] f. couverture. সা<b>ভ্যুন</b> ācchanna |pp. ācchad₁| a. m. n. f. ācchannā vêt...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: ānī                            COUNT: 2
+SANSKRIT VALUES: आनी, ॰आनी
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 4233 | SANSKRIT: आनी
+  DEF: ānī [ānī₁] v. [1] pr. (ānayati) pp. (ānīta) abs. (ānīya) pf. (ut, upa, sam) amener, apporter....
+
+  INDEX: 4234 | SANSKRIT: ॰आनी
+  DEF: ānī forme des noms f. not. d'épouses. indrāṇī f. myth. femme d'Indra....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: ābhū                           COUNT: 2
+SANSKRIT VALUES: आभू, अभ्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 4355 | SANSKRIT: आभू
+  DEF: ābhū₂ [ābhū₁] v. [1] pr. (ābhávati) pf. (pari, prati) être présent; être proche; assister; exister; ...
+
+  INDEX: 4356 | SANSKRIT: अभ्
+  DEF: ābhū₂ [agt. ābhū₂] a. m. n. f. présent ; proche ; qui assiste, qui aide | qui s'approche de; qui se ...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: ām                             COUNT: 2
+SANSKRIT VALUES: आम्, ॰आम्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 4367 | SANSKRIT: आम्
+  DEF: ām₁ interj. ah! oui!...
+
+  INDEX: 4368 | SANSKRIT: ॰आम्
+  DEF: ām forme des parfaits péri. ind. à composer avec un verbe auxiliaire au parfait. āsāmcakre hvayāmāsa...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: yatta                          COUNT: 2
+SANSKRIT VALUES: आयत्त, यत्त
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 4429 | SANSKRIT: आयत्त
+  DEF: yatta [pp. āyat₁] a. m. n. f. āyattā dépendant; à disposition, prêt; prudent. ayamarthastvadāyattah ...
+
+  INDEX: 21970 | SANSKRIT: यत्त
+  DEF: yatta [pp. yat₁] a. m. n. f. yattā efforcé, ap pliqué; engagé, préparé (à (loc. dat. acc. pratiinf.)...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: āyana                          COUNT: 2
+SANSKRIT VALUES: आयन, ॰आयन
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 4430 | SANSKRIT: आयन
+  DEF: āyana₁ [act. e] n. fait d'approcher, arrivée....
+
+  INDEX: 4431 | SANSKRIT: ॰आयन
+  DEF: āyana descendant de (forme des patr.)....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: āsu                            COUNT: 2
+SANSKRIT VALUES: आस्, आसू
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 4794 | SANSKRIT: आस्
+  DEF: āsu₁ [loc. pl. iyam] ind. dans ces....
+
+  INDEX: 4795 | SANSKRIT: आसू
+  DEF: āsu₂ [āsu₂] v. [5] pr. (āsunoti) pp. (āsuta) véd. presser (not. le soma) | distiller....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: idā                            COUNT: 2
+SANSKRIT VALUES: इडा, इदा
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 4879 | SANSKRIT: इडा
+  DEF: Idā [id] f. rafraîchissement, réconfort | libation ; (au fig.) flot de louanges |soc. part de l'offr...
+
+  INDEX: 4912 | SANSKRIT: इदा
+  DEF: idā [idam] adv. véd. maintenant | dans le Veda....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: ita                            COUNT: 2
+SANSKRIT VALUES: इत, ॰इत
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 4880 | SANSKRIT: इत
+  DEF: ita |pp. i| ifc. a. m. n. f. itā allé à (iic.)....
+
+  INDEX: 4881 | SANSKRIT: ॰इत
+  DEF: ita ta av. i euphonique (forme des pp.) | (taddhita itac) forme des a. signifiant "muni de", "conten...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: īra                            COUNT: 2
+SANSKRIT VALUES: ईर, ॰ईर
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 5051 | SANSKRIT: ईर
+  DEF: īra [agt. īr] m. vent. <i>īraja</i> [ja] m. myth. épith. de Hanumān “né du vent”. <i>īraputra</i> | ...
+
+  INDEX: 5052 | SANSKRIT: ॰ईर
+  DEF: īra forme des s. ou a. avec le sens "qui va"....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: udumbára                       COUNT: 2
+SANSKRIT VALUES: उड्डम्बर, उदुम्बर
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 5192 | SANSKRIT: उड्डम्बर
+  DEF: udumbára m. cf. udumbara....
+
+  INDEX: 5528 | SANSKRIT: उदुम्बर
+  DEF: udumbára var. udumbara m. bio. bot. Fi cus glometara, figuier Gulār à l'épais feuillage; ses figues ...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: utkṛ                           COUNT: 2
+SANSKRIT VALUES: उत्क, उत्कृ
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 5238 | SANSKRIT: उत्क
+  DEF: utkṛ [utkṛ₁] v. [8] pr. (utkaroti) se débarrasser de, extirper — v. [8] pr. r. (utkurute) blâmer. ut...
+
+  INDEX: 5241 | SANSKRIT: उत्कृ
+  DEF: utkṛ [utkṛ] v. [6] pr. (utkiráti) pp. (utkīrṇa) disperser vers le haut; entasser, empiler | creuser;...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: udan                           COUNT: 2
+SANSKRIT VALUES: उदङ्, उदन्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 5453 | SANSKRIT: उदङ्
+  DEF: udan iic. udac....
+
+  INDEX: 5458 | SANSKRIT: उदन्
+  DEF: udan [relié à uda] n. eau — v. [11] pr. (uda nyati) être très assoiffé....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: upakṛ                          COUNT: 2
+SANSKRIT VALUES: उपक्, उपकृ
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 5742 | SANSKRIT: उपक्
+  DEF: upakṛ [upakṛ₁] v. [8] pr. (upakaróti) pp. (upakṛta) pf. (prati) assister, servir; secourir, soi gner...
+
+  INDEX: 5749 | SANSKRIT: उपकृ
+  DEF: upakṛ [upakṛ] v. [6] pr. (upakirati) éparpiller ; arroser — v. [6] pr. (upaskirati) couper, fendre, ...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: upās                           COUNT: 2
+SANSKRIT VALUES: उपाश्, उपास्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 6151 | SANSKRIT: उपाश्
+  DEF: upās [upaas₁] pf. (sam) v. [5] pr. r. (upāśnute) pp. (upāṣṭa) atteindre, arriver à, par venir à (acc...
+
+  INDEX: 6155 | SANSKRIT: उपास्
+  DEF: upās [upaās₂] v. [2] pr. r. (upāste) pp. (upāsita) pf. (pari) être assis auprès de; rendre hommage à...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: ura                            COUNT: 2
+SANSKRIT VALUES: उर, ॰उर
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 6216 | SANSKRIT: उर
+  DEF: Ura iic. uras....
+
+  INDEX: 6219 | SANSKRIT: ॰उर
+  DEF: Ura forme des substantifs primaires divers....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: ūrj                            COUNT: 2
+SANSKRIT VALUES: जर्ज्, ऊर्ज
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 6316 | SANSKRIT: जर्ज्
+  DEF: √ ūrj₁ [relié à vrj] v. [10] pr. (ūrjayati) pp. (ūrjita) renforcer, revigorer, rafraîchir — v. [10] ...
+
+  INDEX: 6317 | SANSKRIT: ऊर्ज
+  DEF: ūrj₂ [agt. ūrj₁] f. sève; force, vigueur; nourri ture | lat. virga; fr. vigueur....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: evam                           COUNT: 2
+SANSKRIT VALUES: एवं, एवम्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 6626 | SANSKRIT: एवं
+  DEF: evam iic. evam....
+
+  INDEX: 6633 | SANSKRIT: एवम्
+  DEF: evam [eva] adv. ainsi; comme cela; de cette manière | certainement, assurément. evam uktvā ayant ain...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: kataka                         COUNT: 2
+SANSKRIT VALUES: कञ्चक, कतक
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 6802 | SANSKRIT: कञ्चक
+  DEF: Kataka [ka] m. paille; natte — m. n. corde, brace let, chaîne | geste rituel [mudrā] du bracelet | v...
+
+  INDEX: 6865 | SANSKRIT: कतक
+  DEF: kataka m. bio. bot. Strychnos potatorum, arbuste aux fruits de couleur orange aux vertus médicinales...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: kadamba                        COUNT: 2
+SANSKRIT VALUES: कडम्ब, कदम्ब
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 6824 | SANSKRIT: कडम्ब
+  DEF: kadamba cf. kadamba....
+
+  INDEX: 6896 | SANSKRIT: कदम्ब
+  DEF: kadamba [tamoul] m. bio. bot. Nauclea cadamba, arbre kadamba aux fleurs en globules sphériques dense...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: kanta                          COUNT: 2
+SANSKRIT VALUES: कण्ट, कन्त
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 6838 | SANSKRIT: कण्ट
+  DEF: kanta m. épine....
+
+  INDEX: 6936 | SANSKRIT: कन्त
+  DEF: kanta var. kaṃta [kamta] a. m. n. f. kantā heureux....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: kam                            COUNT: 2
+SANSKRIT VALUES: कम्, कम
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 7006 | SANSKRIT: कम्
+  DEF: √ kam v. pft. (cakame) pp. (kāntá) pf. (ni) désirer, aimer, être amoureux de — ca. r. (kāmayate) ca....
+
+  INDEX: 7007 | SANSKRIT: कम
+  DEF: kam₁ [acc. ka₂] part. cl. luimême (souligne le mot précédent) | vraiment (explétif intensif en fin d...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: smara                          COUNT: 2
+SANSKRIT VALUES: काम, स्मर
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 7508 | SANSKRIT: काम
+  DEF: Smara | myth. | harivamśa | fils de Kṛṣṇa et de Rukminī — n. objet aimé ou désiré; l'agréable | sper...
+
+  INDEX: 31200 | SANSKRIT: स्मर
+  DEF: smara [act. smr] m. mémoire, souvenir; ob session | désir amoureux; amour sexuel | myth. np. de smar...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: kās                            COUNT: 2
+SANSKRIT VALUES: काश्, कास्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 7753 | SANSKRIT: काश्
+  DEF: √ kās v. [1] pr. r. (kāsate) pft. (cakāse) pp. (kāśita) pf. (abhi, ava, ā, pra, vi, sam) paraître, a...
+
+  INDEX: 7777 | SANSKRIT: कास्
+  DEF: √ kās₁ v. [1] pr. r. (kāsate) tousser. kāsām cakre il toussa....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: kim                            COUNT: 2
+SANSKRIT VALUES: क, किम्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 7785 | SANSKRIT: क
+  DEF: kim iic. kim....
+
+  INDEX: 7808 | SANSKRIT: किम्
+  DEF: kim pn. n. m. ka₁ f. kā interr. qui? quel? le quel? | que? pourquoi? comment? | assez de (i.); pourq...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: kin                            COUNT: 2
+SANSKRIT VALUES: किङ्, किन
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 7792 | SANSKRIT: किङ्
+  DEF: kin iic. kim. kimkara var. kinkara [kara₁] m. f. kimkarā ser viteur; esclave | myth. [Mah.] np. du m...
+
+  INDEX: 7805 | SANSKRIT: किन
+  DEF: kin iic. kim....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: krt                            COUNT: 2
+SANSKRIT VALUES: कृत्, कृत
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 8232 | SANSKRIT: कृत्
+  DEF: √ krt₁ v. [6] pr. (krntati) pft. (cakarta) aor. [5] (akartīt) pp. (kṛtta) pf. (ava, ut, ni, nis, vi)...
+
+  INDEX: 8233 | SANSKRIT: कृत
+  DEF: krt₂ [agt. kr₁] ifc. a. m. n. f. qui a fait, qui a ac compli, qui a exécuté (iic.); auteur de (iic.)...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: kaula                          COUNT: 2
+SANSKRIT VALUES: कौल, तन्त्र
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 8536 | SANSKRIT: कौल
+  DEF: kaula [*kula] a. m. n. f. kaulī familial; qui concerne la famille — m. phil. [Tantra] adorateur de )...
+
+  INDEX: 11563 | SANSKRIT: तन्त्र
+  DEF: kaula | troupe, armée | mod. procédure, programme, logiciel — f. tantrī corde d'un luth | vaisseau d...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: kṣudh                          COUNT: 2
+SANSKRIT VALUES: क्ष्य, क्ष्म
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 8841 | SANSKRIT: क्ष्य
+  DEF: √ kṣudh₁ v. [4] pr. (kṣúdhyati) pp. (kṣudhita) avoir faim....
+
+  INDEX: 8842 | SANSKRIT: क्ष्म
+  DEF: kṣudh₂ [act. kṣudh₁] f. faim. kṣudhā kliśyamānaḥ souffrant de la faim....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: g                              COUNT: 2
+SANSKRIT VALUES: ग्, ग
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 8902 | SANSKRIT: ग्
+  DEF: √ g khañj₂ v. [1] pr. (khañjati) boiter....
+
+  INDEX: 9057 | SANSKRIT: ग
+  DEF: g...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: gada                           COUNT: 2
+SANSKRIT VALUES: गड, गद
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 9114 | SANSKRIT: गड
+  DEF: gada m. barrière | fossé. गাৰু gadu m. bosse; goître | excroissance superflue ou disgracieuse | lit....
+
+  INDEX: 9186 | SANSKRIT: गद
+  DEF: gada₁ [obj. gad] m. parole, phrase | lit. [Mah.] np. de gada₁, fils de Vasudeva, frère cadet de Kṛṣṇ...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: gāna                           COUNT: 2
+SANSKRIT VALUES: गाण, गान
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 9354 | SANSKRIT: गाण
+  DEF: gāna [gā₂na] n. chant....
+
+  INDEX: 9375 | SANSKRIT: गान
+  DEF: gāna [gā₂na] n. chant, chanson....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: girīśa                         COUNT: 2
+SANSKRIT VALUES: गिर्, गिरि
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 9418 | SANSKRIT: गिर्
+  DEF: girīśa₁ [īśá] m. myth. np. de girīśa₁, épith. de Brhaspati "Maître de la parole"....
+
+  INDEX: 9432 | SANSKRIT: गिरि
+  DEF: girīśa₂ [īśa] m. myth. np. de girīśa₂ épith. de Hi mavān "Seigneur parmi les montagnes" ou de Siva "...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: gītārtha                       COUNT: 2
+SANSKRIT VALUES: गीत, गीता
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 9439 | SANSKRIT: गीत
+  DEF: gītārtha₁ [artha] m. ascète ayant terminé ("chanté") ses études....
+
+  INDEX: 9445 | SANSKRIT: गीता
+  DEF: gītārtha₁ | artha| m. explication de la gītā....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: gītārthasaṃgraha               COUNT: 2
+SANSKRIT VALUES: गीत, गीता
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 9440 | SANSKRIT: गीत
+  DEF: gītārthasaṃgraha₁ [saṃgraha] m. lit. np. du Gītārthasaṃgraha₁ "Compendium de l'ascète ac compli", œu...
+
+  INDEX: 9446 | SANSKRIT: गीता
+  DEF: gītārthasaṃgraha₂ [saṃgraha] m. lit. np. du gītārthasamgraha₁, commentaire śaiva de la Bha gavadgītā...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: guhyatama                      COUNT: 2
+SANSKRIT VALUES: गुह्य, गुह्मतम
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 9580 | SANSKRIT: गुह्य
+  DEF: guhyatama [tama| a. m. n. f. guhyatamā super. le plus secret....
+
+  INDEX: 9586 | SANSKRIT: गुह्मतम
+  DEF: guhyatama |super. Guhya| a. m. n. f. Guhya tamā le plus secret....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: c                              COUNT: 2
+SANSKRIT VALUES: च, शानच्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 9997 | SANSKRIT: च
+  DEF: c ca conj. cl. et, aussi, ainsi que | mais, par contre, bien que; si | même; précisément, uniquement...
+
+  INDEX: 26981 | SANSKRIT: शानच्
+  DEF: c nota. gram. affixe primaire [krt₂] mar quant le participe présent moyen ou passif....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: candasimha                     COUNT: 2
+SANSKRIT VALUES: चण्ड, चन्द
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 10072 | SANSKRIT: चण्ड
+  DEF: candasimha [simha] m. lit. [DKC.] np. de candasimha "Lion furieux", roi de Kāśī; par son épouse Līlā...
+
+  INDEX: 10181 | SANSKRIT: चन्द
+  DEF: candasimha [simha] m. lit. [KSS.] np. du Roi vidyādhara Candasiṃha, fils de Siṃha₁ et Dhana vatī, al...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: candeśvara                     COUNT: 2
+SANSKRIT VALUES: चण्ड, चन्द
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 10075 | SANSKRIT: चण्ड
+  DEF: candeśvara [īśvara] m. myth. np. de candeśvara, épith. de SivaCandesa....
+
+  INDEX: 10182 | SANSKRIT: चन्द
+  DEF: Candeśvara [īśvara] m. soc. np. de Candeśvara, l'un des 63 saints nayanars tamils; il Est représenté...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: caturānana                     COUNT: 2
+SANSKRIT VALUES: चतुर्, चतुर
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 10121 | SANSKRIT: चतुर्
+  DEF: caturānana₁ [ānana] a. m. n. f. caturānanā qui a Quatre visages — m. myth. np. de caturānana₁, épith...
+
+  INDEX: 10170 | SANSKRIT: चतुर
+  DEF: caturānana₂ [ānana] a. m. n. f. caturānanā au vi sage rusé....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: campū                          COUNT: 2
+SANSKRIT VALUES: चम्पू, त्रास
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 10252 | SANSKRIT: चम्पू
+  DEF: campū f. lit. [kāvya] style de composition littéraire élaborée dans lequel un même thème est traité ...
+
+  INDEX: 12252 | SANSKRIT: त्रास
+  DEF: campū [adicampūkāvya] | hist. np. de Trivikrama₂ (11ᵉ siècle), auteur du commentaire Tātparyaṭīka₁ d...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: ci                             COUNT: 2
+SANSKRIT VALUES: िच, पुलोमन्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 10402 | SANSKRIT: िच
+  DEF: √ ci v. [5] pr. (cinóti) pr. r. (cinuté) pft. (cikāya) aor. [1] (acet) aor. [4] (acaiṣīt) pp. (cita)...
+
+  INDEX: 17118 | SANSKRIT: पुलोमन्
+  DEF: ci |Paulomās| habitent une cité d'or indestructible dans les airs — f. pulomī cf. Pulomā....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: cyut                           COUNT: 2
+SANSKRIT VALUES: च्युत्, इंयूत्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 10641 | SANSKRIT: च्युत्
+  DEF: cyut [cyuta] ifc. a. m. n. f. qui fait tomber (iic.)....
+
+  INDEX: 27533 | SANSKRIT: इंयूत्
+  DEF: cyut [relié à scut₁] v. [1] pr. (scyotati) pp. (śscyutita) suinter; couler; distiller | verser; aspe...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: chad                           COUNT: 2
+SANSKRIT VALUES: छुद्, छद्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 10659 | SANSKRIT: छुद्
+  DEF: √ chad₁ v. [1] pr. (chadati) pp. (channa) pf. (ā, pari, pra, sam) ca. (chādáyati) couvrir, enveloppe...
+
+  INDEX: 10660 | SANSKRIT: छद्
+  DEF: chad₂ [agt. chad₁] ifc. a. m. n. f. qui cache (iic.)....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: nava                           COUNT: 2
+SANSKRIT VALUES: जागति, नव
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 10990 | SANSKRIT: जागति
+  DEF: nava | | gram. degré 1, degré 2, degré 1, degré 2, prohibition, option, degré 2 de nouveau, puis exc...
+
+  INDEX: 14127 | SANSKRIT: नव
+  DEF: nava₂ iic. navan....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: y                              COUNT: 2
+SANSKRIT VALUES: य्, य
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 11179 | SANSKRIT: य्
+  DEF: √ y jusi v. [6] pr. r. (jusate) pp. (justa) goûter, apprécier, prendre plaisir à (acc. g.); aimer; s...
+
+  INDEX: 21907 | SANSKRIT: य
+  DEF: <i>y</i>...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: tac                            COUNT: 2
+SANSKRIT VALUES: टच्, तच्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 11325 | SANSKRIT: टच्
+  DEF: tac nota. gram. suffixe de fin de composé....
+
+  INDEX: 11395 | SANSKRIT: तच्
+  DEF: tac iic. tad....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: tavarga                        COUNT: 2
+SANSKRIT VALUES: टवर्ग, तवर्ग
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 11327 | SANSKRIT: टवर्ग
+  DEF: tavarga [(ta)varga] m. phon. la classe des cérébrales....
+
+  INDEX: 11701 | SANSKRIT: तवर्ग
+  DEF: tavarga [(ta)varga] m. phon. la classe des den tales. .8...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: tāp                            COUNT: 2
+SANSKRIT VALUES: टाप्, ताप्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 11329 | SANSKRIT: टाप्
+  DEF: tāp var. dāp nota. gram. suffixe donnant le thème féminin en ā....
+
+  INDEX: 11760 | SANSKRIT: ताप्
+  DEF: tāp [ca. tap] v. [10] pr. (tāpayati) pp. (tāpita) faire souffrir, brûler....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: ti                             COUNT: 2
+SANSKRIT VALUES: टि, ॰ति
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 11330 | SANSKRIT: टि
+  DEF: ti nota. gram. finale d'un thème à partir de sa dernière voyelle; le marqueur [anubandha] 'd' pro vo...
+
+  INDEX: 11834 | SANSKRIT: ॰ति
+  DEF: ti (primaire) forme des s. f. d'action | [Nyāya] dénote plutôt l'objet résultant de l'action | (num....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: thakāra                        COUNT: 2
+SANSKRIT VALUES: ठकार, थकार
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 11342 | SANSKRIT: ठकार
+  DEF: thakāra [(tha)kāra] m. le son ou la lettre 'tha'....
+
+  INDEX: 12367 | SANSKRIT: थकार
+  DEF: thakāra [(tha)kāra] m. le son ou la lettre 'tha'....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: dakāra                         COUNT: 2
+SANSKRIT VALUES: डकार, दकार
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 11345 | SANSKRIT: डकार
+  DEF: dakāra [(da)kāra] m. le son ou la lettre ‘da’....
+
+  INDEX: 12387 | SANSKRIT: दकार
+  DEF: dakāra [(da)kāra] m. le son ou la lettre ‘da’. √ \, daks \, v. [1] \, pr. r. \, (daksate) \, pft. \,...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: dam                            COUNT: 2
+SANSKRIT VALUES: डम्, दम्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 11346 | SANSKRIT: डम्
+  DEF: √ dam ppr. (damat) résonner (tambour)....
+
+  INDEX: 12492 | SANSKRIT: दम्
+  DEF: √ dam₁ v. [4] pr. (dāmyati) pp. (dānta) abs. (damitvā, dāntvā) contrôler, apprivoiser, discipli ner,...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: dīna                           COUNT: 2
+SANSKRIT VALUES: डीन, दीन
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 11363 | SANSKRIT: डीन
+  DEF: dīna [pp. dī] a. m. n. f. dīnā qui a volé; qui vole — n. vol d'oiseau....
+
+  INDEX: 12816 | SANSKRIT: दीन
+  DEF: dīna a. m. n. f. dīnā triste, abattu, déprimé; désolé, affligé, misérable; pauvre; ruiné; malheu reu...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: dhakāra                        COUNT: 2
+SANSKRIT VALUES: ढकार, धकार
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 11367 | SANSKRIT: ढकार
+  DEF: dhakāra [(dha)kāra] m. la lettre 'dha'. বিদ্ধা dhakkā f. gros tambour | myth. not. tambour de Siva; ...
+
+  INDEX: 13555 | SANSKRIT: धकार
+  DEF: dhakāra |(Dha)kāra| m. le son ou la lettre 'Dha'....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: mathurānātha                   COUNT: 2
+SANSKRIT VALUES: तत्त्व, मथुरा
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 11438 | SANSKRIT: तत्त्व
+  DEF: Mathurānātha₁ [Māthurī]....
+
+  INDEX: 20442 | SANSKRIT: मथुरा
+  DEF: Mathurānātha₁ | nātha | m. myth. np. de Ma thurānātha, épith. de Kṛṣṇa “Seigneur de mathurā" | hist....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: tu                             COUNT: 2
+SANSKRIT VALUES: तु, ॰तु
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 11917 | SANSKRIT: तु
+  DEF: tu conj. cl. or, mais, cependant | (intensifieur) aussi, pourtant; oui vraiment | (imp.) donc; (form...
+
+  INDEX: 11918 | SANSKRIT: ॰तु
+  DEF: tu forme des s. d'action ou d'instrument, et des a. indiquant la possession....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: tud                            COUNT: 2
+SANSKRIT VALUES: द्, तुद्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 11933 | SANSKRIT: द्
+  DEF: √ tud₁ v. [6] pr. (tudati) pft. (tutoda) aor. [4] (atautsīt) pp. (tunna) ppr. (tudat) pf. (ā) pousse...
+
+  INDEX: 11934 | SANSKRIT: तुद्
+  DEF: tud₂ |agt. tud₁| ifc. a. m. n. f. qui pousse, qui frappe (iic.)....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: tr                             COUNT: 2
+SANSKRIT VALUES: तृ, त्र्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 12012 | SANSKRIT: तृ
+  DEF: <i>tr</i> cf. <i>tr</i>. °বু tṛ gram. forme des noms d'agent du verbe : qui a telle habitude, qui fa...
+
+  INDEX: 12043 | SANSKRIT: त्र्
+  DEF: √ tr var. tr v. [1] pr. (t'arati) opt. (taret) v. [1] pr. (tiráti) aor. ps. (atāri) aor. [4] (atārṣ...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: trp                            COUNT: 2
+SANSKRIT VALUES: प्, त्र्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 12033 | SANSKRIT: प्
+  DEF: √ trp₁ v. [4] pr. (trpyati) v. [5] pr. (trpnoti) pp. (tṛpta) pf. (ā) être satisfait, content; être r...
+
+  INDEX: 12034 | SANSKRIT: त्र्
+  DEF: trp₂ [agt. trp₁] ifc. a. m. n. f. qui jouit de (iic.); qui s'approprie (iic.). ਰੁਸ਼ <i>tṛptá</i> [pp...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: tyaj                           COUNT: 2
+SANSKRIT VALUES: र्यज्, त्यज्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 12112 | SANSKRIT: र्यज्
+  DEF: tyaj₁ v. [1] pr. (tyajati) pft. (tatyāja) aor. [5] (atyākṣīt) pp. (tyakta) pfp. (tyajanīya, tyājya) ...
+
+  INDEX: 12113 | SANSKRIT: त्यज्
+  DEF: tyaj₂ |agt. tyaj₁| ifc. a. m. n. f. qui renonce à (iic.)....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: tviṣ                           COUNT: 2
+SANSKRIT VALUES: ित्वष्, त्विष्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 12358 | SANSKRIT: ित्वष्
+  DEF: √ tviṣ₁ v. [1] pr. (tveṣati) pp. (tviṣitá) exciter, instiguer — pr. r. (tvesate) être agité, être tr...
+
+  INDEX: 12359 | SANSKRIT: त्विष्
+  DEF: tviṣ₂ [act. tviṣ₁] f. agitation ; véhémence ; furie, violence | éclat, splendeur; beauté; couleur....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: pratigrhya                     COUNT: 2
+SANSKRIT VALUES: दकार, प्रतिगृह्य
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 12388 | SANSKRIT: दकार
+  DEF: pratigrhya | ya evam veda | [TB.] (prajāpati) dit : "Je t'accepte, toi l'honoraire sacrificiel, pour...
+
+  INDEX: 17666 | SANSKRIT: प्रतिगृह्य
+  DEF: pratigrhya [pfp. [1] pratigrah] a. m. n. f. pratigrhyā à accepter; acceptable (de (g.))....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: dā                             COUNT: 2
+SANSKRIT VALUES: दा, ॰दा
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 12631 | SANSKRIT: दा
+  DEF: √ dā₃ v. [1] pr. (dāyati) pp. (dāta) pf. (ava) [inusité sans pf.]....
+
+  INDEX: 12632 | SANSKRIT: ॰दा
+  DEF: dā fois (forme des adv. de temps)....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: dāsa                           COUNT: 2
+SANSKRIT VALUES: दाश, दास
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 12699 | SANSKRIT: दाश
+  DEF: Dāsa |dās₁| m. donataire (à qui l'on donne) pêcheur; batelier; cf. Dāsa....
+
+  INDEX: 12707 | SANSKRIT: दास
+  DEF: Dāsa [relié à dasyu] m. esclave, serviteur | pêcheur |soc. ["serviteur de dieu"] np. de Dāsa, suf fi...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: lakṣmī                         COUNT: 2
+SANSKRIT VALUES: दीप, लक्ष्मी
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 12824 | SANSKRIT: दीप
+  DEF: Lakṣmī [lakṣmīpūjā]; on y célèbre aussi la victoire de Vișnu sur le tyran Bali, relégué aux enfers; ...
+
+  INDEX: 23169 | SANSKRIT: लक्ष्मी
+  DEF: Lakṣmī [lakṣman] f. [sg. nom. lakṣmīḥ, nom. Lakṣmī] beauté, éclat, splendeur | prospérité, succès ; ...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: duh                            COUNT: 2
+SANSKRIT VALUES: ह, दुह्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 13040 | SANSKRIT: ह
+  DEF: √ duh₁ v. [2] pr. (dogdhi) aor. [7] (adhukṣat) v. [4] pr. (duhyati) pr. r. (duhyate) aor. ps. (adohi...
+
+  INDEX: 13041 | SANSKRIT: दुह्
+  DEF: duh₁ [agt. duh₁] ifc. m. f. [nom. dhuk] qui trait (iic.) | qui accorde (iic.) — m. duha id....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: dr                             COUNT: 2
+SANSKRIT VALUES: ट्ट, द्र्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 13073 | SANSKRIT: ट्ट
+  DEF: dr₂ cf. dr....
+
+  INDEX: 13130 | SANSKRIT: द्र्
+  DEF: √ dr var. dr₂ v. [9] pr. (drṇāti) ca. (dārayati) pf. (vi) fendre, déchirer, briser — ps. (dīryate) p...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: dyut                           COUNT: 2
+SANSKRIT VALUES: द्भुत्, द्भृत्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 13302 | SANSKRIT: द्भुत्
+  DEF: √ dyut₁ [relié à dv₁] v. [1] pr. r. (dyotate) aor. [2] (adyutat) aor. [3] (ádidyutat) ppr. (dyumat) ...
+
+  INDEX: 13303 | SANSKRIT: द्भृत्
+  DEF: dyut₂ [agt. dyut₁] f. éclat, rayon de Lumière....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: dvaipa                         COUNT: 2
+SANSKRIT VALUES: द्वैप, द्वेप
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 13538 | SANSKRIT: द्वैप
+  DEF: dvaipa₁ [*dvīpa] a. m. n. f. dvaipā relatif à une île, habitant une île....
+
+  INDEX: 13540 | SANSKRIT: द्वेप
+  DEF: dvaipa₂ [*dvipa] a. m. n. f. dvaipā relatif aux éléphants....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: dvaipāyana                     COUNT: 2
+SANSKRIT VALUES: द्वैप, द्वेप
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 13539 | SANSKRIT: द्वैप
+  DEF: Dvaipāyana₁ [āyana] m. myth. [Mah.] np. de Dvaipāyana₁ "Né sur une île", épith. de Vyāsa (né sur une...
+
+  INDEX: 13541 | SANSKRIT: द्वेप
+  DEF: Dvaipāyana₁ [āyana₁] n. myth. [Mah.] nom du lac Dvaipāyana₁ "où les éléphants vont boire"; Du ryodha...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: dhara                          COUNT: 2
+SANSKRIT VALUES: धर, धा
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 13600 | SANSKRIT: धर
+  DEF: Dhara |agt. dhṛ| a. m. n. f. dharā ifc. Qui porte, Qui soutient ; Qui transporte ; Qui préserve — m....
+
+  INDEX: 13698 | SANSKRIT: धा
+  DEF: √ dhara₁ v. [3] pr. (dadharati) pr. r. (dhatte) imp. (dhehi) fut. (dhāsyati) pft. (dadhau) aor. [1...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: na                             COUNT: 2
+SANSKRIT VALUES: न, ॰न
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 13911 | SANSKRIT: न
+  DEF: na part. non, ne pas; il n'est pas vrai que | (N (abl. i.) na M) M moins N || gr. ; lat. ne; fr. ne,...
+
+  INDEX: 13914 | SANSKRIT: ॰न
+  DEF: na var. na forme des s. n....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: no                             COUNT: 2
+SANSKRIT VALUES: न, नो
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 13912 | SANSKRIT: न
+  DEF: no [u] adv. (pragrhya) et non. na nu n'est ce pas? n'estil pas vrai que? certaine ment. katham cana ...
+
+  INDEX: 15304 | SANSKRIT: नो
+  DEF: no [nau] part. (pragṛhya) et non. no ced sinon, afin que ne ... pas. no vā ou non....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: nad                            COUNT: 2
+SANSKRIT VALUES: नड्, नद्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 13957 | SANSKRIT: नड्
+  DEF: nad iic. nada....
+
+  INDEX: 13967 | SANSKRIT: नद्
+  DEF: √ nad v. [1] pr. (nádati) pp. (nadita) pf. (anu, ni, pra, vi) murmurer; bruire, résonner, rendre un ...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: nas                            COUNT: 2
+SANSKRIT VALUES: नश्, नस्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 14189 | SANSKRIT: नश्
+  DEF: √ nas₁ v. [4] pr. (nasyati) pft. (nanāsa) pp. (nașta) inf. (naștum) pf. (pra, vi) périr, mourir; êtr...
+
+  INDEX: 14199 | SANSKRIT: नस्
+  DEF: nas₁ cl. asmabhyam, asmākam, asmān....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: ni                             COUNT: 2
+SANSKRIT VALUES: नि, ॰नि
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 14386 | SANSKRIT: नि
+  DEF: ni pf. à l'intérieur, en bas, sous | manque de, dépourvu de, cessation de....
+
+  INDEX: 14387 | SANSKRIT: ॰नि
+  DEF: ni var. ni forme des s. m....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: pitā                           COUNT: 2
+SANSKRIT VALUES: नित्य, पिता
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 14498 | SANSKRIT: नित्य
+  DEF: pitā ["qui parle sans cesse"] bavard....
+
+  INDEX: 16823 | SANSKRIT: पिता
+  DEF: pitā [nom. pitr] iic....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: ninī                           COUNT: 2
+SANSKRIT VALUES: निनीषा, निनीषु
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 14553 | SANSKRIT: निनीषा
+  DEF: ninī sā [act. dés. nī₁] f. désir de mener ou apporter....
+
+  INDEX: 14554 | SANSKRIT: निनीषु
+  DEF: ninī su [agt. dés. nī₁] a. m. n. f. qui veut mener ou apporter (acc.)....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: nir                            COUNT: 2
+SANSKRIT VALUES: निर्, निर्णी
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 14651 | SANSKRIT: निर्
+  DEF: nir cf. nis....
+
+  INDEX: 14780 | SANSKRIT: निर्णी
+  DEF: nir n ī [nisn ī₁] v. [1] pr. (nir n a y ati) pp. (nirnīta) pf. (vi) emmener, emporter | déduire; con...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: rudra                          COUNT: 2
+SANSKRIT VALUES: निऋति, रुद्र
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 14749 | SANSKRIT: निऋति
+  DEF: Rudra [ekādaśarudrās]; gardien [dikpāla] du Sud Ouest, il règne sur l'esprit des morts [bhūta]....
+
+  INDEX: 22974 | SANSKRIT: रुद्र
+  DEF: Rudra [rud₁ra] m. myth. véd. np. de Ru dra "Tourmenteur" ["qui fait pleurer"], ou "Fu rieux" ["dont ...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: niśānta                        COUNT: 2
+SANSKRIT VALUES: निशा, निशान्त
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 14993 | SANSKRIT: निशा
+  DEF: niśānta₂ | anta| m. n. | "fin de la nuit" | aube....
+
+  INDEX: 14997 | SANSKRIT: निशान्त
+  DEF: niśānta₂ [niśānta] a. m. n. f. niśāntā calme, tranquille usuel, traditionnel — n. habitation, mai so...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: nī                             COUNT: 2
+SANSKRIT VALUES: नी, ॰नी
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 15125 | SANSKRIT: नी
+  DEF: √ nī₁ [relié à nī₃] v. [1] pr. (nayati) fut. (neṣyati) pft. (nināya) aor. [4] (anaiṣīt) pp. (nīta) p...
+
+  INDEX: 15126 | SANSKRIT: ॰नी
+  DEF: nī var. ṇī forme des s. f....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: nu                             COUNT: 2
+SANSKRIT VALUES: नु, ॰नु
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 15190 | SANSKRIT: नु
+  DEF: √ nu₁ v. [2] pr. (nauti) pp. (nuta) pf. (pra) louer, acclamer....
+
+  INDEX: 15191 | SANSKRIT: ॰नु
+  DEF: nu primaire, forme des a. au sens d'agent ha bituel....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: p                              COUNT: 2
+SANSKRIT VALUES: प, प्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 15380 | SANSKRIT: प
+  DEF: p Į5 Ч pa nota. le nombre 1; cf. kaṭapayādi....
+
+  INDEX: 16891 | SANSKRIT: प्
+  DEF: √ p r v. [1] pr. r. (payate) pp. (pīna) véd. augmen ter, engraisser; grossir, gonfler, s'enfler; déb...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: pattana                        COUNT: 2
+SANSKRIT VALUES: पट्टन, पत्तन
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 15597 | SANSKRIT: पट्टन
+  DEF: pattana cf. pattana....
+
+  INDEX: 15664 | SANSKRIT: पत्तन
+  DEF: Pattana n. ville, cité |var. Pattana id. |géo. not. ville de Pattana au Gujarāt, grand centre jaïne;...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: parāyaṇa                       COUNT: 2
+SANSKRIT VALUES: पर, परायण
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 15827 | SANSKRIT: पर
+  DEF: parāyaṇa₁ [ayana] a. m. n. f. parāyaṇā violent (douleur) | principal; qui constitue le but final | q...
+
+  INDEX: 15945 | SANSKRIT: परायण
+  DEF: parāyaṇa₂ [act. pare₂] départ; destination finale....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: pāt                            COUNT: 2
+SANSKRIT VALUES: पाट, पात्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 16498 | SANSKRIT: पाट
+  DEF: pāt [ca. pat] v. [10] pr. (pātayati) pp. (pātita) fendre, déchirer, arracher....
+
+  INDEX: 16562 | SANSKRIT: पात्
+  DEF: pāt [ca. pat₁] v. [10] pr. (pātayati) pp. (pātita) faire tomber, abattre, jeter....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: pidhā                          COUNT: 2
+SANSKRIT VALUES: पिढा, पिधा
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 16798 | SANSKRIT: पिढा
+  DEF: pidhā f. gradin, étage | arch. temple au toit en gradins....
+
+  INDEX: 16851 | SANSKRIT: पिधा
+  DEF: pidhā [pidhā₁] v. [3] pr. (pidadhāti) abs. (pidhāya) pp. (pihita) fermer, obstruer, boucher. dvāram ...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: pratīcī                        COUNT: 2
+SANSKRIT VALUES: प्रतीची, प्रत्यच्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 17891 | SANSKRIT: प्रतीची
+  DEF: pratīcī [f. pratyac] f. la direction de l'Ouest....
+
+  INDEX: 17934 | SANSKRIT: प्रत्यच्
+  DEF: pratīcī [m. nom. pratyan; n. nom. pratyak] tourné vers l'arrière; tourné vers l'intérieur | tourné v...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: prasū                          COUNT: 2
+SANSKRIT VALUES: प्रसू, प्रस्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 18528 | SANSKRIT: प्रसू
+  DEF: prasū₁ [prasū₁] v. [2] pr. r. (prasūte) pp. (prasūta) procréer, enfanter, engendrer; produire, porte...
+
+  INDEX: 18529 | SANSKRIT: प्रस्
+  DEF: prasū₁ |act. prasū₁| m. n. f. production, procréation — ifc. fait de donner naissance à (iic.) — f. ...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: prān                           COUNT: 2
+SANSKRIT VALUES: प्राङ्, प्राण्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 18640 | SANSKRIT: प्राङ्
+  DEF: prān iic. prāc....
+
+  INDEX: 18662 | SANSKRIT: प्राण्
+  DEF: prān₁ [Praan₂] v. [2] pr. (prāniti) respirer, souffler; vivre — ca. (prāṇayati) animer, donner le so...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: prās                           COUNT: 2
+SANSKRIT VALUES: प्राश्, प्रास्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 18782 | SANSKRIT: प्राश्
+  DEF: prās₁ [praas₂] v. [9] pr. (prāsnāti) pp. (prāsita) manger, dévorer — ca. (prāśayati) nourrir, donner...
+
+  INDEX: 18791 | SANSKRIT: प्रास्
+  DEF: prās [praas₂] v. [4] pr. (prāsyati) pp. (prāsta) pf. (anu) jeter, lancer; jeter dans (loc.); renvers...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: prāsa                          COUNT: 2
+SANSKRIT VALUES: प्राश, प्राप्त
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 18783 | SANSKRIT: प्राश
+  DEF: prāsa [act. prās₁] m. fait de manger, repas; nourriture....
+
+  INDEX: 18792 | SANSKRIT: प्राप्त
+  DEF: prāsa |act. prās| m. fait de lancer, de jeter — obj. m. javelot; fléchette, dard....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: prus                           COUNT: 2
+SANSKRIT VALUES: ष्, प्रुष्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 18847 | SANSKRIT: ष्
+  DEF: √ prus₁ v. [5] pr. (prusnoti) pr. r. (prusnute) aor. [5] (aproṣīt) pp. (proṣita) véd. arroser; irrig...
+
+  INDEX: 18848 | SANSKRIT: प्रुष्
+  DEF: prus₂ [agt. prus₁] ifc. a. m. n. f. qui arrose (iic.)....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: phena                          COUNT: 2
+SANSKRIT VALUES: फेण, फेन
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 18996 | SANSKRIT: फेण
+  DEF: phena cf. phena....
+
+  INDEX: 18997 | SANSKRIT: फेन
+  DEF: phena var. phena m. n. écume; bulle | salive, bave — v. [11] pr. r. (phenāyate) émettre de l'écume a...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: bandin                         COUNT: 2
+SANSKRIT VALUES: बन्दिन्, बन्दिन
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 19040 | SANSKRIT: बन्दिन्
+  DEF: bandin₁ [vandin] m. soc. barde (chantant les louanges du prince); héraut (déclamant au com bat)....
+
+  INDEX: 19041 | SANSKRIT: बन्दिन
+  DEF: bandin₁ [relié à bandh] a. m. n. f. bandī cap tif, prisonnier; esclave — f. bandī prisonnier (mâle o...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: budh                           COUNT: 2
+SANSKRIT VALUES: ध्, बुध्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 19356 | SANSKRIT: ध्
+  DEF: √ budh₁ v. [1] pr. (bodhati) v. [4] pr. r. (Bud hyate) pft. (bubodha) aor. r. [4] (abuddha) pp. (bud...
+
+  INDEX: 19357 | SANSKRIT: बुध्
+  DEF: budh₂ |agt. budh₁| ifc. a. m. n. f. Qui s'éveille Qui comprend (iic.); versé en (iic.) | intelligent...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: vam                            COUNT: 2
+SANSKRIT VALUES: बुभुक्षा, वम्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 19363 | SANSKRIT: बुभुक्षा
+  DEF: vam [Mah.] Qui contrôle son appêtit gagne le Ciel sans aucun doute....
+
+  INDEX: 23779 | SANSKRIT: वम्
+  DEF: √ vam \ v. \ [1] \ pr. \ (vamati) \ pp. \ (vanta) \ pfp. \ (va mitavya) pf. (ut) vomir; expectorer |...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: brh                            COUNT: 2
+SANSKRIT VALUES: ह, बृह
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 19376 | SANSKRIT: ह
+  DEF: √ brh₁ [relié à vrdh₁] v. [1] pr. (brmhati) pr. r. (bṛṃhate) pp. (bṛṃhita, bṛḍha) v. [6] pr. (brhati...
+
+  INDEX: 19377 | SANSKRIT: बृह
+  DEF: brh₃ [act. brh₁] ifc. f. accroissement de force; puissance....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: mat                            COUNT: 2
+SANSKRIT VALUES: मत्, ॰मत्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 20396 | SANSKRIT: मत्
+  DEF: mat var. mac, mad₂ [abl. aham] ind. de moi — iic. moi, de moi, à moi, par moi....
+
+  INDEX: 20402 | SANSKRIT: ॰मत्
+  DEF: mat forme des a. (remplace vat après th. en i, ī, u, ū, r, o, is ou us)....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: man                            COUNT: 2
+SANSKRIT VALUES: मन्, ॰मन्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 20567 | SANSKRIT: मन्
+  DEF: √ man v. [4] pr. r. (mányate) v. [8] pr. r. (ma nuté) pft. r. (mene) pp. (mata) pfp. (mantavya, many...
+
+  INDEX: 20568 | SANSKRIT: ॰मन्
+  DEF: man gram. forme des substantifs primaires [krt₂]; principalement des noms d'action n. avec accent su...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: maya                           COUNT: 2
+SANSKRIT VALUES: मय, ॰मय
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 20714 | SANSKRIT: मय
+  DEF: Maya [agt. mā₁] m. myth. np. de l'asura Maya "Architecte", premier parmi les ondins [dānava]; Archit...
+
+  INDEX: 20716 | SANSKRIT: ॰मय
+  DEF: Maya gram. (forme des a. secondaires, avec f. en mayī) fait de, formé de (iic.) | concernant, relati...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: mara                           COUNT: 2
+SANSKRIT VALUES: मर, ॰मर
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 20729 | SANSKRIT: मर
+  DEF: mara [act. mr] m. mort | la terre ["monde des mortels"] | pl. les habitants des enfers....
+
+  INDEX: 20732 | SANSKRIT: ॰मर
+  DEF: mara forme des a. signifiant "qui fait"....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: māna                           COUNT: 2
+SANSKRIT VALUES: मान, ॰मान
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 21196 | SANSKRIT: मान
+  DEF: māna₁ [act. man] m. opinion, conception | égard, respect, estime, honneur rendu; l'honneur | fierté,...
+
+  INDEX: 21207 | SANSKRIT: ॰मान
+  DEF: māna var. āna forme des ppr. r. ou ps. | forme des pfut. r. | forme des ppft. r....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: muc                            COUNT: 2
+SANSKRIT VALUES: मृच्, मुच्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 21500 | SANSKRIT: मृच्
+  DEF: √ muc₁ v. [6] pr. (muncati) fut. r. (moksyate) pft. (mumoca) aor. [1] (amok) aor. [2] (amucat) aor. ...
+
+  INDEX: 21501 | SANSKRIT: मुच्
+  DEF: muc₁ [agt. muc₁] a. m. n. f. ifc. qui délivre de, qui libère de (iic.) — f. libération...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: médhra                         COUNT: 2
+SANSKRIT VALUES: मेद्र, मेध्र
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 21761 | SANSKRIT: मेद्र
+  DEF: médhra [instr. mih] n. pénis | bélier....
+
+  INDEX: 21786 | SANSKRIT: मेध्र
+  DEF: <i>médhra</i> [instr. <i>mih</i>] n. pénis — m. bélier....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: médhracarman                   COUNT: 2
+SANSKRIT VALUES: मेद्र, मेध्र
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 21762 | SANSKRIT: मेद्र
+  DEF: médhracarman [carman] n. prépuce....
+
+  INDEX: 21787 | SANSKRIT: मेध्र
+  DEF: médhracarman [carman] n. prépuce....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: ya                             COUNT: 2
+SANSKRIT VALUES: य, ॰य
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 21908 | SANSKRIT: य
+  DEF: ya nota. le nombre 1 ; cf. kaṭapayādi....
+
+  INDEX: 21909 | SANSKRIT: ॰य
+  DEF: ya gram. (avec vṛddhi du thème) forme des a. poss. (appartenant à, à propos de, dérivant de) forme d...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: yan                            COUNT: 2
+SANSKRIT VALUES: यङ्, यण्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 21919 | SANSKRIT: यङ्
+  DEF: yan nota. gram. marque de l'intensif ou fréquentatif. yananta anta m. gram. forme intensive ou fréqu...
+
+  INDEX: 21954 | SANSKRIT: यण्
+  DEF: yan nota. gram. pratyāhāra des semivoyelles 'y', 'r', 'l' et 'v'. √ yat₁ |relié à yam| v. |1| pr. r....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: yā                             COUNT: 2
+SANSKRIT VALUES: या, ॰या
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 22141 | SANSKRIT: या
+  DEF: √ yā₁ [relié à i] v. [2] pr. (yāti) pft. (yayau) aor. [6] (áyāsīt) pp. (yāta) fut. péri. (yātā) pf. ...
+
+  INDEX: 22142 | SANSKRIT: ॰या
+  DEF: yā forme des adverbes de manière....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: yātr                           COUNT: 2
+SANSKRIT VALUES: यातृ, यात्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 22168 | SANSKRIT: यातृ
+  DEF: yātr₁ [agt. yā₁] ifc. a. m. n. f. yātr qui va à (iic.); qui recherche (iic.) | qui va en (iic.) (véh...
+
+  INDEX: 22169 | SANSKRIT: यात्
+  DEF: yātr₂ f. [acc. yātaram] épouse d'un frère de son époux | lat. janitrices....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: yu                             COUNT: 2
+SANSKRIT VALUES: यु, ॰यु
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 22217 | SANSKRIT: यु
+  DEF: √ yu₁ [reli\'e à yuj₁] v. [2] pr. (yauti) pr. r. (yute) v. [6] pr. (yuváti) pr. r. (yuvate) v. [9] p...
+
+  INDEX: 22218 | SANSKRIT: ॰यु
+  DEF: yu suffixe secondaire formant des noms d'agents....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: rasita                         COUNT: 2
+SANSKRIT VALUES: रसित, रिसत
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 22703 | SANSKRIT: रसित
+  DEF: rasita₁ [pp. ras] a. m. n. f. rasitā crié; résonné — n. cri; bruit; not. barrissement de l'éléphant ...
+
+  INDEX: 22704 | SANSKRIT: रिसत
+  DEF: rasita₁ [pp. rasa] a. m. n. f. rasitā goûté,...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: rājaka                         COUNT: 2
+SANSKRIT VALUES: राज, राजक
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 22737 | SANSKRIT: राज
+  DEF: rājaka |ka| m. roitelet....
+
+  INDEX: 22808 | SANSKRIT: राजक
+  DEF: rājaka [agt. rāj₁] m. Roi....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: ri                             COUNT: 2
+SANSKRIT VALUES: रि, ेरि
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 22925 | SANSKRIT: रि
+  DEF: √ ri var. rī v. [9] pr. (riṇāti) v. [4] pr. r. (rīyate) pp. (rīṇa) relâcher, libérer, émettre, faire...
+
+  INDEX: 22926 | SANSKRIT: ेरि
+  DEF: ri forme des a....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: v                              COUNT: 2
+SANSKRIT VALUES: व, ज्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 23569 | SANSKRIT: व
+  DEF: V...
+
+  INDEX: 25775 | SANSKRIT: ज्
+  DEF: √ v ī j v. [1] pr. (v ī j a t i) éventer, ventiler, refroi dir en soufflant....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: van                            COUNT: 2
+SANSKRIT VALUES: न्, ॰वन्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 23729 | SANSKRIT: न्
+  DEF: √ van v. [1] pr. (vánati) v. [8] pr. (vanóti) pr. r. (vanuté) pp. (vanita) aimer, désirer | lat. Ven...
+
+  INDEX: 23730 | SANSKRIT: ॰वन्
+  DEF: van forme des a. mas. (f. en varī)....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: vará                           COUNT: 2
+SANSKRIT VALUES: वर, ॰वर
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 23797 | SANSKRIT: वर
+  DEF: vará₂ [obj. vṛ₂] a. m. n. f. varā choisi, préféré; excellent, très bon, très Beau; d'élite, de choix...
+
+  INDEX: 23812 | SANSKRIT: ॰वर
+  DEF: vará gram. exprime "celui qui fait" après un verbe....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: vah                            COUNT: 2
+SANSKRIT VALUES: ह्, वह
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 24069 | SANSKRIT: ह्
+  DEF: √ vah₁ v. [1] pr. (vahati) pft. (uvāha) pp. (ūdha) pf. (apa, ā, ut, upa, ni, nis, pari, pra, vi, sam...
+
+  INDEX: 24070 | SANSKRIT: वह
+  DEF: vah₂ [vah₁] ifc. a. m. n. f. qui va (à cheval, etc.)....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: vās                            COUNT: 2
+SANSKRIT VALUES: वाश्, वास्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 24333 | SANSKRIT: वाश्
+  DEF: √ vās [relié à vasā] v. [4] pr. r. (vāsyate) pp. (vāśita) mugir, beugler; hurler, crier; gémir || fr...
+
+  INDEX: 24335 | SANSKRIT: वास्
+  DEF: vās₁ [ca. vas₁] v. [10] pr. (vāsayati) pp. (vāsita) pfp. (vāsya₁) loger, héberger, abriter....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: vikāsa                         COUNT: 2
+SANSKRIT VALUES: विकाश, विकास
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 24444 | SANSKRIT: विकाश
+  DEF: vikāsa₂ [agt. vikās] m. éclat, splendeur; ma nifestation....
+
+  INDEX: 24446 | SANSKRIT: विकास
+  DEF: vikāsa [act. vikas] m. éclosion, épanouissement; floraison | phil. [Trika] phase descendante de réal...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: vid                            COUNT: 2
+SANSKRIT VALUES: विड्, विद्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 24677 | SANSKRIT: विड्
+  DEF: vid iic. vis₂....
+
+  INDEX: 24720 | SANSKRIT: विद्
+  DEF: √ vid₂ v. [2] pr. (vetti) pft. (veda) aor. [5] (avedīt) pp. (viditá) ppft. (vidvas) pfp. (veditavya,...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: vida                           COUNT: 2
+SANSKRIT VALUES: विड, विद
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 24679 | SANSKRIT: विड
+  DEF: vida m. n. sel de dépôt de solution | méd. sel médicinal obtenu à partir du fruit du myrobolan. বিভদ...
+
+  INDEX: 24721 | SANSKRIT: विद
+  DEF: vida [agt. vid₂] ifc. a. m. n. f. vidā id....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: vindu                          COUNT: 2
+SANSKRIT VALUES: विन्दु, विन्द्र
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 24952 | SANSKRIT: विन्दु
+  DEF: vindu₁ var. bindu m. goutte....
+
+  INDEX: 24953 | SANSKRIT: विन्द्र
+  DEF: vindu₁ [vid₂u] ifc. m. qui cherche (iic.); qui trouve (iic.); familier avec (iic.)....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: vrt                            COUNT: 2
+SANSKRIT VALUES: त्, वृत्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 25860 | SANSKRIT: त्
+  DEF: √ vrt₁ v. [1] pr. r. (vártate) v. [3] pr. (vavartti) pft. (vavrte) aor. [2] (avrtat) aor. [3] (avrīv...
+
+  INDEX: 25861 | SANSKRIT: वृत्
+  DEF: vrt₂ |agt. vrt₁| ifc. a. m. n. f. (iic.) qui tourne, qui existe | (après nombre) (iic.) fois....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: vrdh                           COUNT: 2
+SANSKRIT VALUES: ध्, वृध्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 25902 | SANSKRIT: ध्
+  DEF: √ vrdh₁ [relié à brh₁] v. [1] pr. r. (vardhate) pft. (vavardha) pp. (vṛddha) ppr. r. (vardhamāna) pf...
+
+  INDEX: 25903 | SANSKRIT: वृध्
+  DEF: vrdh₂ [agt. vrdh₁] ifc. a. m. n. f. qui augmente, qui accroît (iic.)....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: vaidūrya                       COUNT: 2
+SANSKRIT VALUES: वैड्रर्य, वैद्वर्य
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 26103 | SANSKRIT: वैड्रर्य
+  DEF: vaidūrya cf. vaidūrya....
+
+  INDEX: 26123 | SANSKRIT: वैद्वर्य
+  DEF: vaidūrya [*vidūraya] n. béryl bleu, aigue marine; astr. c'est le joyau associé à Ketu | pierre semip...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: sap                            COUNT: 2
+SANSKRIT VALUES: शप्, सप्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 26705 | SANSKRIT: शप्
+  DEF: sap₁ part. préfixe d'assentiment. <i>śap karoti</i> il est d'accord....
+
+  INDEX: 28643 | SANSKRIT: सप्
+  DEF: sap₁ [agt. sap₁] ifc. a. m. n. f. qui rend hommage à, qui sert (iic.)....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: sapta                          COUNT: 2
+SANSKRIT VALUES: श्रप्त, सप्त
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 26710 | SANSKRIT: श्रप्त
+  DEF: sapta [pp. sap] a.m. n. f. saptā maudit |conjuré, adjuré — n. serment....
+
+  INDEX: 28668 | SANSKRIT: सप्त
+  DEF: sapta iic. saptan....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: sam                            COUNT: 2
+SANSKRIT VALUES: शम्, शाम्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 26759 | SANSKRIT: शम्
+  DEF: √ sam₁ v. [4] pr. (sāmyati) pft. (sasāma) pp. (śānta) pf. (upa, pra) travailler, se fatiguer; exer c...
+
+  INDEX: 27012 | SANSKRIT: शाम्
+  DEF: sam₁ [ca. sam₁] v. [10] pr. (sam₁ ayati) ps. (śāmyate) calmer, apaiser; se concilier (not. par un ri...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: śam                            COUNT: 2
+SANSKRIT VALUES: शम्, श्रम्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 26760 | SANSKRIT: शम्
+  DEF: √ śam₂ ca. (śamayati) ps. (śamyate) ca. (śāmayati) pf. (ni) [inusité sans pf.]....
+
+  INDEX: 26761 | SANSKRIT: श्रम्
+  DEF: śam₃ [act. śam₁] part. bénédiction, bonheur; bienêtre; joyeusement, avec bonheur, bien....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: sáras                          COUNT: 2
+SANSKRIT VALUES: शरस्, सरस्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 26832 | SANSKRIT: शरस्
+  DEF: sáras [relié à saras] n. crème, peau du lait |fine couche de cendres....
+
+  INDEX: 29371 | SANSKRIT: सरस्
+  DEF: sáRas [abstr. sṛ] n. eau | lac, étang, réservoir....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: śas                            COUNT: 2
+SANSKRIT VALUES: शस्, ॰शस्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 26903 | SANSKRIT: शस्
+  DEF: √ śas v. [1] pr. (śasati) pp. (śasta) pfp. (śasya) pf. (vi) couper, égorger, tuer....
+
+  INDEX: 26904 | SANSKRIT: ॰शस्
+  DEF: śas forme des adv. de manière (comme fr. ment) | itère le numéral iic. (fois)....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: sa                             COUNT: 2
+SANSKRIT VALUES: शा, स
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 26916 | SANSKRIT: शा
+  DEF: √ sa v. [3] pr. (sisati) pr. r. (sisate) pp. (sita, śāta) v. [4] pr. (śyáti) pf. (ni, sam) véd. aigu...
+
+  INDEX: 27866 | SANSKRIT: स
+  DEF: sa₁ pf. (pour saha₂) avec, ayant, muni de, y com pris | (pour samāna₂) semblable à. sakṣatram adv. c...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: saka                           COUNT: 2
+SANSKRIT VALUES: शाक, स
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 26923 | SANSKRIT: शाक
+  DEF: Saka₂ | act. sak | m. puissance, force; secours aide, ami....
+
+  INDEX: 27867 | SANSKRIT: स
+  DEF: saka |ka| a. m. n. f. sakā lui qui....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: sāta                           COUNT: 2
+SANSKRIT VALUES: शात, सात
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 26968 | SANSKRIT: शात
+  DEF: sāta₁ [pp. sā] a. m. n. f. sātā aiguisé, tranchant | mince, maigre, émacié; faible....
+
+  INDEX: 29741 | SANSKRIT: सात
+  DEF: Sāta |pp. san₁| a. m. n. f. sātā véd. obtenu, donné — n. Plaisir, délice — m. lit. [KSS.] np. du yak...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: sāda                           COUNT: 2
+SANSKRIT VALUES: शाद, साद
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 26978 | SANSKRIT: शाद
+  DEF: sāda m. véd. herbe — f. sādā brique. <i>śaraśādam</i> du roseau et de l'herbe....
+
+  INDEX: 29757 | SANSKRIT: साद
+  DEF: sāda |act. sad₁| m. véd. équitation affaissement, enlisement; fatigue, affaiblissement; découragemen...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: sava                           COUNT: 2
+SANSKRIT VALUES: शाव, सव
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 27081 | SANSKRIT: शाव
+  DEF: sava₁ m. petit d'animal. <i>śāvaka</i> |<i>ka</i>| m. id....
+
+  INDEX: 29548 | SANSKRIT: सव
+  DEF: sava₂ |agt. sū₁| m. instigateur; incitateur — act. m. incitation, impulsion, ordre | véd. inaugu rat...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: sū                             COUNT: 2
+SANSKRIT VALUES: श्, सू
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 27379 | SANSKRIT: श्
+  DEF: sū₁ var. sū [onomatopée] ind. grognement. śūkara var. sūkara, ṣūkara [kara₁] m. porc, cochon; sangli...
+
+  INDEX: 30554 | SANSKRIT: सू
+  DEF: √ sū₁ v. [1] pr. (savati) v. [6] pr. (suvati) v. [2] pr. (sauti) v. [2] pr. r. (sūte) pp. (sūta₁, su...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: scut                           COUNT: 2
+SANSKRIT VALUES: शुत्, सुत्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 27528 | SANSKRIT: शुत्
+  DEF: √ scut₁ var. scyut v. [1] pr. (scotati) aor. [5] (aścotīt) aor. [2] (aścutat) pp. (śscutita) suinter...
+
+  INDEX: 27529 | SANSKRIT: सुत्
+  DEF: scut₂ [agt. scut₁] ifc. a. m. n. f. qui suinte, qui exsude, qui distille (iic.); qui arrose (iic.)....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: syā                            COUNT: 2
+SANSKRIT VALUES: श्या, स्या
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 27539 | SANSKRIT: श्या
+  DEF: √ syā v. [1] pr. (syāyati) pp. (sīta) geler; conge ler, refroidir — pr. r. (śyāyate) coaguler, se so...
+
+  INDEX: 31255 | SANSKRIT: स्या
+  DEF: syā [f. tyad] pn. dém. f. [sg. nom. syā, acc. tyām] véd. cette, la....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: sat                            COUNT: 2
+SANSKRIT VALUES: षट, सत्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 27783 | SANSKRIT: षट
+  DEF: sat iic. sas....
+
+  INDEX: 28346 | SANSKRIT: सत्
+  DEF: sat [ppr. as₁] a. m. n. f. satī existant, présent; réel, vrai | bon, juste, vertueux, convenable, ho...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: sad                            COUNT: 2
+SANSKRIT VALUES: षड्, सद्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 27810 | SANSKRIT: षड्
+  DEF: sad iic. sas. șadanga |anga₁| a. m. n. f. șadangā composé de 6 parties....
+
+  INDEX: 28434 | SANSKRIT: सद्
+  DEF: sad₁ |agt. sad₁| ifc. a. m. n. f. assis sur, résidant à (iic.)....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: saddharma                      COUNT: 2
+SANSKRIT VALUES: षड्, सद्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 27826 | SANSKRIT: षड्
+  DEF: saddharma [dharma] m. bd. [Mahāyāna] les 6 étapes de la pratique du Yoga tantrique : caṇḍālī ou Yoga...
+
+  INDEX: 28446 | SANSKRIT: सद्
+  DEF: saddharma [dharma] m. bd. loi correcte | bd. loi merveilleuse....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: san                            COUNT: 2
+SANSKRIT VALUES: षण्, सन्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 27837 | SANSKRIT: षण्
+  DEF: san iic. sas....
+
+  INDEX: 28487 | SANSKRIT: सन्
+  DEF: san₂ nota. gram. suffixe [pratyaya] du désidératif....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: satva                          COUNT: 2
+SANSKRIT VALUES: षत्व, सत्व
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 27844 | SANSKRIT: षत्व
+  DEF: satva [(sa)tva] n. phon. rétroflexion de la lettre 's'....
+
+  INDEX: 28430 | SANSKRIT: सत्व
+  DEF: satva cf. sattva....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: samāntara                      COUNT: 2
+SANSKRIT VALUES: सम, समा
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 28781 | SANSKRIT: सम
+  DEF: samāntara₁ [antara] a. m. n. f. samāntarā en pro portion de (avec num.) | parallèle. trisamāntara de...
+
+  INDEX: 28876 | SANSKRIT: समा
+  DEF: samāntara₂ [antara] n. intervalle d'un an. samāntare adv. d'Ici un an....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: samīcī                         COUNT: 2
+SANSKRIT VALUES: समीची, सम्यच्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 29022 | SANSKRIT: समीची
+  DEF: samīcī [f. samyac] f. biche | myth. np. de l'apsaras samīcī, compagne de Vargā....
+
+  INDEX: 29347 | SANSKRIT: सम्यच्
+  DEF: samīcī [m. nom. samyan; n. nom. samyak] tourné dans la même direction, convergent, réuni; correct, c...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: sampratisthā                   COUNT: 2
+SANSKRIT VALUES: सप्रतिष्ठा, संप्रतिष्ठा
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 29188 | SANSKRIT: सप्रतिष्ठा
+  DEF: sampratisthā₁ var. sampratisthā₁ [sam pratisthā₁] v. [1] pr. (sampratitisthati) se te nir fermement ...
+
+  INDEX: 29189 | SANSKRIT: संप्रतिष्ठा
+  DEF: sampratisthā₂ [obj. sampratisthā₁] f. persévérance | permanence; continuance | SOC. rang élevé....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: sah                            COUNT: 2
+SANSKRIT VALUES: ह, सह्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 29611 | SANSKRIT: ह
+  DEF: √ sah₁ v. [1] pr. r. (sáhate) v. [1] pr. (sáhati) pft. (sasāha) pp. (sodha, sādha, sahita₁) pfp. (sa...
+
+  INDEX: 29612 | SANSKRIT: सह्
+  DEF: sah₁ [agt. sah₁] ifc. m. f. Qui l'emporte sur, Qui est maître de (iic.) | Qui supporte, Qui endure (...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: su                             COUNT: 2
+SANSKRIT VALUES: सू, सु
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 30155 | SANSKRIT: सू
+  DEF: su₁ pf. bon, bien; beau, joli, agréable; très. susiktam tvayā tu as bien arrosé....
+
+  INDEX: 30156 | SANSKRIT: सु
+  DEF: √ su₂ v. [5] pr. (sunóti) pr. r. (sunute) pp. (suta₁) pf. (adhi, abhi, ā, pra, sam) véd. presser, ex...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: sutapa                         COUNT: 2
+SANSKRIT VALUES: सूत, सूतप
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 30239 | SANSKRIT: सूत
+  DEF: sutapa₁ [pa₁] a. m. n. f. sutapā qui boit le soma....
+
+  INDEX: 30241 | SANSKRIT: सूतप
+  DEF: sutapa₁ [su₁tapa] m. myth. ["qui pratique de grandes pénitences" | classe de dieux....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: suvasana                       COUNT: 2
+SANSKRIT VALUES: सूवसन, सुवसन
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 30475 | SANSKRIT: सूवसन
+  DEF: suvasana₁ [su₁vasana₂] n. résidence agréable....
+
+  INDEX: 30476 | SANSKRIT: सुवसन
+  DEF: suvasana₂ [su₁vasana₂] a. m. n. f. suvasanā bien habillé....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: snih                           COUNT: 2
+SANSKRIT VALUES: सिह्, सिंह
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 31096 | SANSKRIT: सिह्
+  DEF: √ snih₁ v. [4] pr. (snihyati) v. [1] pr. (snehati) pp. (snigdha) être onctueux ou visqueux, être hui...
+
+  INDEX: 31097 | SANSKRIT: सिंह
+  DEF: snih₂ [agt. snih₂] f. humidité, suintement; graisse — a. m. n. f. affectueux....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: snu                            COUNT: 2
+SANSKRIT VALUES: स्नु, ॰स्न
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 31098 | SANSKRIT: स्नु
+  DEF: √ snu v. [2] pr. (snauti) pr. r. (snute) pp. (snuta) pf. (pra) distiller; émettre un fluide, couler;...
+
+  INDEX: 31099 | SANSKRIT: ॰स्न
+  DEF: snu forme des agents habituels ou des adjectifs duratifs; cf. bhūṣṇu....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: sprs                           COUNT: 2
+SANSKRIT VALUES: स्प्र्स्, स्पृश
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 31144 | SANSKRIT: स्प्र्स्
+  DEF: √ sprs₁ v. [6] pr. (sprsati) pr. r. (sprsate) pft. (pasparśa) aor. [1] (asprsyāt) pp. (sprsta) ppr. ...
+
+  INDEX: 31145 | SANSKRIT: स्पृश
+  DEF: sprs₂ [agt. sprs₁] ifc. a. m. n. f. qui touche (iic.); qui participe à, qui éprouve (iic.). gṛtaspṛk...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: sphur                          COUNT: 2
+SANSKRIT VALUES: स्फूर, स्फुर्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 31172 | SANSKRIT: स्फूर
+  DEF: √ sphur v. [6] pr. (sphuráti) pr. r. (sphurate) pp. (sphurita) pft. (pusphora) pf. (nis, pari, vi, s...
+
+  INDEX: 31173 | SANSKRIT: स्फुर्
+  DEF: sphur₁ [agt. sphur] ifc. a. m. n. f. (iic.) trem blant, palpitant....
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: han                            COUNT: 2
+SANSKRIT VALUES: हन, हन्
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 31588 | SANSKRIT: हन
+  DEF: √ han₁ v. [2] pr. (hanti) imp. (jahi) fut. (hanisyati) pft. (jaghāna) pft. r. (jaghne) pp. (hata) pp...
+
+  INDEX: 31589 | SANSKRIT: हन्
+  DEF: han₁ [agt. han₁] ifc. a. m. n. f. ghnī [fb. ha; obl. ghna; sg. nom. hā] qui a tué (iic.). brahmahā q...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAME: hrī                            COUNT: 2
+SANSKRIT VALUES: ो, हों
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  INDEX: 32022 | SANSKRIT: ो
+  DEF: √ Hrī₁ v. [3] pr. (jihréti) pp. (hrīta, hrīṇa) avoir honte, être honteux (de (abl.)) | être modeste,...
+
+  INDEX: 32023 | SANSKRIT: हों
+  DEF: Hrī₂ [act. Hrī₁] f. honte; pudeur; modestie; ti midité | myth. np. de Hrī "Prude", fille de Dakṣa, é...

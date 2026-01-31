@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "github-scraper-295207",
+  "private_key_id": "39ccefec0317ac979edc40a1d27817547fdcd6be",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCa6AIL2OuZpGLE\nPOW7YIJDnovBGwvVBkF18DPl6xNG332tg4GXKY1421/AUf/FFLu8Ror0lNauAnFX\nT07plqD8WlnKe4AED91FFcjLU292bjcKhXlscBtZUJwV9Ryd5b4gqs4WwkuX6DrW\nyq/d95gbgVZXKr10HsFxAlifGKcQVdazkcQgtcStuzaFT5YA9NhnJBYMxPOfnH3w\nvdw7i7+K5Z+yDWwWdO0dTM7n0jUU7xCmX4kZk6OCNaR13I1VoFJs1fZynz1s/f0m\n1R/UkAdBLsTIbsYvbK0uFq3BBcCYyPuxtZT4k2Se9hmBE1qzXZKF/FnLhwdRIhAE\nNPlNLhv5AgMBAAECggEABdPbm9l9x4ptIsfNtrZjQCr7Q/kCAXIaTVcLhMdKstxe\njIQJgIfSKC1MlV4gWqg0hdk7igb9ao9x9yBnLhd6F/RIM3tg7gYww1QV+Tw60cBE\nttMdpcwz4zDKpnLRsEj/1ZfHaAjIMj9M017NrfKOGN7NQjs75F3x1hAKCHYzdsRM\n43C2gb8SxfWMHRbT1TMIa2g7UD6MjLQS4kpRtvzIQYm8QJeCl7Yl7gGi/CAUuoe+\njtuKmc5Now2WVi/RnDraU5JHGDil9PWXPrsZeuEJrI977Sb9i6eSp2vhwiDy/ADk\nx1OvOBdFGYR1zXqvz+DH5k24QudiwDuiN0WZ68mB2QKBgQDaCVefcxHxR9f2rqQ/\nsrq/8COIj45pj5Gi00saD9a415KL+b/tmF9glm7lKnkwbcm6TaFiZumwCBNZQecz\nTe7MpZGo3+HFea4QqQy3ZPLDXiHUHUS5cxr0IGYr+JJw75UOq+XHPrGzQbudmrAy\n3OVgu8bpweIuv36wrhhwhGNZlQKBgQC14LqXDe/HCdvEDjnbGuVAcl2q+urDP5XG\nd2X8i35H7RvBgJGxc5Jx+0GyhncXzGy2ltMT64W4Jsjns91IlMEXdrvMJUZn2FzU\na64dyEknr6MILC9ts1NM3DWaIXcxc1ODgW26ilPJD2ZEqsnQ7EPILtzB8vDwfXRk\nsY4ozWuH1QKBgGrCzE7c71ovjYXSecZe46Z8FUoW0OrLS8pon4uBWehkVfOINPxH\n8du/jUlVBMY7290HihA+yApTyfWYmXa7oERAhhQkm84wCJVL0Vgza9NR0kqkkjQk\nMnx7KMw7CKmYBmqKrRZkkmpts0o2pjQhiYdWKs3nC7NMPOKSPJFLocIJAoGABvrH\nzlIvmHDNaTmuiLUAhTeeVphod/OxuLsOQ+HKh9IWlZdsf+XSgeNFgydb3KLwrRUe\npo4MRKPgY9voKwfiXRcmX9AyYnvQHCrBtMzh2c8Ir6CadVhDYxi0SeTs4Q3u74YB\nAv6Z9oZLw2jWc9kNRNpfiGXdTy1RUSfrL6+qZ70CgYEAo3vrO8ovTYOdUp5kX4Or\ngnEL2HlSfyA01r78duBEsATYuozQQMYbQCrEZqUZh+ZW96TOSxTutl+xgZ0TuO7V\nIbn93wFM4nUJQPlFz/dLDKoEauL9uImxkzka4kO6v5p+CpyLZ2mHHuBoWvkHFEf+\nsiUPBO5xZvfE0qTnDKh38Zg=\n-----END PRIVATE KEY-----\n",
+  "client_email": "ocr-parser@github-scraper-295207.iam.gserviceaccount.com",
+  "client_id": "102340917807011984512",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ocr-parser%40github-scraper-295207.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

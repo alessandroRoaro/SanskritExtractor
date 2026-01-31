@@ -1,0 +1,893 @@
+[
+  {
+    "idx": 64,
+    "merged_word": "sant",
+    "prev_name": "akimcitkara",
+    "prev_sanskrit": "अकिचित्",
+    "prev_end": "akimcitkara [kara₁] a. m. n. f. akimcitkarā impuis",
+    "current_def": "sant [\"qui ne fait rien\"].",
+    "action": "NO_SPACE"
+  },
+  {
+    "idx": 128,
+    "merged_word": "sens",
+    "prev_name": "akṣán",
+    "prev_sanskrit": "अक्षन्",
+    "prev_end": "akṣán [relié à akṣa] n. œil | phil. [Sāṃkhya] le",
+    "current_def": "sens |buddhīndriya| de la vue; son régent [niyantr] est Adit",
+    "action": "SPACE"
+  },
+  {
+    "idx": 129,
+    "merged_word": "forme",
+    "prev_name": "sens",
+    "prev_sanskrit": "अक्षन्",
+    "prev_end": "t Aditya; la perception [tanmātra] associée est la",
+    "current_def": "forme [rūpa]; syn. cakṣus | var. ákṣi id. | du. akṣī les (2)",
+    "action": "SPACE"
+  },
+  {
+    "idx": 336,
+    "merged_word": "sages",
+    "prev_name": "áṅgiras",
+    "prev_sanskrit": "अङ्गिरस्",
+    "prev_end": "ti pl. angirasas myth. les chantres, une classe de",
+    "current_def": "sages | rṣi|; engendrés par Aṅgirā, ils sont associés aux ch",
+    "action": "SPACE"
+  },
+  {
+    "idx": 669,
+    "merged_word": "sage",
+    "prev_name": "atyaya",
+    "prev_sanskrit": "अत्यय",
+    "prev_end": "atyaya [atiaya] m. écoulement, laps, pas",
+    "current_def": "sage | disparition, décès | danger, risque; mal heur, souffr",
+    "action": "NO_SPACE"
+  },
+  {
+    "idx": 989,
+    "merged_word": "tion",
+    "prev_name": "anantavat",
+    "prev_sanskrit": "अनन्त",
+    "prev_end": "nantavat [vat] m. phil. [ChU.] l'Illimité ou parti",
+    "current_def": "tion [pāda] du brahman en quatre espaces : la Terre [Pṛthivī",
+    "action": "NO_SPACE"
+  },
+  {
+    "idx": 2045,
+    "merged_word": "sages",
+    "prev_name": "titans",
+    "prev_sanskrit": "अप्सरस्",
+    "prev_end": "s | asura | ; elles font répandre leur semence aux",
+    "current_def": "sages | ṛṣi|; leur voile magique | tiraskariṇī | les dis sim",
+    "action": "SPACE"
+  },
+  {
+    "idx": 2898,
+    "merged_word": "vampire",
+    "prev_name": "alambuṣa",
+    "prev_sanskrit": "अलम्बुष",
+    "prev_end": "s doigts tendus | myth. [Mah.] np. d'Alambusa, roi",
+    "current_def": "vampire | rākṣasa | du camp des Kauravās, fils de Jațāsura; ",
+    "action": "SPACE"
+  },
+  {
+    "idx": 3127,
+    "merged_word": "tion",
+    "prev_name": "avarodha",
+    "prev_sanskrit": "अवरोध",
+    "prev_end": "avarodha [act. avarudh] m. séclusion, isola",
+    "current_def": "tion | gynécée, harem | pl. avarodhās les femmes du harem.",
+    "action": "NO_SPACE"
+  },
+  {
+    "idx": 3348,
+    "merged_word": "tion",
+    "prev_name": "avyakta",
+    "prev_sanskrit": "अव्यक्त",
+    "prev_end": "s les phénomènes du monde matériel de la Manifesta",
+    "current_def": "tion | vyakta | gram. onomatopée. avyaktānukaraņam gram. ono",
+    "action": "NO_SPACE"
+  },
+  {
+    "idx": 3487,
+    "merged_word": "lunaire",
+    "prev_name": "aśviyuj",
+    "prev_sanskrit": "अश्वल",
+    "prev_end": "anyū; elle habite le 27ᵉ (plus tard 1ᵉr) astérisme",
+    "current_def": "lunaire [nakṣatra], corr. aux étoiles de la tête du Bélier; ",
+    "action": "SPACE"
+  },
+  {
+    "idx": 3530,
+    "merged_word": "tion",
+    "prev_name": "aṣṭasthāna",
+    "prev_sanskrit": "अषाढ",
+    "prev_end": "Bhāvamiśra: l'inspection du corps [rūpa], la palpa",
+    "current_def": "tion [sparśa], l'examen du pouls [nādī], l'étude de la voix ",
+    "action": "NO_SPACE"
+  },
+  {
+    "idx": 4191,
+    "merged_word": "régent",
+    "prev_name": "ādityá",
+    "prev_sanskrit": "आदित्य",
+    "prev_end": "mb. le nombre 12 | phil. [Sāṃkhya] le Soleil comme",
+    "current_def": "régent [niyantr] du sens de la vue [cakṣus].",
+    "action": "SPACE"
+  },
+  {
+    "idx": 4614,
+    "merged_word": "lunaire",
+    "prev_name": "ārdrá",
+    "prev_sanskrit": "आद्रं",
+    "prev_end": "Ārdrā astr. np. d'Ardrā \"la Fraîche\", 4ᵉ astérisme",
+    "current_def": "lunaire [nakṣatra], corr. à l'étoile Bételgeuse; Ru dra y pr",
+    "action": "SPACE"
+  },
+  {
+    "idx": 4637,
+    "merged_word": "souffrance",
+    "prev_name": "france",
+    "prev_sanskrit": "आर्य",
+    "prev_end": "france [samudāya], la vérité de la cessation de la",
+    "current_def": "souffrance [nirodha] et la vérité du Noble Chemin [āryamārga",
+    "action": "SPACE"
+  },
+  {
+    "idx": 4649,
+    "merged_word": "sages",
+    "prev_name": "ārṣeya",
+    "prev_sanskrit": "आषैय",
+    "prev_end": "ārṣeya [ārṣaīya] a. m. n. f. ārṣeyā relatif aux",
+    "current_def": "sages [rsi] | vénérable, respectable — n. lignée de sages; s",
+    "action": "SPACE"
+  },
+  {
+    "idx": 4957,
+    "merged_word": "lunaire",
+    "prev_name": "idā",
+    "prev_sanskrit": "इडा",
+    "prev_end": "pouse; Purūravā est leur fils, qui fonda la lignée",
+    "current_def": "lunaire [somavaṃśa]; Idā a pour frère Ikṣvāku, qui fonda la ",
+    "action": "SPACE"
+  },
+  {
+    "idx": 5016,
+    "merged_word": "régent",
+    "prev_name": "missilefoudre",
+    "prev_sanskrit": "इन्द्र",
+    "prev_end": "e la direction de l'Est; phil. [Sāmkhya] il Est le",
+    "current_def": "régent [niyantr] de la faculté de préhension [pāni]; astr. i",
+    "action": "SPACE"
+  },
+  {
+    "idx": 5157,
+    "merged_word": "sant",
+    "prev_name": "īśvará",
+    "prev_sanskrit": "ईश्वर",
+    "prev_end": "īśvará [īś₁vara] a. m. n. f. Īśvarī riche, puis",
+    "current_def": "sant [\"qui dirige ce qui nous entoure\"] | capable de (inf.) ",
+    "action": "NO_SPACE"
+  },
+  {
+    "idx": 5391,
+    "merged_word": "lunaire",
+    "prev_name": "uttaraphalgunī",
+    "prev_sanskrit": "उत्तर",
+    "prev_end": "ra phalgunī \"la deuxième Rougeâtre\", 10ᵉ astérisme",
+    "current_def": "lunaire [nakṣatra], corr. à l'étoile du Lion (Dene bola); Ar",
+    "action": "SPACE"
+  },
+  {
+    "idx": 6218,
+    "merged_word": "souffrance",
+    "prev_name": "upādāna",
+    "prev_sanskrit": "उपादान",
+    "prev_end": "rier; acquisition | bd. l'attachement, 9ᵉ cause de",
+    "current_def": "souffrance [pratītyasamutpāda] | phil. [Nyāya] cause matérie",
+    "action": "SPACE"
+  },
+  {
+    "idx": 8412,
+    "merged_word": "lunaire",
+    "prev_name": "constellation",
+    "prev_sanskrit": "कृति",
+    "prev_end": "une malédiction de Dakṣa | astr. premier astérisme",
+    "current_def": "lunaire [nakṣatra] les symbolisant cosmiquement, corr. aux 6",
+    "action": "SPACE"
+  },
+  {
+    "idx": 9097,
+    "merged_word": "vampire",
+    "prev_name": "khára",
+    "prev_sanskrit": "खर",
+    "prev_end": "bi tation | myth. [Rām.] np. de Khara \"Rude\", ogre",
+    "current_def": "vampire [rākṣasa], jeune frère de Rāvaṇa; il habitait au Jan",
+    "action": "SPACE"
+  },
+  {
+    "idx": 9116,
+    "merged_word": "ment",
+    "prev_name": "khálu",
+    "prev_sanskrit": "खलू",
+    "prev_end": "khálu adv. en effet ; certes, en vérité ; certaine",
+    "current_def": "ment | voilà que ; or | cessons de (abs.). na khalu adv. nul",
+    "action": "NO_SPACE"
+  },
+  {
+    "idx": 9270,
+    "merged_word": "sages",
+    "prev_name": "ganadhara",
+    "prev_sanskrit": "गण",
+    "prev_end": "ganadhara | dhara | m. jn. chef d'une assemblée de",
+    "current_def": "sages | rsi |.",
+    "action": "SPACE"
+  },
+  {
+    "idx": 10153,
+    "merged_word": "sens",
+    "prev_name": "ghrāṇa",
+    "prev_sanskrit": "म्राण",
+    "prev_end": "ghrāṇa [instr. ghrā] n. nez | phil. [Sāṃkhya] le",
+    "current_def": "sens [buddhīndriya] de l'odorat ; il est régi [niyantr] par ",
+    "action": "SPACE"
+  },
+  {
+    "idx": 10155,
+    "merged_word": "n",
+    "prev_name": "ghrātá",
+    "prev_sanskrit": "म्रात",
+    "prev_end": "ghrātá [pp. ghrā] a.m.n.f. ghrātā senti, reniflé.",
+    "current_def": "n",
+    "action": "SPACE"
+  },
+  {
+    "idx": 10259,
+    "merged_word": "tion",
+    "prev_name": "déguisement",
+    "prev_sanskrit": "चतुः",
+    "prev_end": "déguisement [kaucumārayoga], la prestidigita",
+    "current_def": "tion [hastalāghava], l'art de préparer les mets [vicitraśāka",
+    "action": "NO_SPACE"
+  },
+  {
+    "idx": 10564,
+    "merged_word": "vampire",
+    "prev_name": "cārvāka",
+    "prev_sanskrit": "चार्वाक",
+    "prev_end": "Cārvāka [cārvāc] m. myth. [Mah.] np. du",
+    "current_def": "vampire [rākṣasa] Cārvāka₁ \"au verbe agréable\", ami de Duryo",
+    "action": "SPACE"
+  },
+  {
+    "idx": 10621,
+    "merged_word": "lunaire",
+    "prev_name": "citrá",
+    "prev_sanskrit": "चित्र",
+    "prev_end": "ā astr. np. de citrā \"la Brillante\", 12ᵉ astérisme",
+    "current_def": "lunaire [nakṣatra], corr. à l'Épi de la Vierge; Indra y prés",
+    "action": "SPACE"
+  },
+  {
+    "idx": 11050,
+    "merged_word": "vie",
+    "prev_name": "jaya",
+    "prev_sanskrit": "जय",
+    "prev_end": " \"Conquérant\", personnifiant l'an 28 d'un cycle de",
+    "current_def": "vie [saṃvatsara] — ins. m. moyen d'obtenir la vic toire — f.",
+    "action": "SPACE"
+  },
+  {
+    "idx": 11206,
+    "merged_word": "forme",
+    "prev_name": "jātibādhaka",
+    "prev_sanskrit": "जाति",
+    "prev_end": "samkara], l'instabilité [anavasthiti], la perte de",
+    "current_def": "forme [rūpahāni], et la déconnexion [asambandha]. vyakterabh",
+    "action": "SPACE"
+  },
+  {
+    "idx": 11315,
+    "merged_word": "sens",
+    "prev_name": "jihvaka",
+    "prev_sanskrit": "जिह्म",
+    "prev_end": "ধা jihvā [f. jihva] f. langue | phil. [Sāṃkhya] le",
+    "current_def": "sens [buddhīndriya] du goût; son régent [niyantr] est Varuṇa",
+    "action": "SPACE"
+  },
+  {
+    "idx": 11506,
+    "merged_word": "ñ",
+    "prev_name": "jhāmkṛta",
+    "prev_sanskrit": "झा",
+    "prev_end": "jhāmkṛta [kṛta] n. ornement de pied tintant.",
+    "current_def": "ñ",
+    "action": "SPACE"
+  },
+  {
+    "idx": 11560,
+    "merged_word": "n",
+    "prev_name": "dhaukana",
+    "prev_sanskrit": "ढौकन",
+    "prev_end": "svayamāsanaḍhaukanam fait de se procurer un siège.",
+    "current_def": "n",
+    "action": "SPACE"
+  },
+  {
+    "idx": 11995,
+    "merged_word": "vie",
+    "prev_name": "tāraṇa",
+    "prev_sanskrit": "तारण",
+    "prev_end": "āraṇa \"Salut\", personnifiant l'an 18 d'un cycle de",
+    "current_def": "vie [samvatsara] — n. fait de se tirer d'une diffi culté; tr",
+    "action": "SPACE"
+  },
+  {
+    "idx": 12654,
+    "merged_word": "sage",
+    "prev_name": "dattātreya",
+    "prev_sanskrit": "दत्त",
+    "prev_end": "dattātreya [ātreya] m. myth. [BhP.] np. du",
+    "current_def": "sage | ṛṣi| Dattātreya \"Issu d'Atri\", fils d'Anasūyā comme i",
+    "action": "SPACE"
+  },
+  {
+    "idx": 12668,
+    "merged_word": "sage",
+    "prev_name": "dadhivāhana",
+    "prev_sanskrit": "दिध",
+    "prev_end": "au. dadhyac var. Dadhīca [ac] m. myth. véd. np. du",
+    "current_def": "sage | rṣi | Dadhyan \"Qui répand le dadhi\"; cf. dadhīci.",
+    "action": "SPACE"
+  },
+  {
+    "idx": 13208,
+    "merged_word": "sage",
+    "prev_name": "durvāsa",
+    "prev_sanskrit": "दुर्वास",
+    "prev_end": "l vêtu — m. var. durvāsas myth. np. de l'irascible",
+    "current_def": "sage [ṛṣi] Durvāsā \"le Mal Vêtu\"; il est fils d'Atri et d'An",
+    "action": "SPACE"
+  },
+  {
+    "idx": 14133,
+    "merged_word": "tion",
+    "prev_name": "dhvasti",
+    "prev_sanskrit": "ध्वस्ति",
+    "prev_end": "dhvasti [act. dhvaṃs] f. destruction, cessa",
+    "current_def": "tion | phil. | yoga | arrêt des conséquences des actions.",
+    "action": "NO_SPACE"
+  },
+  {
+    "idx": 14137,
+    "merged_word": "n",
+    "prev_name": "dhvāntá",
+    "prev_sanskrit": "ध्वान्त",
+    "prev_end": "tensément, avec répétition | ang. dull; all. toll.",
+    "current_def": "n",
+    "action": "SPACE"
+  },
+  {
+    "idx": 14566,
+    "merged_word": "nymphe",
+    "prev_name": "nārāyaṇá",
+    "prev_sanskrit": "नारायण",
+    "prev_end": "inité des eaux, frère jumeau (ou fils) de nara; la",
+    "current_def": "nymphe [apsaras] Urvaśī est née d'une fleur posée sur sa cui",
+    "action": "SPACE"
+  },
+  {
+    "idx": 15860,
+    "merged_word": "sant",
+    "prev_name": "panda",
+    "prev_sanskrit": "पण्ड",
+    "prev_end": "panda m. eunuque; mauviette; homme impuis",
+    "current_def": "sant | var. paṇḍu id. | var. paṇḍra id.",
+    "action": "NO_SPACE"
+  },
+  {
+    "idx": 16181,
+    "merged_word": "vie",
+    "prev_name": "parābhavá",
+    "prev_sanskrit": "पराभव",
+    "prev_end": "\"Décrépitude\", personnifiant l'an 40 d'un cycle de",
+    "current_def": "vie |samvatsara|.",
+    "action": "SPACE"
+  },
+  {
+    "idx": 16213,
+    "merged_word": "tion",
+    "prev_name": "parikarman",
+    "prev_sanskrit": "परिकर्मन्",
+    "prev_end": "on en distingue 8 : addition [samkalita], soustrac",
+    "current_def": "tion [vikalita], multiplication [guṇana], division [bhāgahār",
+    "action": "NO_SPACE"
+  },
+  {
+    "idx": 16913,
+    "merged_word": "régent",
+    "prev_name": "pāyu",
+    "prev_sanskrit": "पाय",
+    "prev_end": "ya] la faculté [karmendriya] d'évacuation, dont le",
+    "current_def": "régent [niyantr] est Mitra; son élément [bhūta] prédominant ",
+    "action": "SPACE"
+  },
+  {
+    "idx": 17467,
+    "merged_word": "tion",
+    "prev_name": "pūrva",
+    "prev_sanskrit": "पूर्व",
+    "prev_end": ". pūrveņa ifc. avec; pourvu de — f. pūrvā la direc",
+    "current_def": "tion [diś₂] de l'Est — loc. pūrvasyām à l'Est || pali pubba.",
+    "action": "NO_SPACE"
+  },
+  {
+    "idx": 17478,
+    "merged_word": "nymphe",
+    "prev_name": "pūrvacitti",
+    "prev_sanskrit": "पूर्व",
+    "prev_end": "vacitti [citti] f. pressentiment | myth. np. de la",
+    "current_def": "nymphe [apsaras] Pūrvacitti; elle donna 9 fils au roi Agnīdh",
+    "action": "SPACE"
+  },
+  {
+    "idx": 18182,
+    "merged_word": "laire",
+    "prev_name": "pratyakṣa",
+    "prev_sanskrit": "प्रत्यक्ष",
+    "prev_end": "te clair, direct, immédiat; réel — n. évidence ocu",
+    "current_def": "laire | soin de g. | phil. perception; constatation, expérie",
+    "action": "NO_SPACE"
+  },
+  {
+    "idx": 18940,
+    "merged_word": "tion",
+    "prev_name": "prāna",
+    "prev_sanskrit": "प्राण",
+    "prev_end": "vation | udāna|, la respiration | prāṇa|, la diges",
+    "current_def": "tion |samāna₁| et le souffle vital |vyāna|, qui com bine les",
+    "action": "NO_SPACE"
+  },
+  {
+    "idx": 19073,
+    "merged_word": "laire",
+    "prev_name": "nent",
+    "prev_sanskrit": "प्रासिङ्गक",
+    "prev_end": "ue fondée par Candrakīrti — m. phil. |Nyāya| corol",
+    "current_def": "laire | lit. |théâtre | sujet secondaire d'une pièce; opp. ā",
+    "action": "NO_SPACE"
+  },
+  {
+    "idx": 19195,
+    "merged_word": "lunaire",
+    "prev_name": "prosthapada",
+    "prev_sanskrit": "प्रोष्",
+    "prev_end": " np. de Prosthapadās \"les Pieds de lit\", astérisme",
+    "current_def": "lunaire [nakṣatra] du Carré de Pégase, aussi appelé bhādrapa",
+    "action": "SPACE"
+  },
+  {
+    "idx": 19371,
+    "merged_word": "lunaire",
+    "prev_name": "balava",
+    "prev_sanskrit": "बलव",
+    "prev_end": "balava var. valava n. astr. deuxième demijour",
+    "current_def": "lunaire [karana] (mobile).",
+    "action": "SPACE"
+  },
+  {
+    "idx": 19438,
+    "merged_word": "vie",
+    "prev_name": "bahúdhānya",
+    "prev_sanskrit": "बहु",
+    "prev_end": "rès prospère\", personnifiant l'an 12 d'un cycle de",
+    "current_def": "vie [samvatsara].",
+    "action": "SPACE"
+  },
+  {
+    "idx": 19545,
+    "merged_word": "laire",
+    "prev_name": "bāhuka",
+    "prev_sanskrit": "बाह्क",
+    "prev_end": "uka ou Bāhu \"Réduit en servitude\", de la lignée so",
+    "current_def": "laire [sūryavaṃśa], fils de Bharuka; chassé de son royaume p",
+    "action": "NO_SPACE"
+  },
+  {
+    "idx": 19641,
+    "merged_word": "régent",
+    "prev_name": "buddhīndriya",
+    "prev_sanskrit": "बुद्धि",
+    "prev_end": " goût et ghrāṇa l'odorat; chacun est dirigé par le",
+    "current_def": "régent [niyantr] correspondant; syn. jñānendriya.",
+    "action": "SPACE"
+  },
+  {
+    "idx": 19942,
+    "merged_word": "tion",
+    "prev_name": "bhajana",
+    "prev_sanskrit": "भजन",
+    "prev_end": "bhajana [act. bhaj] n. partage, distribu",
+    "current_def": "tion | adoration, culte | soc. assemblée de chant",
+    "action": "NO_SPACE"
+  },
+  {
+    "idx": 20167,
+    "merged_word": "vie",
+    "prev_name": "bhāva",
+    "prev_sanskrit": "भाव",
+    "prev_end": "Affectueux\", Qui personnalise l'an 8 d'un cycle de",
+    "current_def": "vie [saṃvatsara] | phil. [Nyāya] relation discrimi nante (ex",
+    "action": "SPACE"
+  },
+  {
+    "idx": 20608,
+    "merged_word": "nymphe",
+    "prev_name": "maṅkaṇaka",
+    "prev_sanskrit": "मङ्कणक",
+    "prev_end": "our son bain à la rivière, il y fut rejoint par la",
+    "current_def": "nymphe [apsaras] Rambhā et ses suivantes; il per dit sa seme",
+    "action": "SPACE"
+  },
+  {
+    "idx": 20792,
+    "merged_word": "nymphe",
+    "prev_name": "mádanavat",
+    "prev_sanskrit": "मदन",
+    "prev_end": "atī rem pli d'amour — f. Madanavatī lit. np. de la",
+    "current_def": "nymphe [apsaras] Madanavatī, héroïne du drame Bhairavānandan",
+    "action": "SPACE"
+  },
+  {
+    "idx": 21032,
+    "merged_word": "nymphe",
+    "prev_name": "maya",
+    "prev_sanskrit": "मय",
+    "prev_end": "it la triple forteresse Tripura; son épouse est la",
+    "current_def": "nymphe [apsaras] Hemā; leurs fils sont Māyāvī et Dundubhi; i",
+    "action": "SPACE"
+  },
+  {
+    "idx": 21556,
+    "merged_word": "élégance",
+    "prev_name": "mānuṣya",
+    "prev_sanskrit": "मानुष्य",
+    "prev_end": "mānuṣya [*manuṣaya] n. beauté, grâce,",
+    "current_def": "élégance | bonté, générosité | phil. esthétique.",
+    "action": "NO_SPACE"
+  },
+  {
+    "idx": 21671,
+    "merged_word": "tion",
+    "prev_name": "laires",
+    "prev_sanskrit": "मास",
+    "prev_end": "i]; il y en a douze, chacun associé à la constella",
+    "current_def": "tion [nakṣatra] dans laquelle a lieu la pleine lune : caitra",
+    "action": "NO_SPACE"
+  },
+  {
+    "idx": 22627,
+    "merged_word": "laire",
+    "prev_name": "yuvanāśva",
+    "prev_sanskrit": "युवनाश्व",
+    "prev_end": " roi Yuvanāśva, fils de Prasenajit de la lignée so",
+    "current_def": "laire [sūryavaṃśa] (ou bien [Rām.] fils de Dhund humāra); il",
+    "action": "NO_SPACE"
+  },
+  {
+    "idx": 23249,
+    "merged_word": "vampire",
+    "prev_name": "rāvaṇa",
+    "prev_sanskrit": "रावण",
+    "prev_end": "leur\", brahmane fils de Viśravā et de Keśinī₂, roi",
+    "current_def": "vampire | rākṣasa | de Laṅkā, chef du rakṣas; par ses pénite",
+    "action": "SPACE"
+  },
+  {
+    "idx": 23420,
+    "merged_word": "sage",
+    "prev_name": "reņuka",
+    "prev_sanskrit": "रेणुक",
+    "prev_end": "ille du roi Prasenajit et de Renu₁; elle épousa le",
+    "current_def": "sage | rṣi | Jamadagni ; coupable de concupiscence à regarde",
+    "action": "SPACE"
+  },
+  {
+    "idx": 23486,
+    "merged_word": "laire",
+    "prev_name": "rohitāśva",
+    "prev_sanskrit": "रोहित",
+    "prev_end": "Cheval rouge\", fils de Hariscandra de la lignée so",
+    "current_def": "laire [sūryavaṃśa]; celuici acheta Sunaḥśepa à son père pour",
+    "action": "NO_SPACE"
+  },
+  {
+    "idx": 24055,
+    "merged_word": "lunaire",
+    "prev_name": "vaṇija",
+    "prev_sanskrit": "विणिज",
+    "prev_end": "ne zodiacal de la Balance | astr. sixième demijour",
+    "current_def": "lunaire [karaṇa] (mobile) — f. vaṇijā trafic, com merce.",
+    "action": "SPACE"
+  },
+  {
+    "idx": 24201,
+    "merged_word": "régent",
+    "prev_name": "marines",
+    "prev_sanskrit": "वरुण",
+    "prev_end": "atabhişak ( du Verseau); phil. [Sāṃkhya] il est le",
+    "current_def": "régent [niyantr] du sens du goût [jihvā]; il est le gar dien",
+    "action": "SPACE"
+  },
+  {
+    "idx": 24518,
+    "merged_word": "tion",
+    "prev_name": "vāc",
+    "prev_sanskrit": "वाच्",
+    "prev_end": "t [bhūta] prédominant est ākāśa l'éther; la percep",
+    "current_def": "tion [tanmātra] associée est le son [śabda] qui ex cite le s",
+    "action": "NO_SPACE"
+  },
+  {
+    "idx": 24847,
+    "merged_word": "vie",
+    "prev_name": "vikramá",
+    "prev_sanskrit": "विक्रम",
+    "prev_end": "roi Purūravā; il personnifie l'an 14 d'un cycle de",
+    "current_def": "vie [saṃvatsara] | cf. vikramāditya | hist. np. de l'ère [sa",
+    "action": "SPACE"
+  },
+  {
+    "idx": 25038,
+    "merged_word": "souffrance",
+    "prev_name": "agrégats",
+    "prev_sanskrit": "विज्ञान",
+    "prev_end": "agrégats [skandha] de l'ego; c'est la 3ᵉ cause de",
+    "current_def": "souffrance [pratītyasamutpāda] | bd. conscience en tant que ",
+    "action": "SPACE"
+  },
+  {
+    "idx": 25500,
+    "merged_word": "vampire",
+    "prev_name": "vibhīṣaṇa",
+    "prev_sanskrit": "विभीषण",
+    "prev_end": ")7 couche, avortement | myth. [Rām.] np. de l'ogre",
+    "current_def": "vampire [rākṣasa] Vibhīṣaṇa l'\"Effrayant\", fils de Viśravā e",
+    "action": "SPACE"
+  },
+  {
+    "idx": 25866,
+    "merged_word": "tion",
+    "prev_name": "viśeṣaṇatāviśeṣa",
+    "prev_sanskrit": "विशेषण",
+    "prev_end": "viśeṣaṇatāviśeṣa [viśeṣa] m. phil. [Nyāya] rela",
+    "current_def": "tion [sambandha] de qualification spécifique entre le qualif",
+    "action": "NO_SPACE"
+  },
+  {
+    "idx": 26731,
+    "merged_word": "vie",
+    "prev_name": "vyaya",
+    "prev_sanskrit": "ञ्यय",
+    "prev_end": "ya \"Prodigue\", personnifiant l'an 20 d'un cycle de",
+    "current_def": "vie |samvatsara| | arch. la dépense dans le système <i>āyādi",
+    "action": "SPACE"
+  },
+  {
+    "idx": 26854,
+    "merged_word": "tion",
+    "prev_name": "positive",
+    "prev_sanskrit": "व्याप्ति",
+    "prev_end": "positive [anvayavyāpti] et celle par contradic",
+    "current_def": "tion [vyatirekavyāpti] | phil. [NN.] concomitance inévitable",
+    "action": "NO_SPACE"
+  },
+  {
+    "idx": 26889,
+    "merged_word": "sage",
+    "prev_name": "diamètre",
+    "prev_sanskrit": "व्यास",
+    "prev_end": "diamètre | compilateur | myth. [Mah.] np. du",
+    "current_def": "sage [rsi] vyāsa \"compilateur (du Mah.)\", fils de l'ascète P",
+    "action": "SPACE"
+  },
+  {
+    "idx": 27820,
+    "merged_word": "vampire",
+    "prev_name": "śūrpaṇakhā",
+    "prev_sanskrit": "शूर्प",
+    "prev_end": " Sūrpaṇakhā \"Celle qui a des griffes en éventail\",",
+    "current_def": "vampire [rākṣasī] sœur de Rāvaṇa; elle habitait le Janasthān",
+    "action": "SPACE"
+  },
+  {
+    "idx": 27976,
+    "merged_word": "laire",
+    "prev_name": "śrapita",
+    "prev_sanskrit": "श्रपित",
+    "prev_end": " śrapitasya sūpāderatithyupakārakatvam maxime popu",
+    "current_def": "laire |nyāya| : les mets préparés pour le gendre peuvent aus",
+    "action": "NO_SPACE"
+  },
+  {
+    "idx": 28048,
+    "merged_word": "vie",
+    "prev_name": "śrīmukha",
+    "prev_sanskrit": "श्रित",
+    "prev_end": "lie frimousse\", personnifiant l'an 7 d'un cycle de",
+    "current_def": "vie |samvatsara|.",
+    "action": "SPACE"
+  },
+  {
+    "idx": 28092,
+    "merged_word": "nymphe",
+    "prev_name": "śrutārthā",
+    "prev_sanskrit": "श्रुत",
+    "prev_end": "thā, fille du brahmane Somaśarmā; elle incarne une",
+    "current_def": "nymphe [apsaras] descendue sur Terre à la suite d'une malédi",
+    "action": "SPACE"
+  },
+  {
+    "idx": 28121,
+    "merged_word": "sens",
+    "prev_name": "śrotṛ",
+    "prev_sanskrit": "श्रोत्",
+    "prev_end": "rótra [instr. śru] n. oreille | phil. [Sāṃkhya] le",
+    "current_def": "sens [buddhīndriya] de l'ouïe; il est régi [niyantr] par les",
+    "action": "SPACE"
+  },
+  {
+    "idx": 28466,
+    "merged_word": "souffrance",
+    "prev_name": "qualité",
+    "prev_sanskrit": "सस्कार",
+    "prev_end": " agrégats [skandha] de l'ego; c'est la 2ᵉ cause de",
+    "current_def": "souffrance [pratītyasamutpāda] | Gram. formation correcte d'",
+    "action": "SPACE"
+  },
+  {
+    "idx": 28690,
+    "merged_word": "tion",
+    "prev_name": "samgharsa",
+    "prev_sanskrit": "संघर्ष",
+    "prev_end": "samgharsa [act. samghṛṣ] m. friction; tritura",
+    "current_def": "tion | rivalité | jalousie (envers (acc.prati iic.)).",
+    "action": "NO_SPACE"
+  },
+  {
+    "idx": 28929,
+    "merged_word": "sage",
+    "prev_name": "sanandana",
+    "prev_sanskrit": "सनन्दन",
+    "prev_end": "sanandana [sa₁nandana] m. myth. np. du",
+    "current_def": "sage [rsi] sanandana \"Joyeux\", l'un des 4 éternels [sanakādi",
+    "action": "SPACE"
+  },
+  {
+    "idx": 29489,
+    "merged_word": "sens",
+    "prev_name": "samudāyaśakti",
+    "prev_sanskrit": "समुदाय",
+    "prev_end": "capacité créatrice d'un mot composé, produisant un",
+    "current_def": "sens [parārthābhidhāna] à partir de celui de ses composés.",
+    "action": "SPACE"
+  },
+  {
+    "idx": 29771,
+    "merged_word": "souffrance",
+    "prev_name": "samyaksamādhi",
+    "prev_sanskrit": "सम्यक",
+    "prev_end": "ecte, une des 8 étapes du chemin d'abolition de la",
+    "current_def": "souffrance [aṣṭāṅgamārga].",
+    "action": "SPACE"
+  },
+  {
+    "idx": 29895,
+    "merged_word": "vie",
+    "prev_name": "sárvadhārin",
+    "prev_sanskrit": "सर्व",
+    "prev_end": "possède tout\", personnifiant l'an 22 d'un cycle de",
+    "current_def": "vie [samvatsara] | myth. épith. de Siva.",
+    "action": "SPACE"
+  },
+  {
+    "idx": 30218,
+    "merged_word": "tion",
+    "prev_name": "sādhanacatustaya",
+    "prev_sanskrit": "साधन",
+    "prev_end": "], être indifférent au profit des fruits de son ac",
+    "current_def": "tion [arthaphalabhogavirāga] ici et dans l'au [ihāmutra], av",
+    "action": "NO_SPACE"
+  },
+  {
+    "idx": 30232,
+    "merged_word": "tion",
+    "prev_name": "sādhāraṇadharma",
+    "prev_sanskrit": "साधारण",
+    "prev_end": "al universel, supérieur à celui de sa propre condi",
+    "current_def": "tion | svadharma|.",
+    "action": "NO_SPACE"
+  },
+  {
+    "idx": 30274,
+    "merged_word": "nymphe",
+    "prev_name": "sānumat",
+    "prev_sanskrit": "सानु",
+    "prev_end": " — f. Sānumatī lit. [Abhijñānaśakuntalā] np. de la",
+    "current_def": "nymphe [apsaras] Sānumatī, amie de Sakuntalā.",
+    "action": "SPACE"
+  },
+  {
+    "idx": 30395,
+    "merged_word": "sage",
+    "prev_name": "sārasvatá",
+    "prev_sanskrit": "सारस्वत",
+    "prev_end": "créativité littéraire | myth. |Harṣacarita| np. du",
+    "current_def": "sage | ṛṣi | Sārasvata, fils de Dadhīci et Sarasvatī; il fut",
+    "action": "SPACE"
+  },
+  {
+    "idx": 30654,
+    "merged_word": "nymphe",
+    "prev_name": "sugandha",
+    "prev_sanskrit": "स्गन्ध",
+    "prev_end": " odorant — m. soufre — f. Sugandhā myth. np. de la",
+    "current_def": "nymphe [apsaras] Sugandhā \"Parfumée\" | bio. di verses plante",
+    "action": "SPACE"
+  },
+  {
+    "idx": 30894,
+    "merged_word": "nymphe",
+    "prev_name": "surabhidattā",
+    "prev_sanskrit": "सूरिम",
+    "prev_end": "Surabhidattā [datta] f. lit. [KSS.] np. de la",
+    "current_def": "nymphe [apsaras] Surabhidattā, déchue du pa radis d'Indra po",
+    "action": "SPACE"
+  },
+  {
+    "idx": 31260,
+    "merged_word": "élégance",
+    "prev_name": "saundarya",
+    "prev_sanskrit": "सौन्दर्य",
+    "prev_end": "saundarya [*sundaraya] n. beauté, grâce,",
+    "current_def": "élégance | bonté, générosité | phil. esthétique.",
+    "action": "NO_SPACE"
+  },
+  {
+    "idx": 31372,
+    "merged_word": "nymphe",
+    "prev_name": "stāva",
+    "prev_sanskrit": "स्ताव",
+    "prev_end": " celui qui fait l'éloge — f. stāvā myth. np. de la",
+    "current_def": "nymphe [apsaras] stāvā.",
+    "action": "SPACE"
+  },
+  {
+    "idx": 31590,
+    "merged_word": "régent",
+    "prev_name": "sparśa",
+    "prev_sanskrit": "स्पर्श",
+    "prev_end": "a] la perception [tanmātra] du toucher [tvak]; son",
+    "current_def": "régent [niyantr] est Vāyu | phil. [Vaiśeṣika] la pro",
+    "action": "SPACE"
+  },
+  {
+    "idx": 31592,
+    "merged_word": "souffrance",
+    "prev_name": "priété",
+    "prev_sanskrit": "स्पर्श",
+    "prev_end": "té [guṇa] du toucher | bd. le contact, 6e cause de",
+    "current_def": "souffrance [pratītyasamutpāda] | sentiment, sensa tion; chos",
+    "action": "SPACE"
+  },
+  {
+    "idx": 32065,
+    "merged_word": "nymphe",
+    "prev_name": "hanumat",
+    "prev_sanskrit": "हनुमत्",
+    "prev_end": "allié de Rāma; il est fils du vent Pavana et de la",
+    "current_def": "nymphe | apsaras | Añjanā changée en singe; doué d'une force",
+    "action": "SPACE"
+  }
+]
