@@ -1,6 +1,7 @@
 import json
 import time
 import uuid
+import os
 import requests
 from pathlib import Path
 
@@ -159,8 +160,8 @@ class TranslationManager:
 
 def main():
     # Get Azure credentials from environment variables
-    key = "2WyBGP1L0E3XvnpgW343emJO3F07l2NG58sHSsvSfHCJGlZI8jWGJQQJ99ALACgEuAYXJ3w3AAAbACOG9ZOu"  # Replace with your Translator API key
-    region = "italynorth"  # Replace with your Translator region (e.g., italynorth)
+    key = os.environ.get('AZURE_TRANSLATOR_KEY', '')
+    region = os.environ.get('AZURE_TRANSLATOR_REGION', 'italynorth')
 
     if not key or not region:
         print("Please set AZURE_TRANSLATOR_KEY and AZURE_TRANSLATOR_REGION environment variables")

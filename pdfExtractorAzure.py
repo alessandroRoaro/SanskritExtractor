@@ -76,9 +76,9 @@ def extract_text_from_images(page_range, output_path, endpoint, key):
 
 # Test on a single page
 if __name__ == "__main__":
-    # Check for Azure credentials
-    endpoint = 'https://dictionaryparser.cognitiveservices.azure.com/'
-    key = '6MBtEJkBSFYfbJGJDSj6pr04nGdSaB8FKUW012rpI3twEn3ovOgdJQQJ99CAAC5RqLJXJ3w3AAALACOGuvcI'
+    # Check for Azure credentials (set these as environment variables)
+    endpoint = os.environ.get('AZURE_DOC_INTELLIGENCE_ENDPOINT', '')
+    key = os.environ.get('AZURE_DOC_INTELLIGENCE_KEY', '')
     
     if not endpoint or not key:
         print("=" * 60)

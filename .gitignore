@@ -1,0 +1,35 @@
+# Credentials - NEVER COMMIT THESE
+*.json
+!dictionary*.json
+!merge_actions*.json
+!entries_to_retranslate.json
+
+# Google Cloud service account files
+*-credentials.json
+*-key.json
+github-scraper-*.json
+
+# Environment files
+.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Translation progress (optional - remove if you want to track)
+translation_progress_*.json
