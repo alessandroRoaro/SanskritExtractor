@@ -28,4 +28,18 @@ jobs:
               entries = json.load(f)
           print(f"Regenerated dictionary: {len(entries)} entries; "
                 f"{sum(len(entry['definitions']) for entry in entries)} definitions")
+          with open("dictionary_micro1.json", encoding="utf-8") as f:
+              previous = json.load(f)
+          previous_names = {entry["name"] for entry in previous}
+          new_names = {entry["name"] for entry in entries}
+          print("Former micro1 headwords absent from new extraction:",
+                sorted(previous_names - new_names))
+          print("Headwords newly discovered by new extraction:",
+                sorted(new_names - previous_names))
           PY
+      - name: Upload regenerated dictionary for inspection
+        uses: actions/upload-artifact@v4
+        with:
+          name: dictionary-micro1-checked
+          path: /tmp/dictionary_micro1_checked.json
+          retention-days: 7
