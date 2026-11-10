@@ -42,6 +42,75 @@ class DictionaryParserTests(unittest.TestCase):
             ["dhārā", "dhārāgṛha", "namaste"],
         )
 
+    def test_bengali_glyphs_at_start_are_mapped_to_devanagari(self):
+        entries = self.parse(
+            "धृतिमत dhṛtimat |mat| a. ferme\n"
+            "√ ধৃষ্ dhṛṣ v. [5] oser\n"
+            "ধৃষ্ট dhṛṣṭa a. hardi\n"
+        )
+        self.assertEqual([e["name"] for e in entries],
+                         ["dhṛtimat", "dhṛṣ", "dhṛṣṭa"])
+        self.assertEqual(entries[1]["sanskrit"], "धृष्")
+        self.assertTrue(entries[1]["definitions"][0]["isRootVerb"])
+
+    def test_ascii_visarga_in_devanagari_headword(self):
+        entries = self.parse(
+            "निःक्षत्र niḥkṣatra a. sans caste\n"
+            "नि:शङ्क niḥśaṅka [nis-śaṅkā] a. sans peur\n"
+            "नि:शब्द niḥśabda [nis-śabda] a. silencieux\n"
+        )
+        self.assertEqual([e["name"] for e in entries],
+                         ["niḥkṣatra", "niḥśaṅka", "niḥśabda"])
+        self.assertEqual(entries[1]["sanskrit"], "निःशङ्क")
+
+    def test_broken_bracket_does_not_swallow_headword(self):
+        entries = self.parse(
+            "धीर dhīra a. courageux\n"
+            "dhīralalita [lalita] m. héros\n"
+            "dhīraśānta [śānta| m. héros paisible\n"
+        )
+        self.assertEqual([e["name"] for e in entries],
+                         ["dhīra", "dhīralalita", "dhīraśānta"])
+
+    def test_dehyphenates_wrapped_words_not_compounds(self):
+        entries = self.parse(
+            "धार् dhār v. [1] rete-\n"
+            "nir, entrete-\n"
+            "nir l'enfant Duryodhana-Suyodhana\n"
+        )
+        definition = entries[0]["definitions"][0]["definition"]
+        self.assertIn("retenir", definition)
+        self.assertIn("entretenir", definition)
+        self.assertIn("Duryodhana-Suyodhana", definition)
+
+    def test_glossed_french_prose_is_not_a_headword(self):
+        entries = self.parse(
+            "निरयन niráyana n. astr. zodiaque\n"
+            'sidéral ["sans mouvement"], lié aux constellations;\n'
+            "opp. sāyana.\n"
+            "निरर्थ nirartha a. vain\n"
+        )
+        self.assertEqual([e["name"] for e in entries], ["nirayana", "nirartha"])
+        self.assertIn("sidéral", entries[0]["definitions"][0]["definition"])
+
+    def test_stray_letter_before_iast_and_spaced_damaged_devanagari(self):
+        entries = self.parse(
+            "निर्व्याज nirvyāja a. loyal\n"
+            "निर्व्यं a nirvyūḍha [pp. nirvyūh] a. fini\n"
+            "निर्द्धः ख nirduḥkha [nis-duḥkha] a. sans douleur\n"
+        )
+        self.assertEqual([e["name"] for e in entries],
+                         ["nirvyāja", "nirvyūḍha", "nirduḥkha"])
+        self.assertEqual(entries[2]["sanskrit"], "")
+
+    def test_bare_page_letters_are_ignored(self):
+        entries = self.parse(
+            "न\nn\nन na part. non\n"
+            "प\np\nĮ5\nЧ pa nota\n"
+            "पद pada m. pied\n"
+        )
+        self.assertEqual([e["name"] for e in entries], ["na", "pada"])
+
     def test_numbered_roots_group_into_definitions(self):
         entries = self.parse(
             "√ धाव् dhāv₁ v. [1] courir\n"
