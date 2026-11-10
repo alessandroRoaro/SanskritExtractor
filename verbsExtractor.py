@@ -175,16 +175,22 @@ def clean_definition_text(text):
 
 
 def normalize_ocr(text):
-    """NFC and conservative correction of known Latin OCR substitutions."""
-    text = unicodedata.normalize("NFC", text).translate(IAST_OCR_FIXES)
+    """NFC normalization and known IAST OCR substitutions."""
+    return unicodedata.normalize("NFC", text).translate(IAST_OCR_FIXES)
 
-    def map_bengali_head(match):
-        word = match.group("word")
-        if "ৎ" in word:  # no direct Devanagari equivalent
-            return match.group(0)
-        return match.group("prefix") + "".join(chr(ord(ch) - 0x80) for ch in word)
 
-    return BENGALI_HEAD_RE.sub(map_bengali_head, text)
+def normalize_bengali_head_line(line):
+    """Recognize Bengali OCR headwords, without trusting their spelling.
+
+    A Bengali-to-Devanagari codepoint offset recovers the headword boundary,
+    but does not prove the spelling itself was correctly recognized by OCR.
+    Such entries retain an empty 'sanskrit' field.
+    """
+    match = BENGALI_HEAD_RE.match(line)
+    if not match or "ৎ" in match.group("word"):
+        return line, False
+    converted = "".join(chr(ord(ch) - 0x80) for ch in match.group("word"))
+    return line[:match.start("word")] + converted + line[match.end("word"):], True
 
 
 def clean_name(name):
@@ -300,6 +306,7 @@ def extract_verbs_and_terms_from_text_file(file_path):
                 continue
 
             line = clean_slash_artifacts(line.strip())
+            line, bengali_head = normalize_bengali_head_line(line)
             # An OCR ASCII colon between Devanagari letters represents visarga.
             line = re.sub(r"(?<=[\u0900-\u097F]):(?=[\u0900-\u097F])", "ः", line)
             if line == '':
@@ -310,7 +317,7 @@ def extract_verbs_and_terms_from_text_file(file_path):
             deva_match = DEVANAGARI_HEAD_RE.match(line)
             sanskrit_word = (
                 deva_match.group("deva")
-                if deva_match and " " not in deva_match.group("deva")
+                if deva_match and not bengali_head and " " not in deva_match.group("deva")
                 else "" if deva_match else None
             )
             sanskrit_word_index = deva_match.start("deva") if deva_match else None
