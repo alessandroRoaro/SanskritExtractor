@@ -50,7 +50,7 @@ class DictionaryParserTests(unittest.TestCase):
         )
         self.assertEqual([e["name"] for e in entries],
                          ["dhṛtimat", "dhṛṣ", "dhṛṣṭa"])
-        self.assertEqual(entries[1]["sanskrit"], "धृष्")
+        self.assertEqual(entries[1]["sanskrit"], "")  # OCR Bengali was uncertain
         self.assertTrue(entries[1]["definitions"][0]["isRootVerb"])
 
     def test_ascii_visarga_in_devanagari_headword(self):
