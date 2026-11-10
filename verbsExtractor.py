@@ -22,7 +22,16 @@ IAST_CHARS = r"A-Za-zÀ-ɏḀ-ỿ\u0300-\u036f₀-₉"
 IAST_HEADWORD_RE = re.compile(rf"^[{IAST_CHARS}]+$")
 # Only a leading Devanagari sequence can start a dictionary entry.
 DEVANAGARI_HEAD_RE = re.compile(
-    r"^(?:√\s*)?(?P<deva>[\u0900-\u097F\uA8E0-\uA8FF]+)(?=\s|$)"
+    r"^(?:√\s*)?(?P<deva>[\u0900-\u097F\uA8E0-\uA8FF]+"
+    r"(?:\s+[\u0900-\u097F\uA8E0-\uA8FF]+)*)(?=\s|$)"
+)
+# OCR substitutions in Sanskrit headwords, not arbitrary running prose.
+BENGALI_HEAD_RE = re.compile(
+    r"^(?P<prefix>\s*(?:√\s*)?)(?P<word>[\u0981-\u09E3]+)(?=\s|$)",
+    re.MULTILINE,
+)
+MALFORMED_SUB_ENTRY_RE = re.compile(
+    rf"^(?P<name>[{IAST_CHARS}]+)\s*\[[{IAST_CHARS}\s-]{{1,30}}\|\s*"
 )
 POS_AFTER_ETYMOLOGY_RE = re.compile(
     r"^\s*(?:var\.\s*\S+\s*)?"
@@ -71,6 +80,11 @@ def sub_entry_match(line, next_line=""):
     definition, rather than silently inventing a term.
     """
     line = line.strip()
+    damaged = MALFORMED_SUB_ENTRY_RE.match(line)
+    if damaged and POS_AFTER_ETYMOLOGY_RE.match(line[damaged.end():]):
+        candidate = damaged.group("name")
+        if is_valid_name(clean_name(candidate)):
+            return candidate
     for pattern in (SUB_ENTRY_SQUARE_BRACKET, SUB_ENTRY_PIPE_BRACKET):
         match = pattern.match(line)
         if not match:
@@ -93,7 +107,8 @@ def sub_entry_match(line, next_line=""):
         # Some glossed expressions use a quoted translation instead of POS.
         if (pattern is SUB_ENTRY_SQUARE_BRACKET
                 and line[match.end():].lstrip().startswith(('"', '“', '«'))
-                and len(name) >= 5):
+                and len(name) >= 5
+                and not re.search(r"[éèêëàâîïôöùûüç]", name, re.I)):
             return name
     return None
 
@@ -137,6 +152,17 @@ def bare_root_name(line):
     return tokens[0]
 
 
+def append_continuation(parts, line):
+    """Join words hyphenated across OCR lines; retain internal hyphens."""
+    if not parts:
+        return
+    previous = parts[-1]
+    if re.search(r"[^\W\d_]-$", previous) and line and line[0].islower():
+        parts[-1] = previous[:-1] + line
+    else:
+        parts[-1] = previous + " " + line
+
+
 def clean_definition_text(text):
     """Clean up HTML, slash artifacts, and whitespace in definition text."""
     text = strip_html(text)
@@ -150,7 +176,15 @@ def clean_definition_text(text):
 
 def normalize_ocr(text):
     """NFC and conservative correction of known Latin OCR substitutions."""
-    return unicodedata.normalize("NFC", text).translate(IAST_OCR_FIXES)
+    text = unicodedata.normalize("NFC", text).translate(IAST_OCR_FIXES)
+
+    def map_bengali_head(match):
+        word = match.group("word")
+        if "ৎ" in word:  # no direct Devanagari equivalent
+            return match.group(0)
+        return match.group("prefix") + "".join(chr(ord(ch) - 0x80) for ch in word)
+
+    return BENGALI_HEAD_RE.sub(map_bengali_head, text)
 
 
 def clean_name(name):
@@ -266,13 +300,19 @@ def extract_verbs_and_terms_from_text_file(file_path):
                 continue
 
             line = clean_slash_artifacts(line.strip())
+            # An OCR ASCII colon between Devanagari letters represents visarga.
+            line = re.sub(r"(?<=[\u0900-\u097F]):(?=[\u0900-\u097F])", "ः", line)
             if line == '':
                 continue
 
             # Only a Devanagari headword at the *beginning* of a line
             # counts as a new entry. Devanagari inside prose is not a header.
             deva_match = DEVANAGARI_HEAD_RE.match(line)
-            sanskrit_word = deva_match.group("deva") if deva_match else None
+            sanskrit_word = (
+                deva_match.group("deva")
+                if deva_match and " " not in deva_match.group("deva")
+                else "" if deva_match else None
+            )
             sanskrit_word_index = deva_match.start("deva") if deva_match else None
             sanskrit_word_index_end = deva_match.end("deva") if deva_match else None
 
@@ -283,14 +323,6 @@ def extract_verbs_and_terms_from_text_file(file_path):
                 pending_root_prefix = False
                 continue
 
-            # Process words to remove hyphens
-            words = line.split()
-            processed_words = []
-            for word in words:
-                processed_word = re.sub(r'(?<!\s)(\s?)-(\s?)(?!\s)', r'\1\2', word)
-                processed_words.append(processed_word)
-            line = ' '.join(processed_words)
-
             # Case 1: We have a pending Sanskrit from previous line, this line should have the IAST name
             if pending_sanskrit is not None:
                 skipping_annotation = False
@@ -299,6 +331,12 @@ def extract_verbs_and_terms_from_text_file(file_path):
                     words_in_line = line_stripped.split()
                     name = words_in_line[0] if words_in_line else ''
                     
+                    # A bare one-letter OCR page marker has no definition.
+                    if len(words_in_line) == 1 and len(clean_name(name)) <= 1:
+                        pending_sanskrit = None
+                        pending_root_prefix = False
+                        skipping_annotation = True
+                        continue
                     if name:
                         # Build the definition text
                         if pending_root_prefix:
@@ -352,7 +390,15 @@ def extract_verbs_and_terms_from_text_file(file_path):
                     pending_root_prefix = has_root_prefix
                     continue
 
-                name = line_after_sanskrit.split()[0]
+                words_after_sanskrit = line_after_sanskrit.split()
+                name = words_after_sanskrit[0]
+                # Ignore a stray one-letter glyph before a clear IAST headword.
+                if (len(name) == 1 and len(words_after_sanskrit) >= 3
+                        and len(words_after_sanskrit[1]) >= 3
+                        and IAST_TOKEN.fullmatch(words_after_sanskrit[1])
+                        and words_after_sanskrit[2][0] in "[|"):
+                    name = words_after_sanskrit[1]
+                    line_after_sanskrit = line_after_sanskrit.split(None, 1)[1]
                 
                 # Build the full definition text
                 if has_root_prefix:
@@ -446,7 +492,7 @@ def extract_verbs_and_terms_from_text_file(file_path):
                 if not is_new_sub_entry:
                     # Append to the last raw definition
                     if current_raw_definitions:
-                        current_raw_definitions[-1] += ' ' + line_stripped
+                        append_continuation(current_raw_definitions, line_stripped)
 
         # Add any remaining entry
         if current_entry is not None and current_raw_definitions:
