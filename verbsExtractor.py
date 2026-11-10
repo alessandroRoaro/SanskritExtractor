@@ -59,8 +59,41 @@ def get_sub_entry_name(line):
     return None
 
 
+def strip_html(text):
+    """Remove HTML tags such as <i>...</i>."""
+    return re.sub(r'<[^>]+>', '', text)
+
+
+def clean_slash_artifacts(text):
+    """Remove backslash delimiters left in the source, such as '\\ dhyā \\' or '\\,'."""
+    text = text.replace('\x08', '')
+    text = text.replace('\\,', ' ')
+    # Keep letter commands (\theta); drop delimiter backslashes.
+    text = re.sub(r'\\(?![A-Za-z])', '', text)
+    text = re.sub(r' +', ' ', text)
+    return text.strip()
+
+
+IAST_TOKEN = re.compile(rf'^[{IAST_CHARS}]+$')
+
+
+def bare_root_name(line):
+    """IAST name of a root line that has no Devanagari, e.g. '√ dhyā' or '√ pac v. [1]'."""
+    line = line.strip()
+    if not line.startswith(ROOT_SYMBOL):
+        return None
+    tokens = line[len(ROOT_SYMBOL):].split()
+    if not tokens or not IAST_TOKEN.match(tokens[0]):
+        return None
+    if all(IAST_TOKEN.match(token) for token in tokens):
+        return ''.join(tokens)
+    return tokens[0]
+
+
 def clean_definition_text(text):
-    """Clean up extra spaces and normalize whitespace in definition text."""
+    """Clean up HTML, slash artifacts, and whitespace in definition text."""
+    text = strip_html(text)
+    text = clean_slash_artifacts(text)
     # Replace multiple spaces with single space
     text = re.sub(r' +', ' ', text)
     # Remove leading/trailing whitespace
@@ -70,8 +103,7 @@ def clean_definition_text(text):
 
 def clean_name(name):
     """Clean up a name: lowercase, strip HTML tags, remove control chars."""
-    # Strip HTML tags like <i>...</i>
-    name = re.sub(r'<[^>]+>', '', name)
+    name = strip_html(name)
     # Remove control characters
     name = re.sub(r'[\x00-\x1f\x7f]', '', name)
     # Strip subscripts and lowercase
@@ -79,6 +111,25 @@ def clean_name(name):
     # Remove any remaining leading/trailing whitespace
     name = name.strip()
     return name
+
+
+def is_hyphen_annotation(headword):
+    """Suffix and grammar notes such as -a, -as, -ni are not dictionary terms."""
+    return bool(headword) and headword.startswith('-')
+
+
+def line_headword(line, sanskrit_end):
+    """First IAST token of a line, after a leading Devanagari headword when present."""
+    if sanskrit_end:
+        rest = line[sanskrit_end:].strip()
+        if rest:
+            return rest.split()[0]
+    tokens = line.split()
+    if not tokens:
+        return None
+    if tokens[0] == ROOT_SYMBOL:
+        return tokens[1] if len(tokens) > 1 else None
+    return tokens[0]
 
 
 def is_valid_name(name):
@@ -143,8 +194,13 @@ def extract_verbs_and_terms_from_text_file(file_path):
         current_raw_definitions = []  # List of raw definition strings
         pending_sanskrit = None  # Sanskrit word waiting for IAST name on next line
         pending_root_prefix = False  # Whether there was a √ before pending Sanskrit
+        skipping_annotation = False  # Continuation of a hyphenated grammar note
 
         for line in lines:
+            if line == '':
+                continue
+
+            line = clean_slash_artifacts(line.strip())
             if line == '':
                 continue
 
@@ -166,6 +222,13 @@ def extract_verbs_and_terms_from_text_file(file_path):
                         sanskrit_word_index_end = index
                         break
 
+            headword = line_headword(line, sanskrit_word_index_end)
+            if is_hyphen_annotation(headword):
+                skipping_annotation = True
+                pending_sanskrit = None
+                pending_root_prefix = False
+                continue
+
             # Process words to remove hyphens
             words = line.split()
             processed_words = []
@@ -176,6 +239,7 @@ def extract_verbs_and_terms_from_text_file(file_path):
 
             # Case 1: We have a pending Sanskrit from previous line, this line should have the IAST name
             if pending_sanskrit is not None:
+                skipping_annotation = False
                 line_stripped = line.strip()
                 if line_stripped:
                     words_in_line = line_stripped.split()
@@ -221,6 +285,7 @@ def extract_verbs_and_terms_from_text_file(file_path):
 
             # Case 2: Sanskrit found on this line
             if sanskrit_word is not None:
+                skipping_annotation = False
                 # Check if there's a √ symbol before the Sanskrit word
                 prefix_before_sanskrit = line[:sanskrit_word_index].strip() if sanskrit_word_index else ''
                 has_root_prefix = prefix_before_sanskrit.endswith(ROOT_SYMBOL)
@@ -266,9 +331,35 @@ def extract_verbs_and_terms_from_text_file(file_path):
                     }
                     current_raw_definitions = [definition_text]
 
+            # Case 2b: Root headword with no Devanagari, e.g. "√ dhyā"
+            elif (root_name := bare_root_name(line)) and is_valid_name(clean_name(root_name)):
+                skipping_annotation = False
+                cleaned_name = clean_name(root_name)
+                tokens = line[len(ROOT_SYMBOL):].split()
+                if all(IAST_TOKEN.match(token) for token in tokens):
+                    definition_text = ROOT_SYMBOL + ' ' + root_name
+                else:
+                    definition_text = line
+
+                if current_entry:
+                    for raw_def in current_raw_definitions:
+                        current_entry['definitions'].append(create_definition_object(raw_def))
+                    extracted_entries.append(current_entry)
+
+                current_entry = {
+                    "sanskrit": "",
+                    "name": cleaned_name,
+                    "flat": convert_iast_to_flat(cleaned_name).lower(),
+                    "definitions": [],
+                }
+                current_raw_definitions = [definition_text]
+
             # Case 3: No Sanskrit, check if it's a sub-entry or continuation
             elif current_entry and line.strip() != '' and not re.search(r'^\d+$', line):
                 line_stripped = line.strip()
+                if skipping_annotation and not is_sub_entry_line(line_stripped):
+                    continue
+                skipping_annotation = False
                 is_new_sub_entry = False
                 
                 # Check if this line starts a sub-entry (IAST word + brackets)
@@ -339,12 +430,12 @@ def merge_entries_with_same_name(entries):
 
 
 # Usage
-file_path = 'extracted_dictionary_hybrid.txt'
+file_path = 'extracted_dictionary_micro1.txt'
 
 extracted_entries = extract_verbs_and_terms_from_text_file(file_path)
 # Merge entries with same Sanskrit and name
 extracted_entries = merge_entries_with_same_name(extracted_entries)
 
-file_path = 'dictionary.json'
+file_path = 'dictionary_micro1.json'
 with open(file_path, 'w', encoding='utf-8') as json_file:
     json.dump(extracted_entries, json_file, ensure_ascii=False, indent=4)
