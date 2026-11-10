@@ -32,10 +32,10 @@ class DictionaryParserTests(unittest.TestCase):
 
     def test_wrapped_pos_and_quoted_subentries(self):
         entries = self.parse(
-            "धारा dhārā f. eau\\n"
-            "dhārāgṛha |gṛha|\\n"
-            "n. salle de bains\\n"
-            "namaste [\\\"je te salue\\\"] salutations\\n"
+            "धारा dhārā f. eau\n"
+            "dhārāgṛha |gṛha|\n"
+            "n. salle de bains\n"
+            'namaste ["je te salue"] salutations\n'
         )
         self.assertEqual(
             [entry["name"] for entry in entries],
