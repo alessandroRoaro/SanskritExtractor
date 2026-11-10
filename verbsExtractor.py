@@ -1,8 +1,8 @@
 import re
 import json
+import argparse
+import unicodedata
 
-from iast_to_flat_converter import convert_iast_to_flat
-from sanskrit_char_extractor import is_sanskrit_char
 
 # TODO some verbs are missing from before
 
@@ -17,7 +17,29 @@ SUBSCRIPT_PATTERN = re.compile(f'[{SUBSCRIPT_DIGITS}]+$')
 # IAST word: Latin letters with diacritics and Vedic accents
 # For [...]: matches "word [...]" 
 # For |...|: matches "word |short-etymology|" (content must be short, typically 1-2 words)
-IAST_CHARS = r'a-zA-ZāīūṛṝḷḹēōṃḥñṅṇṭḍśṣĀĪŪṚṜḶḸĒŌṂḤÑṄṆṬḌŚṢáíúéóÁÍÚÉÓàìùèòÀÌÙÈÒ₀₁₂₃₄₅₆₇₈₉'
+# Match precomposed Latin IAST, decomposed diacritics and homonym subscripts.
+IAST_CHARS = r"A-Za-zÀ-ɏḀ-ỿ\u0300-\u036f₀-₉"
+IAST_HEADWORD_RE = re.compile(rf"^[{IAST_CHARS}]+$")
+# Only a leading Devanagari sequence can start a dictionary entry.
+DEVANAGARI_HEAD_RE = re.compile(
+    r"^(?:√\s*)?(?P<deva>[\u0900-\u097F\uA8E0-\uA8FF]+)(?=\s|$)"
+)
+POS_AFTER_ETYMOLOGY_RE = re.compile(
+    r"^\s*(?:var\.\s*\S+\s*)?"
+    r"(?:a\.|m\.|n\.|f\.|v\.|ind\.|ifc\.|adv\.|np\.|"
+    r"pp\.|ppr\.|act\.|cf\.|lit\.|mod\.|soc\.|myth\.|"
+    r"hist\.|véd\.|bd\.|phil\.|gram\.|num\.|iic\.)"
+)
+# Known IAST glyph substitutions made by OCR.
+IAST_OCR_FIXES = str.maketrans({"ş": "ṣ", "Ş": "Ṣ", "ţ": "ṭ", "Ţ": "Ṭ"})
+NON_DECOMPOSABLE_LETTERS = {
+    "ł": "l", "Ł": "L", "đ": "d", "Đ": "D",
+    "ħ": "h", "Ħ": "H", "ø": "o", "Ø": "O",
+    "ŋ": "n", "Ŋ": "N", "ð": "d", "Ð": "D",
+    "ß": "ss", "æ": "ae", "Æ": "AE",
+    "œ": "oe", "Œ": "OE", "ı": "i",
+}
+
 
 # Pattern for square brackets: word [...]
 SUB_ENTRY_SQUARE_BRACKET = re.compile(
@@ -41,22 +63,47 @@ def strip_subscript(word):
     return SUBSCRIPT_PATTERN.sub('', word)
 
 
-def is_sub_entry_line(line):
-    """Check if a line starts a sub-entry (IAST word followed by brackets)."""
-    line = line.strip()
-    return SUB_ENTRY_SQUARE_BRACKET.match(line) or SUB_ENTRY_PIPE_BRACKET.match(line)
+def sub_entry_match(line, next_line=""):
+    """Recognize standalone Latin-only headwords with etymology and POS.
 
-
-def get_sub_entry_name(line):
-    """Extract the name from a sub-entry line."""
+    The POS requirement avoids promoting French prose with [...] to entries.
+    A candidate with a damaged annotation remains part of the preceding
+    definition, rather than silently inventing a term.
+    """
     line = line.strip()
-    match = SUB_ENTRY_SQUARE_BRACKET.match(line)
-    if match:
-        return match.group(1)
-    match = SUB_ENTRY_PIPE_BRACKET.match(line)
-    if match:
-        return match.group(1)
+    for pattern in (SUB_ENTRY_SQUARE_BRACKET, SUB_ENTRY_PIPE_BRACKET):
+        match = pattern.match(line)
+        if not match:
+            continue
+        name = match.group(1)
+        if not is_valid_name(clean_name(name)):
+            return None
+        if pattern is SUB_ENTRY_SQUARE_BRACKET:
+            end = line.find("]", match.end())
+        else:
+            end = line.find("|", match.end() - 1)
+        if end < 0 or end - match.end() > 60:
+            return None
+        tail = line[end + 1:]
+        if POS_AFTER_ETYMOLOGY_RE.match(tail):
+            return name
+        # OCR may wrap the grammatical marker to the next line.
+        if not tail.strip() and POS_AFTER_ETYMOLOGY_RE.match(next_line):
+            return name
+        # Some glossed expressions use a quoted translation instead of POS.
+        if (pattern is SUB_ENTRY_SQUARE_BRACKET
+                and line[match.end():].lstrip().startswith(('"', '“', '«'))
+                and len(name) >= 5):
+            return name
     return None
+
+
+def is_sub_entry_line(line, next_line=""):
+    return sub_entry_match(line, next_line) is not None
+
+
+def get_sub_entry_name(line, next_line=""):
+    return sub_entry_match(line, next_line)
 
 
 def strip_html(text):
@@ -101,16 +148,37 @@ def clean_definition_text(text):
     return text
 
 
+def normalize_ocr(text):
+    """NFC and conservative correction of known Latin OCR substitutions."""
+    return unicodedata.normalize("NFC", text).translate(IAST_OCR_FIXES)
+
+
 def clean_name(name):
-    """Clean up a name: lowercase, strip HTML tags, remove control chars."""
-    name = strip_html(name)
-    # Remove control characters
-    name = re.sub(r'[\x00-\x1f\x7f]', '', name)
-    # Strip subscripts and lowercase
-    name = strip_subscript(name).lower()
-    # Remove any remaining leading/trailing whitespace
-    name = name.strip()
-    return name
+    """Normalize IAST while retaining Sanskrit-specific diacritics."""
+    name = normalize_ocr(strip_html(name))
+    decomposed = unicodedata.normalize("NFD", name)
+    result = []
+    last_base = ""
+    for character in decomposed:
+        if unicodedata.combining(character):
+            # Vedic accents do not distinguish our normalized headword names.
+            if character in "\u0300\u0301" and last_base.lower() in "aeiou":
+                continue
+        else:
+            last_base = character
+        result.append(character)
+    name = unicodedata.normalize("NFC", "".join(result))
+    name = re.sub(r"[0-9₀-₉\x00-\x1f\x7f]", "", name)
+    return name.strip().lower()
+
+
+def flatten_name(name):
+    """Lowercase ASCII search form, not a unique dictionary identifier."""
+    text = "".join(NON_DECOMPOSABLE_LETTERS.get(c, c) for c in name)
+    text = unicodedata.normalize("NFKD", text)
+    text = "".join(c for c in text if not unicodedata.combining(c))
+    text = text.encode("ascii", "ignore").decode("ascii").lower()
+    return re.sub(r"[^a-z]", "", text)
 
 
 def is_hyphen_annotation(headword):
@@ -139,13 +207,10 @@ def is_valid_name(name):
     # Reject names that are just numbers
     if re.match(r'^[0-9]+$', name):
         return False
-    # Reject names with ~ (malformed from PDF extraction)
-    if '~' in name:
-        return False
-    # Reject names that are too long (likely malformed)
-    if len(name) > 50:
-        return False
-    return True
+    # Reject punctuation/noise and accidental fragments of French prose.
+    return len(name) <= 50 and bool(IAST_HEADWORD_RE.fullmatch(name)) and any(
+        character.isalpha() for character in name
+    )
 
 
 def should_group_with_current_entry(current_entry, sanskrit_word, name):
@@ -165,8 +230,8 @@ def should_group_with_current_entry(current_entry, sanskrit_word, name):
         return False
     
     # Check if base names match (without subscripts)
-    clean_name = strip_subscript(name)
-    return clean_name == current_entry['name']
+    base_name = clean_name(name)
+    return base_name == current_entry['name']
 
 
 def create_definition_object(definition_text):
@@ -185,7 +250,7 @@ def create_definition_object(definition_text):
 def extract_verbs_and_terms_from_text_file(file_path):
     """Extract verbs and associated text between specified markers from a text file."""
     with open(file_path, 'r', encoding='utf-8') as file:
-        text = file.read()
+        text = normalize_ocr(file.read())
 
         # Track matches
         extracted_entries = []
@@ -196,7 +261,7 @@ def extract_verbs_and_terms_from_text_file(file_path):
         pending_root_prefix = False  # Whether there was a √ before pending Sanskrit
         skipping_annotation = False  # Continuation of a hyphenated grammar note
 
-        for line in lines:
+        for line_index, line in enumerate(lines):
             if line == '':
                 continue
 
@@ -204,23 +269,12 @@ def extract_verbs_and_terms_from_text_file(file_path):
             if line == '':
                 continue
 
-            # Scan for Sanskrit characters in this line
-            sanskrit_word = None
-            sanskrit_word_index = None
-            sanskrit_word_index_end = None
-            
-            for index, char in enumerate(line):
-                if is_sanskrit_char(char):
-                    sanskrit_word = (sanskrit_word or '') + char
-                    if sanskrit_word_index is None:
-                        sanskrit_word_index = index
-                elif sanskrit_word is not None:
-                    if char != ' ' and line[index - 1] != ' ':
-                        sanskrit_word = None
-                        sanskrit_word_index = None
-                    elif char != ' ':
-                        sanskrit_word_index_end = index
-                        break
+            # Only a Devanagari headword at the *beginning* of a line
+            # counts as a new entry. Devanagari inside prose is not a header.
+            deva_match = DEVANAGARI_HEAD_RE.match(line)
+            sanskrit_word = deva_match.group("deva") if deva_match else None
+            sanskrit_word_index = deva_match.start("deva") if deva_match else None
+            sanskrit_word_index_end = deva_match.end("deva") if deva_match else None
 
             headword = line_headword(line, sanskrit_word_index_end)
             if is_hyphen_annotation(headword):
@@ -274,7 +328,7 @@ def extract_verbs_and_terms_from_text_file(file_path):
                             current_entry = {
                                 "sanskrit": pending_sanskrit,
                                 "name": cleaned_name,
-                                "flat": convert_iast_to_flat(cleaned_name).lower(),
+                                "flat": flatten_name(cleaned_name),
                                 "definitions": [],
                             }
                             current_raw_definitions = [definition_text]
@@ -326,7 +380,7 @@ def extract_verbs_and_terms_from_text_file(file_path):
                     current_entry = {
                         "sanskrit": sanskrit_word,
                         "name": cleaned_name,
-                        "flat": convert_iast_to_flat(cleaned_name).lower(),
+                        "flat": flatten_name(cleaned_name),
                         "definitions": [],
                     }
                     current_raw_definitions = [definition_text]
@@ -349,7 +403,7 @@ def extract_verbs_and_terms_from_text_file(file_path):
                 current_entry = {
                     "sanskrit": "",
                     "name": cleaned_name,
-                    "flat": convert_iast_to_flat(cleaned_name).lower(),
+                    "flat": flatten_name(cleaned_name),
                     "definitions": [],
                 }
                 current_raw_definitions = [definition_text]
@@ -357,14 +411,18 @@ def extract_verbs_and_terms_from_text_file(file_path):
             # Case 3: No Sanskrit, check if it's a sub-entry or continuation
             elif current_entry and line.strip() != '' and not re.search(r'^\d+$', line):
                 line_stripped = line.strip()
-                if skipping_annotation and not is_sub_entry_line(line_stripped):
+                following_line = (
+                    lines[line_index + 1].strip()
+                    if line_index + 1 < len(lines) else ""
+                )
+                if skipping_annotation and not is_sub_entry_line(line_stripped, following_line):
                     continue
                 skipping_annotation = False
                 is_new_sub_entry = False
                 
                 # Check if this line starts a sub-entry (IAST word + brackets)
-                if is_sub_entry_line(line_stripped):
-                    sub_entry_name = get_sub_entry_name(line_stripped)
+                if is_sub_entry_line(line_stripped, following_line):
+                    sub_entry_name = get_sub_entry_name(line_stripped, following_line)
                     cleaned_name = clean_name(sub_entry_name)
                     
                     # Only create sub-entry if name is valid
@@ -378,9 +436,9 @@ def extract_verbs_and_terms_from_text_file(file_path):
                         
                         # Create new entry for sub-entry using parent's Sanskrit
                         current_entry = {
-                            "sanskrit": current_entry['sanskrit'],  # Use parent's Sanskrit
+                            "sanskrit": "",  # This subentry has no explicit Devanagari
                             "name": cleaned_name,
-                            "flat": convert_iast_to_flat(cleaned_name).lower(),
+                            "flat": flatten_name(cleaned_name),
                             "definitions": [],
                         }
                         current_raw_definitions = [line_stripped]
@@ -429,13 +487,19 @@ def merge_entries_with_same_name(entries):
     return [merged[key] for key in order]
 
 
-# Usage
-file_path = 'extracted_dictionary_micro1.txt'
+def main():
+    parser = argparse.ArgumentParser(description="Extract Sanskrit dictionary entries from OCR text")
+    parser.add_argument("input", nargs="?", default="extracted_dictionary_micro1.txt")
+    parser.add_argument("output", nargs="?", default="dictionary_micro1.json")
+    args = parser.parse_args()
 
-extracted_entries = extract_verbs_and_terms_from_text_file(file_path)
-# Merge entries with same Sanskrit and name
-extracted_entries = merge_entries_with_same_name(extracted_entries)
+    extracted = extract_verbs_and_terms_from_text_file(args.input)
+    entries = merge_entries_with_same_name(extracted)
+    with open(args.output, "w", encoding="utf-8") as json_file:
+        json.dump(entries, json_file, ensure_ascii=False, indent=4)
+    definitions = sum(len(entry["definitions"]) for entry in entries)
+    print(f"Wrote {len(entries)} entries and {definitions} definitions to {args.output}")
 
-file_path = 'dictionary_micro1.json'
-with open(file_path, 'w', encoding='utf-8') as json_file:
-    json.dump(extracted_entries, json_file, ensure_ascii=False, indent=4)
+
+if __name__ == "__main__":
+    main()
