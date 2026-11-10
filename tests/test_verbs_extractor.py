@@ -30,6 +30,18 @@ class DictionaryParserTests(unittest.TestCase):
         self.assertEqual([entry["sanskrit"] for entry in entries],
                          ["धिक", "", ""])
 
+    def test_wrapped_pos_and_quoted_subentries(self):
+        entries = self.parse(
+            "धारा dhārā f. eau\\n"
+            "dhārāgṛha |gṛha|\\n"
+            "n. salle de bains\\n"
+            "namaste [\\\"je te salue\\\"] salutations\\n"
+        )
+        self.assertEqual(
+            [entry["name"] for entry in entries],
+            ["dhārā", "dhārāgṛha", "namaste"],
+        )
+
     def test_numbered_roots_group_into_definitions(self):
         entries = self.parse(
             "√ धाव् dhāv₁ v. [1] courir\n"
