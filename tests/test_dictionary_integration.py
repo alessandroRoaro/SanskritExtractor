@@ -9,6 +9,9 @@ from verbsExtractor import (
 )
 
 ROOT = Path(__file__).resolve().parents[1]
+EXPECTED_ENTRIES = 2181
+EXPECTED_DEFINITIONS = 2220
+COUNT_TOLERANCE = 5
 
 
 class FullDictionaryIntegrationTests(unittest.TestCase):
@@ -35,15 +38,23 @@ class FullDictionaryIntegrationTests(unittest.TestCase):
             with self.subTest(name=name):
                 self.assertNotIn(name, self.names)
 
-    def test_no_regression_in_overall_coverage(self):
+    def test_counts_match_current_ocr_baseline(self):
+        """Detect unexpected count changes, not disagreement with old micro1."""
         entries = len(self.entries)
         definitions = sum(len(e["definitions"]) for e in self.entries)
         print(f"\nOCR benchmark: {entries} entries; {definitions} definitions")
-        # The supplied pre-fix output had 2,148 / 2,186. Some false
-        # positives are intentionally removed; recovered names must
-        # compensate for them rather than reducing total coverage.
-        self.assertGreaterEqual(entries, 2148)
-        self.assertGreaterEqual(definitions, 2186)
+        self.assertLessEqual(
+            abs(entries - EXPECTED_ENTRIES),
+            COUNT_TOLERANCE,
+            f"Entry count {entries} differs from baseline {EXPECTED_ENTRIES} "
+            f"by more than ±{COUNT_TOLERANCE}",
+        )
+        self.assertLessEqual(
+            abs(definitions - EXPECTED_DEFINITIONS),
+            COUNT_TOLERANCE,
+            f"Definition count {definitions} differs from baseline "
+            f"{EXPECTED_DEFINITIONS} by more than ±{COUNT_TOLERANCE}",
+        )
 
     def test_flat_search_keys_and_definition_schema(self):
         for entry in self.entries:
