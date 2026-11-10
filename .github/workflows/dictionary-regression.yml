@@ -1,0 +1,45 @@
+name: Dictionary extraction regression
+
+on:
+  pull_request:
+    paths:
+      - "verbsExtractor.py"
+      - "tests/**"
+      - "extracted_dictionary_micro1.txt"
+      - ".github/workflows/dictionary-regression.yml"
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Unit and OCR integration tests
+        run: python -m unittest discover -s tests -v
+      - name: Regenerate dictionary for verification
+        run: |
+          python verbsExtractor.py extracted_dictionary_micro1.txt /tmp/dictionary_micro1_checked.json
+          python - <<'PY'
+          import json
+          with open("/tmp/dictionary_micro1_checked.json", encoding="utf-8") as f:
+              entries = json.load(f)
+          print(f"Regenerated dictionary: {len(entries)} entries; "
+                f"{sum(len(entry['definitions']) for entry in entries)} definitions")
+          with open("dictionary_micro1.json", encoding="utf-8") as f:
+              previous = json.load(f)
+          previous_names = {entry["name"] for entry in previous}
+          new_names = {entry["name"] for entry in entries}
+          print("Former micro1 headwords absent from new extraction:",
+                sorted(previous_names - new_names))
+          print("Headwords newly discovered by new extraction:",
+                sorted(new_names - previous_names))
+          PY
+      - name: Upload regenerated dictionary for inspection
+        uses: actions/upload-artifact@v4
+        with:
+          name: dictionary-micro1-checked
+          path: /tmp/dictionary_micro1_checked.json
+          retention-days: 7
