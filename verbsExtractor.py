@@ -28,7 +28,7 @@ POS_AFTER_ETYMOLOGY_RE = re.compile(
     r"^\s*(?:var\.\s*\S+\s*)?"
     r"(?:a\.|m\.|n\.|f\.|v\.|ind\.|ifc\.|adv\.|np\.|"
     r"pp\.|ppr\.|act\.|cf\.|lit\.|mod\.|soc\.|myth\.|"
-    r"hist\.|véd\.|bd\.|phil\.|gram\.|num\.)"
+    r"hist\.|véd\.|bd\.|phil\.|gram\.|num\.|iic\.)"
 )
 # Known IAST glyph substitutions made by OCR.
 IAST_OCR_FIXES = str.maketrans({"ş": "ṣ", "Ş": "Ṣ", "ţ": "ṭ", "Ţ": "Ṭ"})
@@ -63,7 +63,7 @@ def strip_subscript(word):
     return SUBSCRIPT_PATTERN.sub('', word)
 
 
-def sub_entry_match(line):
+def sub_entry_match(line, next_line=""):
     """Recognize standalone Latin-only headwords with etymology and POS.
 
     The POS requirement avoids promoting French prose with [...] to entries.
@@ -84,17 +84,26 @@ def sub_entry_match(line):
             end = line.find("|", match.end() - 1)
         if end < 0 or end - match.end() > 60:
             return None
-        if POS_AFTER_ETYMOLOGY_RE.match(line[end + 1:]):
+        tail = line[end + 1:]
+        if POS_AFTER_ETYMOLOGY_RE.match(tail):
+            return name
+        # OCR may wrap the grammatical marker to the next line.
+        if not tail.strip() and POS_AFTER_ETYMOLOGY_RE.match(next_line):
+            return name
+        # Some glossed expressions use a quoted translation instead of POS.
+        if (pattern is SUB_ENTRY_SQUARE_BRACKET
+                and line[match.end():].lstrip().startswith(('"', '“', '«'))
+                and len(name) >= 5):
             return name
     return None
 
 
-def is_sub_entry_line(line):
-    return sub_entry_match(line) is not None
+def is_sub_entry_line(line, next_line=""):
+    return sub_entry_match(line, next_line) is not None
 
 
-def get_sub_entry_name(line):
-    return sub_entry_match(line)
+def get_sub_entry_name(line, next_line=""):
+    return sub_entry_match(line, next_line)
 
 
 def strip_html(text):
@@ -252,7 +261,7 @@ def extract_verbs_and_terms_from_text_file(file_path):
         pending_root_prefix = False  # Whether there was a √ before pending Sanskrit
         skipping_annotation = False  # Continuation of a hyphenated grammar note
 
-        for line in lines:
+        for line_index, line in enumerate(lines):
             if line == '':
                 continue
 
@@ -402,14 +411,18 @@ def extract_verbs_and_terms_from_text_file(file_path):
             # Case 3: No Sanskrit, check if it's a sub-entry or continuation
             elif current_entry and line.strip() != '' and not re.search(r'^\d+$', line):
                 line_stripped = line.strip()
-                if skipping_annotation and not is_sub_entry_line(line_stripped):
+                following_line = (
+                    lines[line_index + 1].strip()
+                    if line_index + 1 < len(lines) else ""
+                )
+                if skipping_annotation and not is_sub_entry_line(line_stripped, following_line):
                     continue
                 skipping_annotation = False
                 is_new_sub_entry = False
                 
                 # Check if this line starts a sub-entry (IAST word + brackets)
-                if is_sub_entry_line(line_stripped):
-                    sub_entry_name = get_sub_entry_name(line_stripped)
+                if is_sub_entry_line(line_stripped, following_line):
+                    sub_entry_name = get_sub_entry_name(line_stripped, following_line)
                     cleaned_name = clean_name(sub_entry_name)
                     
                     # Only create sub-entry if name is valid
