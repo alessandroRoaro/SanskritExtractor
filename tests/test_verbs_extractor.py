@@ -257,6 +257,21 @@ class DictionaryParserTests(unittest.TestCase):
         self.assertNotIn("nāmadhātuprakriyā",
                          entries[0]["definitions"][0]["definition"])
 
+    def test_bare_gram_feminine_form_is_not_a_separate_entry(self):
+        entries = self.parse(
+            "नपुंसकलिङ्ग napuṃsakaliṅga [liṅga] a. n. f. m.\n"
+            "napumsakalingā gram. de genre neutre.\n"
+            "निःसंख्य niḥsaṃkhya [nis-saṃkhyā₂] a. m. n. f.\n"
+            "nihsamkhyā gram. dépourvu de nombre.\n"
+            "नर nara m. homme.\n"
+        )
+        self.assertEqual([e["name"] for e in entries],
+                         ["napuṃsakaliṅga", "niḥsaṃkhya", "nara"])
+        self.assertIn("napumsakalingā gram.",
+                      entries[0]["definitions"][0]["definition"])
+        self.assertIn("nihsamkhyā gram.",
+                      entries[1]["definitions"][0]["definition"])
+
     def test_variant_dhuta_is_not_separate_and_naksatra_prose_does_not_split(self):
         entries = self.parse(
             "धूत dhuta var. dhūta [pp. dhū₁] a. secoué.\n"
