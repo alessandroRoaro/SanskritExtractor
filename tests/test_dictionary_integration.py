@@ -9,7 +9,7 @@ from verbsExtractor import (
 )
 
 ROOT = Path(__file__).resolve().parents[1]
-EXPECTED_ENTRIES = 736
+EXPECTED_ENTRIES = 741
 EXPECTED_DEFINITIONS = 756
 COUNT_TOLERANCE = 5
 
