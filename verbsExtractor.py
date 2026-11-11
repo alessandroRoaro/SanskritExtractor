@@ -253,25 +253,52 @@ def is_valid_name(name):
     )
 
 
-def should_group_with_current_entry(current_entry, sanskrit_word, name):
+def has_numbered_headword(definition_text):
+    """Only a numbered headword at the start counts, not subscripts in glosses."""
+    return bool(re.match(
+        rf"^\\s*{re.escape(ROOT_SYMBOL)}?\\s*"
+        rf"[{IAST_CHARS}]*[{SUBSCRIPT_DIGITS}]+(?=\\s|$)",
+        definition_text,
+    ))
+
+
+def prefer_ocr_name(entry, incoming_name):
+    """When the same Devanagari has variant OCR IAST, favor more diacritics.
+
+    Only adjust the name when its ASCII search form is identical; never
+    arbitrarily choose between unrelated romanizations.
     """
-    Check if a new definition should be grouped with the current entry.
-    Only group when:
-    - Same Sanskrit word
-    - Name has a subscript AND base name matches current entry's name
+    candidate = clean_name(incoming_name)
+    existing = entry["name"]
+    if (candidate != existing
+            and flatten_name(candidate) == flatten_name(existing)
+            and sum(ord(c) > 127 for c in candidate)
+            > sum(ord(c) > 127 for c in existing)):
+        entry["name"] = candidate
+        entry["flat"] = flatten_name(candidate)
+
+
+def should_group_with_current_entry(
+    current_entry, sanskrit_word, name, current_raw_definitions=()
+):
+    """Group by reliable Devanagari, or by numbered identical IAST without it.
+
+    Different nonempty Devanagari spellings must never be conflated, even
+    when their ASCII flat keys coincide (नश् versus नस्).
     """
     if current_entry is None:
         return False
-    
-    if current_entry['sanskrit'] != sanskrit_word:
+    existing_sanskrit = current_entry["sanskrit"]
+    if existing_sanskrit and sanskrit_word:
+        return existing_sanskrit == sanskrit_word
+    if existing_sanskrit or sanskrit_word:
         return False
-    
-    if not has_subscript(name):
-        return False
-    
-    # Check if base names match (without subscripts)
-    base_name = clean_name(name)
-    return base_name == current_entry['name']
+    return (
+        clean_name(name) == current_entry["name"]
+        and has_subscript(name)
+        and bool(current_raw_definitions)
+        and has_numbered_headword(current_raw_definitions[0])
+    )
 
 
 def create_definition_object(definition_text):
@@ -360,7 +387,11 @@ def extract_verbs_and_terms_from_text_file(file_path):
                             continue
                         
                         # Check if should group with current entry (same Sanskrit, same base name with subscript)
-                        if should_group_with_current_entry(current_entry, pending_sanskrit, name):
+                        if should_group_with_current_entry(
+                            current_entry, pending_sanskrit, name,
+                            current_raw_definitions
+                        ):
+                            prefer_ocr_name(current_entry, name)
                             current_raw_definitions.append(definition_text)
                         else:
                             # Save previous entry if exists
@@ -420,7 +451,10 @@ def extract_verbs_and_terms_from_text_file(file_path):
                     continue
                 
                 # Check if should group with current entry (same Sanskrit, same base name with subscript)
-                if should_group_with_current_entry(current_entry, sanskrit_word, name):
+                if should_group_with_current_entry(
+                    current_entry, sanskrit_word, name, current_raw_definitions
+                ):
+                    prefer_ocr_name(current_entry, name)
                     current_raw_definitions.append(definition_text)
                 else:
                     # Save previous entry if exists
@@ -512,32 +546,48 @@ def extract_verbs_and_terms_from_text_file(file_path):
 
 
 def merge_entries_with_same_name(entries):
+    """Consolidate source definitions without conflating Sanskrit homographs.
+
+    Priority 1: exact, nonempty Devanagari spelling (even if OCR IAST differs).
+    Priority 2: when both lack Devanagari, identical normalized IAST only
+    if both entries begin with a numbered headword. The 'flat' search key
+    is deliberately never used as a grouping key.
     """
-    Post-process entries to merge those with the same Sanskrit and same base name.
-    This handles cases where numbered definitions (like dhī₁, dhī₂, dhī₃) are 
-    separated by sub-entries in the source text.
-    """
-    merged = {}
-    order = []  # Keep track of first occurrence order
-    
+    merged = []
+    devanagari_index = {}
+    numbered_iast_index = {}
+
     for entry in entries:
-        key = (entry['sanskrit'], entry['name'])
-        
-        if key in merged:
-            # Merge definitions into existing entry
-            merged[key]['definitions'].extend(entry['definitions'])
+        sanskrit = entry["sanskrit"]
+        name = clean_name(entry["name"])
+        if sanskrit:
+            index = devanagari_index.get(sanskrit)
+        elif (entry["definitions"]
+              and has_numbered_headword(entry["definitions"][0]["definition"])):
+            index = numbered_iast_index.get(name)
         else:
-            # New entry
-            merged[key] = {
-                "sanskrit": entry['sanskrit'],
-                "name": entry['name'],
-                "flat": entry['flat'],
-                "definitions": list(entry['definitions']),
+            index = None
+
+        if index is None:
+            index = len(merged)
+            new_entry = {
+                "sanskrit": sanskrit,
+                "name": name,
+                "flat": flatten_name(name),
+                "definitions": list(entry["definitions"]),
             }
-            order.append(key)
-    
-    # Return entries in original order
-    return [merged[key] for key in order]
+            merged.append(new_entry)
+            if sanskrit:
+                devanagari_index[sanskrit] = index
+            elif (new_entry["definitions"]
+                  and has_numbered_headword(new_entry["definitions"][0]["definition"])):
+                numbered_iast_index[name] = index
+        else:
+            merged[index]["definitions"].extend(entry["definitions"])
+            if sanskrit:
+                prefer_ocr_name(merged[index], name)
+
+    return merged
 
 
 def main():
