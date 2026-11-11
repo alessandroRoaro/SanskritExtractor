@@ -91,7 +91,7 @@ class DictionaryParserTests(unittest.TestCase):
             "निरर्थ nirartha a. vain\n"
         )
         self.assertEqual([e["name"] for e in entries], ["nirayana", "nirartha"])
-        self.assertIn("sidéral", entries[1]["definitions"][0]["definition"])
+        self.assertIn("sidéral", entries[0]["definitions"][0]["definition"])
 
     def test_stray_letter_before_iast_and_spaced_damaged_devanagari(self):
         entries = self.parse(
