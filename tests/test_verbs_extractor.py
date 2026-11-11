@@ -203,6 +203,35 @@ class DictionaryParserTests(unittest.TestCase):
         ])
         self.assertEqual(len(entries), 1)
 
+    def test_bare_noun_and_adjective_headwords(self):
+        entries = self.parse(
+            "धीर dhīra a. stable\n"
+            "dhrupadākyanṛtya n. la danse dhrupada\n"
+            "trināciketa m. phil. rituel du feu\n"
+            "nikaṣāyamāṇa a. m. n. qui définit la norme\n"
+            "nayanavişayībhāva m. le fait d'être en vue\n"
+            "नर nara m. homme\n"
+        )
+        self.assertEqual(
+            [entry["name"] for entry in entries],
+            ["dhīra", "dhrupadākyanṛtya", "trināciketa",
+             "nikaṣāyamāṇa", "nayanaviṣayībhāva", "nara"],
+        )
+
+    def test_number_after_root_symbol_is_ocr_noise(self):
+        entries = self.parse(
+            "ध्वरा dhvarā f. courbure\n"
+            "√2 dhvr v. [1] pr. (dhvárati) se courber\n"
+            "ध्वस् dhvas v. tomber\n"
+        )
+        root = [entry for entry in entries if entry["name"] == "dhvr"]
+        self.assertEqual(len(root), 1)
+        self.assertTrue(root[0]["definitions"][0]["isRootVerb"])
+
+    def test_romanian_ocr_diacritics_are_normalized(self):
+        self.assertEqual(extractor.clean_name("nikațe"), "nikaṭe")
+        self.assertEqual(extractor.clean_name("naștahavis"), "naṣtahavis")
+
     def test_bare_adverb_is_an_independent_entry(self):
         entries = self.parse(
             "धीर dhīra₁ [dhā₁] a. m. n. f. brave\n"
