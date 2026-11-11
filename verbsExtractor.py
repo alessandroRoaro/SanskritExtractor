@@ -256,8 +256,8 @@ def is_valid_name(name):
 def has_numbered_headword(definition_text):
     """Only a numbered headword at the start counts, not subscripts in glosses."""
     return bool(re.match(
-        rf"^\\s*{re.escape(ROOT_SYMBOL)}?\\s*"
-        rf"[{IAST_CHARS}]*[{SUBSCRIPT_DIGITS}]+(?=\\s|$)",
+        rf"^\s*{re.escape(ROOT_SYMBOL)}?\s*"
+        rf"[{IAST_CHARS}]*[{SUBSCRIPT_DIGITS}]+(?=\s|$)",
         definition_text,
     ))
 
