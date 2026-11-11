@@ -736,6 +736,53 @@ def merge_entries_with_same_name(entries):
     return merged
 
 
+
+# Only the leading lemma is renumbered; numbers in meanings, examples,
+# etymologies, and cross-references are authoritative source text.
+LEADING_IAST_HEAD_RE = re.compile(
+    rf"^(?P<root>\s*√\s*|\s*)"
+    rf"(?P<headword>[A-Za-zÀ-ɏḀ-ỿ\u0300-\u036f]+)"
+    rf"(?P<subscript>[{SUBSCRIPT_DIGITS}]*)(?=\s|$)"
+)
+ASCII_TO_SUBSCRIPT = str.maketrans("0123456789", SUBSCRIPT_DIGITS)
+
+
+def renumber_definition_subscripts(entries):
+    """Number grouped, OCR-numbered senses in JSON definition order.
+
+    Only change the leading lemma when every definition begins with the
+    corresponding headword (allowing OCR diacritic loss). In particular,
+    do not change unnumbered groups or single senses, and do not touch
+    numbered cross-references inside the definition body.
+    """
+    for entry in entries:
+        definitions = entry["definitions"]
+        if len(definitions) < 2:
+            continue
+        matches = [
+            LEADING_IAST_HEAD_RE.match(d["definition"])
+            for d in definitions
+        ]
+        if (not all(matches)
+                or not any(m.group("subscript") for m in matches)
+                or not all(
+                    clean_name(m.group("headword")) == entry["name"]
+                    or flatten_name(clean_name(m.group("headword"))) == entry["flat"]
+                    for m in matches
+                )):
+            continue
+        for number, (definition, match) in enumerate(zip(definitions, matches), 1):
+            text = definition["definition"]
+            numbered = str(number).translate(ASCII_TO_SUBSCRIPT)
+            # Keep the root symbol, spacing, spelling, and all body text.
+            definition["definition"] = (
+                text[:match.start("subscript")]
+                + numbered
+                + text[match.end("subscript"):]
+            )
+    return entries
+
+
 def main():
     parser = argparse.ArgumentParser(description="Extract Sanskrit dictionary entries from OCR text")
     parser.add_argument("input", nargs="?", default="extracted_dictionary_micro1.txt")
@@ -744,6 +791,7 @@ def main():
 
     extracted = extract_verbs_and_terms_from_text_file(args.input)
     entries = merge_entries_with_same_name(extracted)
+    renumber_definition_subscripts(entries)
     with open(args.output, "w", encoding="utf-8") as json_file:
         json.dump(entries, json_file, ensure_ascii=False, indent=4)
     definitions = sum(len(entry["definitions"]) for entry in entries)
