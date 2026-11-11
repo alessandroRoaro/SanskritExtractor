@@ -33,6 +33,27 @@ BENGALI_HEAD_RE = re.compile(
 MALFORMED_SUB_ENTRY_RE = re.compile(
     rf"^(?P<name>[{IAST_CHARS}]+)\s*\[[{IAST_CHARS}\s-]{{1,30}}\|\s*"
 )
+# Latin-only subentries without etymology: adverbs are often printed as
+# "dhīram adv. tranquillement." rather than "dhīram [..] adv. ...".
+# Do not interpret arbitrary French prose as dictionary headwords.
+BARE_GRAMMATICAL_HEAD_RE = re.compile(
+    rf"^(?P<name>[{IAST_CHARS}]+)\s+"
+    rf"(?:adv\.|ind\.|m\.|n\.|f\.|a\.\s*m\.)\s+\S"
+)
+# Etymology-free Sanskrit compounds can be labelled only by a subject
+# abbreviation, e.g. "nāmadhātuprakriyā gram." or "nicrdgāyatrī lit.".
+# Such labels also occur in French prose, so require an IAST-looking compound,
+# including a Sanskrit diacritic, rather than trusting the label alone.
+BARE_SUBJECT_HEAD_RE = re.compile(
+    rf"^(?P<name>[{IAST_CHARS}]+)\s+(?:gram\.|lit\.)\s+\S"
+)
+SANSKRIT_HEAD_DIACRITIC_RE = re.compile(r"[āīūṛṝḷḹṃḥṅñṇṭḍśṣ]")
+
+FOREIGN_OCR_LEADER_RE = re.compile(
+    r"^[\u0A00-\u0A7F\u0980-\u09FF\uAC00-\uD7AF\u0400-\u04FF]+"
+    r"\s+(?P<rest>.+)$"
+)
+
 POS_AFTER_ETYMOLOGY_RE = re.compile(
     r"^\s*(?:var\.\s*\S+\s*)?"
     r"(?:a\.|m\.|n\.|f\.|v\.|ind\.|ifc\.|adv\.|np\.|"
@@ -40,7 +61,10 @@ POS_AFTER_ETYMOLOGY_RE = re.compile(
     r"hist\.|véd\.|bd\.|phil\.|gram\.|num\.|iic\.)"
 )
 # Known IAST glyph substitutions made by OCR.
-IAST_OCR_FIXES = str.maketrans({"ş": "ṣ", "Ş": "Ṣ", "ţ": "ṭ", "Ţ": "Ṭ"})
+IAST_OCR_FIXES = str.maketrans({
+    "ş": "ṣ", "Ş": "Ṣ", "ș": "ṣ", "Ș": "Ṣ",
+    "ţ": "ṭ", "Ţ": "Ṭ", "ț": "ṭ", "Ț": "Ṭ",
+})
 NON_DECOMPOSABLE_LETTERS = {
     "ł": "l", "Ł": "L", "đ": "d", "Đ": "D",
     "ħ": "h", "Ħ": "H", "ø": "o", "Ø": "O",
@@ -80,6 +104,39 @@ def sub_entry_match(line, next_line=""):
     definition, rather than silently inventing a term.
     """
     line = line.strip()
+    # A foreign-script OCR glyph in the Devanagari column is not part
+    # of the Latin headword. Recover the boundary but not its spelling.
+    foreign = FOREIGN_OCR_LEADER_RE.match(line)
+    if foreign:
+        candidate_line = foreign.group("rest")
+        if (SUB_ENTRY_SQUARE_BRACKET.match(candidate_line)
+                or BARE_GRAMMATICAL_HEAD_RE.match(candidate_line)):
+            line = candidate_line
+
+    bare = BARE_GRAMMATICAL_HEAD_RE.match(line)
+    if bare:
+        name = bare.group("name")
+        normalized = clean_name(name)
+        if (is_valid_name(normalized) and len(normalized) >= 4
+                and not re.search(r"[éèêëàâîïôöùûüç]", name, re.I)
+                and normalized not in {
+                    "dans", "pour", "avec", "sans", "plus", "tout",
+                    "tous", "mais", "dont", "leur", "elle", "elles",
+                    "nous", "vous", "ainsi", "alors", "comme",
+                    "fait", "être", "vers", "entre", "cela",
+                }):
+            return name
+
+    subject = BARE_SUBJECT_HEAD_RE.match(line)
+    if subject:
+        name = subject.group("name")
+        normalized = clean_name(name)
+        # Do not promote "histoire lit." / French continuations.
+        if (len(normalized) >= 8 and is_valid_name(normalized)
+                and SANSKRIT_HEAD_DIACRITIC_RE.search(normalized)
+                and not re.search(r"[éèêëàâîïôöùûüç]", name, re.I)):
+            return name
+
     damaged = MALFORMED_SUB_ENTRY_RE.match(line)
     if damaged and POS_AFTER_ETYMOLOGY_RE.match(line[damaged.end():]):
         candidate = damaged.group("name")
@@ -253,25 +310,85 @@ def is_valid_name(name):
     )
 
 
-def should_group_with_current_entry(current_entry, sanskrit_word, name):
+def has_numbered_headword(definition_text):
+    """Only a numbered headword at the start counts, not subscripts in glosses."""
+    return bool(re.match(
+        rf"^\s*{re.escape(ROOT_SYMBOL)}?\s*"
+        rf"[{IAST_CHARS}]*[{SUBSCRIPT_DIGITS}]+(?=\s|$)",
+        definition_text,
+    ))
+
+
+def headword_subscript_number(text):
+    """Read a numeric subscript from the *leading headword*, not a gloss."""
+    match = re.match(
+        rf"^\s*{re.escape(ROOT_SYMBOL)}?\s*"
+        rf"[{IAST_CHARS}]+?([{SUBSCRIPT_DIGITS}]+)(?=\s|$)",
+        text,
+    )
+    if not match:
+        return None
+    digits = match.group(1).translate(str.maketrans(SUBSCRIPT_DIGITS, "0123456789"))
+    return int(digits)
+
+
+def has_consecutive_headword_numbers(first, second):
+    first_number = headword_subscript_number(first)
+    second_number = headword_subscript_number(second)
+    return (first_number is not None and second_number is not None
+            and second_number == first_number + 1)
+
+
+def is_latin_subentry_same_lemma(entry, name, definition_text):
+    """Allow the next numbered sense, including after a damaged-script header."""
+    if entry is None or clean_name(name) != entry["name"]:
+        return False
+    return any(
+        has_consecutive_headword_numbers(d["definition"], definition_text)
+        for d in entry["definitions"]
+    )
+
+
+def prefer_ocr_name(entry, incoming_name):
+    """When the same Devanagari has variant OCR IAST, favor more diacritics.
+
+    Only adjust the name when its ASCII search form is identical; never
+    arbitrarily choose between unrelated romanizations.
     """
-    Check if a new definition should be grouped with the current entry.
-    Only group when:
-    - Same Sanskrit word
-    - Name has a subscript AND base name matches current entry's name
+    candidate = clean_name(incoming_name)
+    existing = entry["name"]
+    if (candidate != existing
+            and flatten_name(candidate) == flatten_name(existing)
+            and sum(ord(c) > 127 for c in candidate)
+            > sum(ord(c) > 127 for c in existing)):
+        entry["name"] = candidate
+        entry["flat"] = flatten_name(candidate)
+
+
+def should_group_with_current_entry(
+    current_entry, sanskrit_word, name, current_raw_definitions=()
+):
+    """Match reliable Devanagari first, then numbered or IAST-only senses.
+
+    Different explicit Devanagari spellings are always kept distinct.
+    If OCR omitted the script for the next numbered sense, a consecutive
+    subscript and matching IAST can attach it to the preceding entry.
     """
     if current_entry is None:
         return False
-    
-    if current_entry['sanskrit'] != sanskrit_word:
+    existing_sanskrit = current_entry["sanskrit"]
+    candidate_name = clean_name(name)
+    if existing_sanskrit and sanskrit_word:
+        return (
+            existing_sanskrit == sanskrit_word
+            and current_entry["flat"] == flatten_name(candidate_name)
+        )
+    if existing_sanskrit or sanskrit_word:
         return False
-    
-    if not has_subscript(name):
-        return False
-    
-    # Check if base names match (without subscripts)
-    base_name = clean_name(name)
-    return base_name == current_entry['name']
+    # Both spellings absent: independently recognized identical normalized
+    # IAST subentries belong together, whether numbered or not.
+    return candidate_name == current_entry["name"]
+
 
 
 def create_definition_object(definition_text):
@@ -306,6 +423,13 @@ def extract_verbs_and_terms_from_text_file(file_path):
                 continue
 
             line = clean_slash_artifacts(line.strip())
+            # Isolated page folios such as "1(" and ")2" are OCR noise,
+            # not definition content. Do not discard numbered lexical forms.
+            if re.fullmatch(r"(?:[0-9]{1,3}\(|\)[0-9]{1,3})", line):
+                continue
+            # OCR sometimes inserts a digit immediately after the root sign,
+            # e.g. "√2 dhvr v." for a genuine standalone root.
+            line = re.sub(r"^√\s*[0-9](?=\s+[A-Za-z])", "√", line)
             line, bengali_head = normalize_bengali_head_line(line)
             # An OCR ASCII colon between Devanagari letters represents visarga.
             line = re.sub(r"(?<=[\u0900-\u097F]):(?=[\u0900-\u097F])", "ः", line)
@@ -360,7 +484,11 @@ def extract_verbs_and_terms_from_text_file(file_path):
                             continue
                         
                         # Check if should group with current entry (same Sanskrit, same base name with subscript)
-                        if should_group_with_current_entry(current_entry, pending_sanskrit, name):
+                        if should_group_with_current_entry(
+                            current_entry, pending_sanskrit, name,
+                            current_raw_definitions
+                        ):
+                            prefer_ocr_name(current_entry, name)
                             current_raw_definitions.append(definition_text)
                         else:
                             # Save previous entry if exists
@@ -420,7 +548,10 @@ def extract_verbs_and_terms_from_text_file(file_path):
                     continue
                 
                 # Check if should group with current entry (same Sanskrit, same base name with subscript)
-                if should_group_with_current_entry(current_entry, sanskrit_word, name):
+                if should_group_with_current_entry(
+                    current_entry, sanskrit_word, name, current_raw_definitions
+                ):
+                    prefer_ocr_name(current_entry, name)
                     current_raw_definitions.append(definition_text)
                 else:
                     # Save previous entry if exists
@@ -473,28 +604,67 @@ def extract_verbs_and_terms_from_text_file(file_path):
                 skipping_annotation = False
                 is_new_sub_entry = False
                 
-                # Check if this line starts a sub-entry (IAST word + brackets)
-                if is_sub_entry_line(line_stripped, following_line):
+                # Strip a single corrupted script marker only when followed by
+                # a recognized headword with a grammatical/etymology cue.
+                foreign = FOREIGN_OCR_LEADER_RE.match(line_stripped)
+                if foreign and is_sub_entry_line(foreign.group("rest"), following_line):
+                    line_stripped = foreign.group("rest")
+
+                # A bare "gram." label may describe the feminine form
+                # of the preceding adjective, not a new lemma:
+                # niḥsaṃkhya -> nihsamkhyā, napuṃsakaliṅga -> napumsakalingā.
+                subject = BARE_SUBJECT_HEAD_RE.match(line_stripped)
+                same_lemma_feminine = (
+                    subject is not None
+                    and clean_name(subject.group("name")).endswith("ā")
+                    and current_entry["name"].endswith("a")
+                    and flatten_name(clean_name(subject.group("name")))
+                        == current_entry["flat"]
+                )
+                # Check for a separately marked Latin headword.
+                if (not same_lemma_feminine
+                        and is_sub_entry_line(line_stripped, following_line)):
                     sub_entry_name = get_sub_entry_name(line_stripped, following_line)
                     cleaned_name = clean_name(sub_entry_name)
                     
                     # Only create sub-entry if name is valid
                     if is_valid_name(cleaned_name):
                         is_new_sub_entry = True
-                        # Save current entry first
-                        if current_raw_definitions:
-                            for raw_def in current_raw_definitions:
-                                current_entry['definitions'].append(create_definition_object(raw_def))
-                            extracted_entries.append(current_entry)
-                        
-                        # Create new entry for sub-entry using parent's Sanskrit
-                        current_entry = {
-                            "sanskrit": "",  # This subentry has no explicit Devanagari
-                            "name": cleaned_name,
-                            "flat": flatten_name(cleaned_name),
-                            "definitions": [],
-                        }
-                        current_raw_definitions = [line_stripped]
+                        # The numbered next sense can have no reliable script,
+                        # even though the preceding sense had Devanagari.
+                        next_number = headword_subscript_number(line_stripped)
+                        previous_number = (
+                            headword_subscript_number(current_raw_definitions[-1])
+                            if current_raw_definitions else None
+                        )
+                        merge_next_sense = (
+                            cleaned_name == current_entry["name"]
+                            and next_number is not None
+                            and previous_number is not None
+                            and next_number == previous_number + 1
+                        )
+                        # IAST-only headwords can also group without numbers,
+                        # but only once independently recognized by grammar.
+                        merge_iast_only = (
+                            not current_entry["sanskrit"]
+                            and cleaned_name == current_entry["name"]
+                        )
+                        if merge_next_sense or merge_iast_only:
+                            current_raw_definitions.append(line_stripped)
+                        else:
+                            if current_raw_definitions:
+                                for raw_def in current_raw_definitions:
+                                    current_entry['definitions'].append(
+                                        create_definition_object(raw_def)
+                                    )
+                                extracted_entries.append(current_entry)
+                            current_entry = {
+                                "sanskrit": "",
+                                "name": cleaned_name,
+                                "flat": flatten_name(cleaned_name),
+                                "definitions": [],
+                            }
+                            current_raw_definitions = [line_stripped]
                 
                 if not is_new_sub_entry:
                     # Append to the last raw definition
@@ -512,32 +682,58 @@ def extract_verbs_and_terms_from_text_file(file_path):
 
 
 def merge_entries_with_same_name(entries):
+    """Merge independently detected headwords conservatively.
+
+    Priority 1: same nonempty Devanagari and compatible Latin romanization.
+    Priority 2: same IAST with consecutive numbered senses when script is
+    missing on one side.
+    Priority 3: same normalized IAST when both lack Devanagari.
+    Different explicit Sanskrit spellings never merge.
     """
-    Post-process entries to merge those with the same Sanskrit and same base name.
-    This handles cases where numbered definitions (like dhī₁, dhī₂, dhī₃) are 
-    separated by sub-entries in the source text.
-    """
-    merged = {}
-    order = []  # Keep track of first occurrence order
-    
+    merged = []
+    devanagari_index = {}
+    iast_without_devanagari = {}
+
     for entry in entries:
-        key = (entry['sanskrit'], entry['name'])
-        
-        if key in merged:
-            # Merge definitions into existing entry
-            merged[key]['definitions'].extend(entry['definitions'])
+        sanskrit = entry["sanskrit"]
+        name = clean_name(entry["name"])
+        definitions = entry["definitions"]
+        if sanskrit:
+            index = devanagari_index.get((sanskrit, flatten_name(name)))
         else:
-            # New entry
-            merged[key] = {
-                "sanskrit": entry['sanskrit'],
-                "name": entry['name'],
-                "flat": entry['flat'],
-                "definitions": list(entry['definitions']),
-            }
-            order.append(key)
-    
-    # Return entries in original order
-    return [merged[key] for key in order]
+            index = iast_without_devanagari.get(name)
+            if index is None and definitions:
+                first_definition = definitions[0]["definition"]
+                for j in range(len(merged) - 1, -1, -1):
+                    other = merged[j]
+                    if other["name"] != name or not other["definitions"]:
+                        continue
+                    if any(has_consecutive_headword_numbers(
+                            d["definition"], first_definition)
+                           for d in other["definitions"]):
+                        index = j
+                        break
+
+        if index is None:
+            index = len(merged)
+            merged.append({
+                "sanskrit": sanskrit,
+                "name": name,
+                "flat": flatten_name(name),
+                "definitions": list(definitions),
+            })
+            if sanskrit:
+                devanagari_index[(sanskrit, flatten_name(name))] = index
+            else:
+                iast_without_devanagari[name] = index
+        else:
+            merged[index]["definitions"].extend(definitions)
+            if sanskrit:
+                prefer_ocr_name(merged[index], name)
+            # If a numbered Latin-only definition has an earlier Devanagari
+            # sense, retain the reliable spelling from that sense.
+
+    return merged
 
 
 def main():
