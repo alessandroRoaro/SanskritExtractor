@@ -91,7 +91,7 @@ class DictionaryParserTests(unittest.TestCase):
             "निरर्थ nirartha a. vain\n"
         )
         self.assertEqual([e["name"] for e in entries], ["nirayana", "nirartha"])
-        self.assertIn("sidéral", entries[0]["definitions"][0]["definition"])
+        self.assertIn("sidéral", entries[1]["definitions"][0]["definition"])
 
     def test_stray_letter_before_iast_and_spaced_damaged_devanagari(self):
         entries = self.parse(
@@ -234,6 +234,7 @@ class DictionaryParserTests(unittest.TestCase):
 
     def test_bare_subject_labels_can_start_sanskrit_compounds(self):
         entries = self.parse(
+            "नाम nāma n. nom.\n"
             "nāmadhātu [dhātu] m. gram. verbe dénominatif.\n"
             "nāmadhātuprakriyā gram. usage d'un verbe\n"
             "dénominatif.\n"
@@ -245,10 +246,10 @@ class DictionaryParserTests(unittest.TestCase):
         )
         names = [e["name"] for e in entries]
         self.assertEqual(names, [
-            "nāmadhātu", "nāmadhātuprakriyā", "nāmadheya",
+            "nāma", "nāmadhātu", "nāmadhātuprakriyā", "nāmadheya",
             "nicṛt", "nicrdgāyatrī",
         ])
-        self.assertEqual(len(entries[3]["definitions"]), 2)
+        self.assertEqual(len(entries[4]["definitions"]), 2)
         self.assertEqual(
             entries[-1]["definitions"][0]["definition"],
             "nicrdgāyatrī lit. adaptation de la gāyatrī ne respectant pas son mètre.",
