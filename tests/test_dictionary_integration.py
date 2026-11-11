@@ -9,8 +9,8 @@ from verbsExtractor import (
 )
 
 ROOT = Path(__file__).resolve().parents[1]
-EXPECTED_ENTRIES = 756
-EXPECTED_DEFINITIONS = 772
+EXPECTED_ENTRIES = 761
+EXPECTED_DEFINITIONS = 777
 COUNT_TOLERANCE = 5
 
 
@@ -29,6 +29,12 @@ class FullDictionaryIntegrationTests(unittest.TestCase):
             "dhīraśānta", "dhṛṣ", "dhṛṣu", "dhṛṣṭa",
             "niḥśaṅka", "niḥśabda", "niḥśeṣa", "niḥśvasya",
             "niḥsaṃjña",
+            "dhīram", "dhṛṣṭam", "dhruvam", "nacirāt",
+            "nacirādiva", "nabhastas", "navīyasā", "nayeṣu",
+            "nāmatas", "niḥśankam", "nikaṭe", "nikaṭāt",
+            "nikāmam", "nikhilena", "dhrupadākyanṛtya",
+            "dhvr", "nayanaviṣayībhāva", "trināciketa",
+            "nikaṣāyamāṇa", "dhi",
         ):
             with self.subTest(name=name):
                 self.assertIn(name, self.names)
@@ -70,6 +76,7 @@ class FullDictionaryIntegrationTests(unittest.TestCase):
         self.assertTrue(definitions[0]["isRootVerb"])
         self.assertTrue(definitions[1]["definition"].startswith("dhū₂ "))
         self.assertNotIn("몇", definitions[1]["definition"])
+        self.assertNotIn("1(", definitions[1]["definition"])
         self.assertNotIn("conséquent", by_name)
 
     def test_flat_search_keys_and_definition_schema(self):
