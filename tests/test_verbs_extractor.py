@@ -146,6 +146,21 @@ class DictionaryParserTests(unittest.TestCase):
         self.assertEqual(entries[0]["sanskrit"], "नद्")
         self.assertEqual(len(entries[0]["definitions"]), 2)
 
+    def test_repeated_corrupt_devanagari_does_not_merge_distinct_iast(self):
+        entries = self.parse(
+            "नाक nāka m. ciel\n"
+            "नाक nāku n. fourmilière\n"
+            "निक्त nákta n. nuit\n"
+            "निक्त niktá a. purifié\n"
+            "निग्रह nigrah v. [9] retenir\n"
+            "निग्रह nigraha m. restriction\n"
+        )
+        self.assertEqual(
+            [e["name"] for e in entries],
+            ["nāka", "nāku", "nakta", "nikta", "nigrah", "nigraha"],
+        )
+        self.assertTrue(all(len(e["definitions"]) == 1 for e in entries))
+
     def test_no_devanagari_numbered_identical_iast_group(self):
         entries = self.parse(
             "धर्म dharma m. loi\n"
