@@ -6,6 +6,7 @@ from pathlib import Path
 from verbsExtractor import (
     extract_verbs_and_terms_from_text_file,
     merge_entries_with_same_name,
+    renumber_definition_subscripts,
 )
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -18,8 +19,10 @@ class FullDictionaryIntegrationTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         path = ROOT / "extracted_dictionary_micro1.txt"
-        cls.entries = merge_entries_with_same_name(
-            extract_verbs_and_terms_from_text_file(path)
+        cls.entries = renumber_definition_subscripts(
+            merge_entries_with_same_name(
+                extract_verbs_and_terms_from_text_file(path)
+            )
         )
         cls.names = {entry["name"] for entry in cls.entries}
 
@@ -90,6 +93,17 @@ class FullDictionaryIntegrationTests(unittest.TestCase):
             "nicrdgāyatrī",
             by_name["nicṛt"]["definitions"][-1]["definition"],
         )
+
+    def test_dhi_headwords_sequential_and_references_unchanged(self):
+        dhi = next(e for e in self.entries if e["name"] == "dhī")
+        self.assertEqual(len(dhi["definitions"]), 3)
+        headwords = [
+            d["definition"].split()[1 if d["isRootVerb"] else 0]
+            for d in dhi["definitions"]
+        ]
+        self.assertEqual(headwords, ["dhī₁", "dhī₂", "dhī₃"])
+        self.assertIn("[act. dhī₂]", dhi["definitions"][1]["definition"])
+        self.assertIn("cf. dhā₁.", dhi["definitions"][2]["definition"])
 
     def test_flat_search_keys_and_definition_schema(self):
         for entry in self.entries:
