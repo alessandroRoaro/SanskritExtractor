@@ -610,8 +610,20 @@ def extract_verbs_and_terms_from_text_file(file_path):
                 if foreign and is_sub_entry_line(foreign.group("rest"), following_line):
                     line_stripped = foreign.group("rest")
 
-                # Check if this line starts a independently recognized Latin subentry
-                if is_sub_entry_line(line_stripped, following_line):
+                # A bare "gram." label may describe the feminine form
+                # of the preceding adjective, not a new lemma:
+                # niḥsaṃkhya -> nihsamkhyā, napuṃsakaliṅga -> napumsakalingā.
+                subject = BARE_SUBJECT_HEAD_RE.match(line_stripped)
+                same_lemma_feminine = (
+                    subject is not None
+                    and clean_name(subject.group("name")).endswith("ā")
+                    and current_entry["name"].endswith("a")
+                    and flatten_name(clean_name(subject.group("name")))
+                        == current_entry["flat"]
+                )
+                # Check for a separately marked Latin headword.
+                if (not same_lemma_feminine
+                        and is_sub_entry_line(line_stripped, following_line)):
                     sub_entry_name = get_sub_entry_name(line_stripped, following_line)
                     cleaned_name = clean_name(sub_entry_name)
                     
