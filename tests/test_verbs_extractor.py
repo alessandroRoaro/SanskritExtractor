@@ -232,6 +232,55 @@ class DictionaryParserTests(unittest.TestCase):
         self.assertEqual(extractor.clean_name("nikațe"), "nikaṭe")
         self.assertEqual(extractor.clean_name("naștahavis"), "naṣtahavis")
 
+    def test_bare_subject_labels_can_start_sanskrit_compounds(self):
+        entries = self.parse(
+            "nāmadhātu [dhātu] m. gram. verbe dénominatif.\n"
+            "nāmadhātuprakriyā gram. usage d'un verbe\n"
+            "dénominatif.\n"
+            "nāmadheya [dheya] n. appellation.\n"
+            "निचृत् nicṛt₁ [ni-cṛt] v. [6] insérer.\n"
+            "निचृत् nicrt₂ [act. nicrt₁] f. gram. mètre défectif.\n"
+            "nicrdgāyatrī lit. adaptation de la gāyatrī ne res-\n"
+            "pectant pas son mètre.\n"
+        )
+        names = [e["name"] for e in entries]
+        self.assertEqual(names, [
+            "nāmadhātu", "nāmadhātuprakriyā", "nāmadheya",
+            "nicṛt", "nicrdgāyatrī",
+        ])
+        self.assertEqual(len(entries[3]["definitions"]), 2)
+        self.assertEqual(
+            entries[-1]["definitions"][0]["definition"],
+            "nicrdgāyatrī lit. adaptation de la gāyatrī ne respectant pas son mètre.",
+        )
+        self.assertNotIn("nāmadhātuprakriyā",
+                         entries[0]["definitions"][0]["definition"])
+
+    def test_variant_dhuta_is_not_separate_and_naksatra_prose_does_not_split(self):
+        entries = self.parse(
+            "धूत dhuta var. dhūta [pp. dhū₁] a. secoué.\n"
+            "धूत dhūtá var. dhuta |pp. dhū₁| a. agité.\n"
+            "নিধ্ব nákṣatra [instr. nakṣ] n. étoile.\n"
+            "nakṣatra désigne une division de l'écliptique.\n"
+            "नक्ष nakṣ v. atteindre.\n"
+        )
+        names = [e["name"] for e in entries]
+        self.assertNotIn("dhuta", names)
+        self.assertEqual(len([e for e in entries if e["name"] == "dhūta"]), 1)
+        self.assertEqual(len([e for e in entries if e["name"] == "nakṣatra"]), 1)
+        self.assertIn("nakṣatra désigne",
+                      next(e for e in entries if e["name"] == "nakṣatra")
+                      ["definitions"][0]["definition"])
+
+    def test_subject_label_in_french_prose_is_not_a_headword(self):
+        entries = self.parse(
+            "निकर nikara m. abondance.\n"
+            "consequent lit. un trésor dans la littérature.\n"
+            "grammaticalement gram. explication de l'exemple.\n"
+            "नर nara m. homme.\n"
+        )
+        self.assertEqual([e["name"] for e in entries], ["nikara", "nara"])
+
     def test_bare_adverb_is_an_independent_entry(self):
         entries = self.parse(
             "धीर dhīra₁ [dhā₁] a. m. n. f. brave\n"
