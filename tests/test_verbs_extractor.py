@@ -349,6 +349,78 @@ class DictionaryParserTests(unittest.TestCase):
         )
         self.assertEqual([e["name"] for e in entries], ["nikara", "nara"])
 
+    def test_renumbers_dhi_headwords_but_not_cross_references(self):
+        entries = self.parse(
+            "√ धी dhī₂ v. [4] penser; cf. dhyā.\n"
+            "धी dhī₂ [act. dhī₂] f. pensée; cf. dhā₁.\n"
+            "धी dhī₃ cf. dhā₁.\n"
+        )
+        extractor.renumber_definition_subscripts(entries)
+        self.assertEqual(len(entries), 1)
+        definitions = [d["definition"] for d in entries[0]["definitions"]]
+        self.assertEqual(definitions, [
+            "√ dhī₁ v. [4] penser; cf. dhyā.",
+            "dhī₂ [act. dhī₂] f. pensée; cf. dhā₁.",
+            "dhī₃ cf. dhā₁.",
+        ])
+        self.assertTrue(entries[0]["definitions"][0]["isRootVerb"])
+        self.assertFalse(entries[0]["definitions"][1]["isVerb"])
+
+    def test_repairs_duplicate_and_skipped_numbers_without_editing_body(self):
+        entries = self.parse(
+            "धार dhāra₁ [agt. dhṛ] m. torrent.\n"
+            "धार dhāra₁ [dhāv₁] m. ruisseau.\n"
+        )
+        extractor.renumber_definition_subscripts(entries)
+        self.assertEqual(
+            [d["definition"] for d in entries[0]["definitions"]],
+            ["dhāra₁ [agt. dhṛ] m. torrent.",
+             "dhāra₂ [dhāv₁] m. ruisseau."],
+        )
+
+    def test_unnumbered_and_single_definition_entries_remain_unchanged(self):
+        entries = self.parse(
+            "धाय dhāya [agt. dhā₁] m. cadeau.\n"
+            "नद् nad₁ v. résonner.\n"
+            "नर nara m. homme.\n"
+        )
+        before = [
+            d["definition"] for entry in entries for d in entry["definitions"]
+        ]
+        extractor.renumber_definition_subscripts(entries)
+        self.assertEqual(
+            [d["definition"] for entry in entries for d in entry["definitions"]],
+            before,
+        )
+
+    def test_does_not_renumber_unrelated_lemmas_from_ocr_collision(self):
+        entries = [{
+            "name": "nāka", "sanskrit": "नाक", "flat": "naka",
+            "definitions": [
+                {"definition": "nāka₂ m. sky", "isVerb": False,
+                 "isRootVerb": False},
+                {"definition": "nāku₃ m. hill", "isVerb": False,
+                 "isRootVerb": False},
+            ],
+        }]
+        extractor.renumber_definition_subscripts(entries)
+        self.assertEqual(
+            [d["definition"] for d in entries[0]["definitions"]],
+            ["nāka₂ m. sky", "nāku₃ m. hill"],
+        )
+
+    def test_post_merge_renumbering_does_not_affect_grouping(self):
+        entries = self.parse(
+            "√ धाव् dhāv₂ v. [1] courir.\n"
+            "√ धाव् dhāv₃ v. [1] laver.\n"
+        )
+        self.assertEqual(len(entries), 1)
+        extractor.renumber_definition_subscripts(entries)
+        self.assertEqual(
+            [d["definition"].split()[1] for d in entries[0]["definitions"]],
+            ["dhāv₁", "dhāv₂"],
+        )
+
     def test_iast_and_flat_normalization(self):
         self.assertEqual(extractor.clean_name("DHIŞAṆA₂"), "dhiṣaṇa")
         self.assertEqual(extractor.flatten_name("dhṛtarāṣṭra"), "dhrtarastra")
