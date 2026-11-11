@@ -45,7 +45,7 @@ BARE_GRAMMATICAL_HEAD_RE = re.compile(
 # Such labels also occur in French prose, so require an IAST-looking compound,
 # including a Sanskrit diacritic, rather than trusting the label alone.
 BARE_SUBJECT_HEAD_RE = re.compile(
-    rf"^(?P<name>[{IAST_CHARS}]+)\\s+(?:gram\\.|lit\\.)\\s+\\S"
+    rf"^(?P<name>[{IAST_CHARS}]+)\s+(?:gram\.|lit\.)\s+\S"
 )
 SANSKRIT_HEAD_DIACRITIC_RE = re.compile(r"[āīūṛṝḷḹṃḥṅñṇṭḍśṣ]")
 
