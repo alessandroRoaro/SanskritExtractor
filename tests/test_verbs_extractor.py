@@ -122,6 +122,72 @@ class DictionaryParserTests(unittest.TestCase):
         self.assertTrue(all(definition["isRootVerb"]
                             for definition in entries[0]["definitions"]))
 
+    def test_nash_and_nas_group_by_devanagari_not_flat(self):
+        entries = self.parse(
+            "√ नश् nas₁ v. [4] pr. (nasyati) périr\n"
+            "नश् naś₂ [act. naś₂] ifc. a. lié à la destruction\\n"
+            "नस् nas₁ pron. nous\\n"
+            "नस् nas₂ f. nez\\n"
+        )
+        self.assertEqual(len(entries), 2)
+        self.assertEqual(
+            [(e["name"], e["sanskrit"], len(e["definitions"])) for e in entries],
+            [("naś", "नश्", 2), ("nas", "नस्", 2)],
+        )
+        self.assertEqual([e["flat"] for e in entries], ["nas", "nas"])
+        self.assertTrue(entries[0]["definitions"][0]["isRootVerb"])
+
+    def test_same_devanagari_has_priority_over_ocr_iast_difference(self):
+        entries = self.parse(
+            "नद् nad₁ v. résonner\\n"
+            "नद् nád₂ m. son\\n"
+        )
+        self.assertEqual(len(entries), 1)
+        self.assertEqual(entries[0]["sanskrit"], "नद्")
+        self.assertEqual(len(entries[0]["definitions"]), 2)
+
+    def test_no_devanagari_numbered_identical_iast_group(self):
+        entries = self.parse(
+            "धर्म dharma m. loi\\n"
+            "nāyaka₁ [nāya] m. chef\\n"
+            "नर nara m. homme\\n"
+            "nāyaka₂ [nāya] m. héros\\n"
+        )
+        matching = [e for e in entries if e["name"] == "nāyaka"]
+        self.assertEqual(len(matching), 1)
+        self.assertEqual(matching[0]["sanskrit"], "")
+        self.assertEqual(len(matching[0]["definitions"]), 2)
+
+    def test_no_devanagari_without_subscripts_do_not_group(self):
+        entries = self.parse(
+            "धर्म dharma m. loi\\n"
+            "nāyaka [nāya] m. chef\\n"
+            "नर nara m. homme\\n"
+            "nāyaka [nāya] m. héros\\n"
+        )
+        self.assertEqual(sum(e["name"] == "nāyaka" for e in entries), 2)
+
+    def test_same_flat_without_devanagari_does_not_group_different_iast(self):
+        entries = self.parse(
+            "धर्म dharma m. loi\\n"
+            "nas₁ [na] m. nez\\n"
+            "नर nara m. homme\\n"
+            "naś₂ [naś] m. destruction\\n"
+        )
+        matching = [e for e in entries if e["flat"] == "nas"]
+        self.assertEqual([e["name"] for e in matching], ["nas", "naś"])
+
+    def test_no_devanagari_unsubscripted_does_not_merge_with_numbered(self):
+        entries = extractor.merge_entries_with_same_name([
+            {"sanskrit": "", "name": "nāya", "flat": "naya",
+             "definitions": [{"definition": "nāya m. guide",
+                              "isVerb": False, "isRootVerb": False}]},
+            {"sanskrit": "", "name": "nāya", "flat": "naya",
+             "definitions": [{"definition": "nāya₂ m. conduite",
+                              "isVerb": False, "isRootVerb": False}]},
+        ])
+        self.assertEqual(len(entries), 2)
+
     def test_iast_and_flat_normalization(self):
         self.assertEqual(extractor.clean_name("DHIŞAṆA₂"), "dhiṣaṇa")
         self.assertEqual(extractor.flatten_name("dhṛtarāṣṭra"), "dhrtarastra")
