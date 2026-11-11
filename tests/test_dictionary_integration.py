@@ -9,8 +9,8 @@ from verbsExtractor import (
 )
 
 ROOT = Path(__file__).resolve().parents[1]
-EXPECTED_ENTRIES = 761
-EXPECTED_DEFINITIONS = 777
+EXPECTED_ENTRIES = 763
+EXPECTED_DEFINITIONS = 779
 COUNT_TOLERANCE = 5
 
 
@@ -34,7 +34,8 @@ class FullDictionaryIntegrationTests(unittest.TestCase):
             "nāmatas", "niḥśankam", "nikaṭe", "nikaṭāt",
             "nikāmam", "nikhilena", "dhrupadākyanṛtya",
             "dhvr", "nayanaviṣayībhāva", "trināciketa",
-            "nikaṣāyamāṇa", "dhi",
+            "nikaṣāyamāṇa", "dhi", "nāmadhātuprakriyā",
+            "nicrdgāyatrī", "nicṛt",
         ):
             with self.subTest(name=name):
                 self.assertIn(name, self.names)
@@ -78,6 +79,17 @@ class FullDictionaryIntegrationTests(unittest.TestCase):
         self.assertNotIn("몇", definitions[1]["definition"])
         self.assertNotIn("1(", definitions[1]["definition"])
         self.assertNotIn("conséquent", by_name)
+        self.assertNotIn("dhuta", by_name)
+        self.assertIn("dhūta", by_name)
+        self.assertIn("nakṣatra", by_name)
+        self.assertNotIn(
+            "nāmadhātuprakriyā",
+            by_name["nāmadhātu"]["definitions"][0]["definition"],
+        )
+        self.assertNotIn(
+            "nicrdgāyatrī",
+            by_name["nicṛt"]["definitions"][-1]["definition"],
+        )
 
     def test_flat_search_keys_and_definition_schema(self):
         for entry in self.entries:
