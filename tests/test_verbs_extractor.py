@@ -173,14 +173,14 @@ class DictionaryParserTests(unittest.TestCase):
         self.assertEqual(matching[0]["sanskrit"], "")
         self.assertEqual(len(matching[0]["definitions"]), 2)
 
-    def test_no_devanagari_without_subscripts_do_not_group(self):
+    def test_no_devanagari_without_subscripts_can_group(self):
         entries = self.parse(
             "धर्म dharma m. loi\n"
             "nāyaka [nāya] m. chef\n"
             "नर nara m. homme\n"
             "nāyaka [nāya] m. héros\n"
         )
-        self.assertEqual(sum(e["name"] == "nāyaka" for e in entries), 2)
+        self.assertEqual(sum(e["name"] == "nāyaka" for e in entries), 1)
 
     def test_same_flat_without_devanagari_does_not_group_different_iast(self):
         entries = self.parse(
@@ -192,7 +192,7 @@ class DictionaryParserTests(unittest.TestCase):
         matching = [e for e in entries if e["flat"] == "nas"]
         self.assertEqual([e["name"] for e in matching], ["nas", "naś"])
 
-    def test_no_devanagari_unsubscripted_does_not_merge_with_numbered(self):
+    def test_no_devanagari_unsubscripted_can_merge_with_numbered(self):
         entries = extractor.merge_entries_with_same_name([
             {"sanskrit": "", "name": "nāya", "flat": "naya",
              "definitions": [{"definition": "nāya m. guide",
@@ -201,7 +201,59 @@ class DictionaryParserTests(unittest.TestCase):
              "definitions": [{"definition": "nāya₂ m. conduite",
                               "isVerb": False, "isRootVerb": False}]},
         ])
+        self.assertEqual(len(entries), 1)
+
+    def test_bare_adverb_is_an_independent_entry(self):
+        entries = self.parse(
+            "धीर dhīra₁ [dhā₁] a. m. n. f. brave\n"
+            "dhīram adv. tranquillement.\n"
+            "dhīratara |-tara| a. m. n. f. ferme\n"
+        )
+        self.assertEqual([e["name"] for e in entries],
+                         ["dhīra", "dhīram", "dhīratara"])
+        self.assertEqual(entries[1]["definitions"][0]["definition"],
+                         "dhīram adv. tranquillement.")
+
+    def test_damaged_foreign_script_marker_creates_second_dhu_definition(self):
+        entries = self.parse(
+            "√ धू dhū₁ v. [5] secouer, agiter\n"
+            "몇 dhū₂ [act. dhū₁] ifc. f. fait de secouer.\n"
+            "धूत dhūta a. secoué\n"
+        )
+        dhu = [e for e in entries if e["name"] == "dhū"]
+        self.assertEqual(len(dhu), 1)
+        self.assertEqual(len(dhu[0]["definitions"]), 2)
+        self.assertEqual(dhu[0]["definitions"][1]["definition"],
+                         "dhū₂ [act. dhū₁] ifc. f. fait de secouer.")
+        self.assertTrue(dhu[0]["definitions"][0]["isRootVerb"])
+        self.assertFalse(dhu[0]["definitions"][1]["isRootVerb"])
+
+    def test_iast_only_independent_unnumbered_headwords_can_group(self):
+        entries = self.parse(
+            "धर्म dharma m. loi\n"
+            "nāyaka [nāya] m. guide\n"
+            "नर nara m. homme\n"
+            "nāyaka [nāya] m. héros\n"
+        )
+        matching = [e for e in entries if e["name"] == "nāyaka"]
+        self.assertEqual(len(matching), 1)
+        self.assertEqual(len(matching[0]["definitions"]), 2)
+
+    def test_different_devanagari_remain_separate_even_for_consecutive_iast(self):
+        entries = self.parse(
+            "नश् nas₁ v. périr\n"
+            "नस् nas₂ m. nez\n"
+        )
         self.assertEqual(len(entries), 2)
+
+    def test_french_prose_does_not_look_like_bare_adverb(self):
+        entries = self.parse(
+            "निकर nikara m. abondance\n"
+            "conséquent | trésor, grand ensemble\n"
+            "sans cesse adv. de manière continue\n"
+            "नर nara m. homme\n"
+        )
+        self.assertEqual([e["name"] for e in entries], ["nikara", "nara"])
 
     def test_iast_and_flat_normalization(self):
         self.assertEqual(extractor.clean_name("DHIŞAṆA₂"), "dhiṣaṇa")
