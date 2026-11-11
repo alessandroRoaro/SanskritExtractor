@@ -40,6 +40,15 @@ BARE_GRAMMATICAL_HEAD_RE = re.compile(
     rf"^(?P<name>[{IAST_CHARS}]+)\s+"
     rf"(?:adv\.|ind\.|m\.|n\.|f\.|a\.\s*m\.)\s+\S"
 )
+# Etymology-free Sanskrit compounds can be labelled only by a subject
+# abbreviation, e.g. "nāmadhātuprakriyā gram." or "nicrdgāyatrī lit.".
+# Such labels also occur in French prose, so require an IAST-looking compound,
+# including a Sanskrit diacritic, rather than trusting the label alone.
+BARE_SUBJECT_HEAD_RE = re.compile(
+    rf"^(?P<name>[{IAST_CHARS}]+)\\s+(?:gram\\.|lit\\.)\\s+\\S"
+)
+SANSKRIT_HEAD_DIACRITIC_RE = re.compile(r"[āīūṛṝḷḹṃḥṅñṇṭḍśṣ]")
+
 FOREIGN_OCR_LEADER_RE = re.compile(
     r"^[\u0A00-\u0A7F\u0980-\u09FF\uAC00-\uD7AF\u0400-\u04FF]+"
     r"\s+(?P<rest>.+)$"
@@ -116,6 +125,16 @@ def sub_entry_match(line, next_line=""):
                     "nous", "vous", "ainsi", "alors", "comme",
                     "fait", "être", "vers", "entre", "cela",
                 }):
+            return name
+
+    subject = BARE_SUBJECT_HEAD_RE.match(line)
+    if subject:
+        name = subject.group("name")
+        normalized = clean_name(name)
+        # Do not promote "histoire lit." / French continuations.
+        if (len(normalized) >= 8 and is_valid_name(normalized)
+                and SANSKRIT_HEAD_DIACRITIC_RE.search(normalized)
+                and not re.search(r"[éèêëàâîïôöùûüç]", name, re.I)):
             return name
 
     damaged = MALFORMED_SUB_ENTRY_RE.match(line)
