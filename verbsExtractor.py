@@ -404,6 +404,10 @@ def extract_verbs_and_terms_from_text_file(file_path):
                 continue
 
             line = clean_slash_artifacts(line.strip())
+            # Isolated page folios such as "1(" and ")2" are OCR noise,
+            # not definition content. Do not discard numbered lexical forms.
+            if re.fullmatch(r"(?:[0-9]{1,3}\\(|\\)[0-9]{1,3})", line):
+                continue
             # OCR sometimes inserts a digit immediately after the root sign,
             # e.g. "√2 dhvr v." for a genuine standalone root.
             line = re.sub(r"^√\s*[0-9](?=\s+[A-Za-z])", "√", line)
