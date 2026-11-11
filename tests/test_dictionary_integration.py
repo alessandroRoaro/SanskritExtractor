@@ -9,8 +9,8 @@ from verbsExtractor import (
 )
 
 ROOT = Path(__file__).resolve().parents[1]
-EXPECTED_ENTRIES = 741
-EXPECTED_DEFINITIONS = 756
+EXPECTED_ENTRIES = 756
+EXPECTED_DEFINITIONS = 772
 COUNT_TOLERANCE = 5
 
 
@@ -55,6 +55,22 @@ class FullDictionaryIntegrationTests(unittest.TestCase):
             f"Definition count {definitions} differs from baseline "
             f"{EXPECTED_DEFINITIONS} by more than ±{COUNT_TOLERANCE}",
         )
+
+    def test_real_ocr_dhu_senses_and_bare_adverb(self):
+        by_name = {entry["name"]: entry for entry in self.entries}
+        self.assertIn("dhīram", by_name)
+        self.assertTrue(
+            by_name["dhīram"]["definitions"][0]["definition"].startswith(
+                "dhīram adv."
+            )
+        )
+        self.assertIn("dhū", by_name)
+        definitions = by_name["dhū"]["definitions"]
+        self.assertEqual(len(definitions), 2)
+        self.assertTrue(definitions[0]["isRootVerb"])
+        self.assertTrue(definitions[1]["definition"].startswith("dhū₂ "))
+        self.assertNotIn("몇", definitions[1]["definition"])
+        self.assertNotIn("conséquent", by_name)
 
     def test_flat_search_keys_and_definition_schema(self):
         for entry in self.entries:
