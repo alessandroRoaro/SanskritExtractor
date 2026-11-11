@@ -290,7 +290,12 @@ def should_group_with_current_entry(
         return False
     existing_sanskrit = current_entry["sanskrit"]
     if existing_sanskrit and sanskrit_word:
-        return existing_sanskrit == sanskrit_word
+        # The same OCR Devanagari can be incorrectly copied to distinct
+        # words (e.g. नाक nāka/nāku). Require compatible romanization too.
+        return (
+            existing_sanskrit == sanskrit_word
+            and current_entry["flat"] == flatten_name(clean_name(name))
+        )
     if existing_sanskrit or sanskrit_word:
         return False
     return (
@@ -548,7 +553,7 @@ def extract_verbs_and_terms_from_text_file(file_path):
 def merge_entries_with_same_name(entries):
     """Consolidate source definitions without conflating Sanskrit homographs.
 
-    Priority 1: exact, nonempty Devanagari spelling (even if OCR IAST differs).
+    Priority 1: exact, nonempty Devanagari plus compatible ASCII romanization.
     Priority 2: when both lack Devanagari, identical normalized IAST only
     if both entries begin with a numbered headword. The 'flat' search key
     is deliberately never used as a grouping key.
@@ -561,7 +566,7 @@ def merge_entries_with_same_name(entries):
         sanskrit = entry["sanskrit"]
         name = clean_name(entry["name"])
         if sanskrit:
-            index = devanagari_index.get(sanskrit)
+            index = devanagari_index.get((sanskrit, flatten_name(name)))
         elif (entry["definitions"]
               and has_numbered_headword(entry["definitions"][0]["definition"])):
             index = numbered_iast_index.get(name)
@@ -578,7 +583,7 @@ def merge_entries_with_same_name(entries):
             }
             merged.append(new_entry)
             if sanskrit:
-                devanagari_index[sanskrit] = index
+                devanagari_index[(sanskrit, flatten_name(name))] = index
             elif (new_entry["definitions"]
                   and has_numbered_headword(new_entry["definitions"][0]["definition"])):
                 numbered_iast_index[name] = index
