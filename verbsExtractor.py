@@ -37,7 +37,8 @@ MALFORMED_SUB_ENTRY_RE = re.compile(
 # "dhīram adv. tranquillement." rather than "dhīram [..] adv. ...".
 # Do not interpret arbitrary French prose as dictionary headwords.
 BARE_GRAMMATICAL_HEAD_RE = re.compile(
-    rf"^(?P<name>[{IAST_CHARS}]+)\s+(?:adv\.|ind\.)\s+\S"
+    rf"^(?P<name>[{IAST_CHARS}]+)\s+"
+    rf"(?:adv\.|ind\.|m\.|n\.|f\.|a\.\s*m\.)\s+\S"
 )
 FOREIGN_OCR_LEADER_RE = re.compile(
     r"^[\u0A00-\u0A7F\u0980-\u09FF\uAC00-\uD7AF\u0400-\u04FF]+"
@@ -51,7 +52,10 @@ POS_AFTER_ETYMOLOGY_RE = re.compile(
     r"hist\.|véd\.|bd\.|phil\.|gram\.|num\.|iic\.)"
 )
 # Known IAST glyph substitutions made by OCR.
-IAST_OCR_FIXES = str.maketrans({"ş": "ṣ", "Ş": "Ṣ", "ţ": "ṭ", "Ţ": "Ṭ"})
+IAST_OCR_FIXES = str.maketrans({
+    "ş": "ṣ", "Ş": "Ṣ", "ș": "ṣ", "Ș": "Ṣ",
+    "ţ": "ṭ", "Ţ": "Ṭ", "ț": "ṭ", "Ț": "Ṭ",
+})
 NON_DECOMPOSABLE_LETTERS = {
     "ł": "l", "Ł": "L", "đ": "d", "Đ": "D",
     "ħ": "h", "Ħ": "H", "ø": "o", "Ø": "O",
@@ -103,7 +107,15 @@ def sub_entry_match(line, next_line=""):
     bare = BARE_GRAMMATICAL_HEAD_RE.match(line)
     if bare:
         name = bare.group("name")
-        if is_valid_name(clean_name(name)) and len(clean_name(name)) >= 3:
+        normalized = clean_name(name)
+        if (is_valid_name(normalized) and len(normalized) >= 4
+                and not re.search(r"[éèêëàâîïôöùûüç]", name, re.I)
+                and normalized not in {
+                    "dans", "pour", "avec", "sans", "plus", "tout",
+                    "tous", "mais", "dont", "leur", "elle", "elles",
+                    "nous", "vous", "ainsi", "alors", "comme",
+                    "fait", "être", "vers", "entre", "cela",
+                }):
             return name
 
     damaged = MALFORMED_SUB_ENTRY_RE.match(line)
@@ -392,6 +404,9 @@ def extract_verbs_and_terms_from_text_file(file_path):
                 continue
 
             line = clean_slash_artifacts(line.strip())
+            # OCR sometimes inserts a digit immediately after the root sign,
+            # e.g. "√2 dhvr v." for a genuine standalone root.
+            line = re.sub(r"^√\s*[0-9](?=\s+[A-Za-z])", "√", line)
             line, bengali_head = normalize_bengali_head_line(line)
             # An OCR ASCII colon between Devanagari letters represents visarga.
             line = re.sub(r"(?<=[\u0900-\u097F]):(?=[\u0900-\u097F])", "ः", line)
