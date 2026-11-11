@@ -9,8 +9,8 @@ from verbsExtractor import (
 )
 
 ROOT = Path(__file__).resolve().parents[1]
-EXPECTED_ENTRIES = 2181
-EXPECTED_DEFINITIONS = 2220
+EXPECTED_ENTRIES = 736
+EXPECTED_DEFINITIONS = 756
 COUNT_TOLERANCE = 5
 
 
@@ -24,11 +24,11 @@ class FullDictionaryIntegrationTests(unittest.TestCase):
         cls.names = {entry["name"] for entry in cls.entries}
 
     def test_known_missed_headwords_are_recovered(self):
-        # All present in the OCR source but previously lost in JSON.
+        # All present in the current, shortened OCR source.
         for name in (
             "dhīraśānta", "dhṛṣ", "dhṛṣu", "dhṛṣṭa",
             "niḥśaṅka", "niḥśabda", "niḥśeṣa", "niḥśvasya",
-            "niḥsaṃjña", "nirduḥkha", "nirvyūḍha",
+            "niḥsaṃjña",
         ):
             with self.subTest(name=name):
                 self.assertIn(name, self.names)
