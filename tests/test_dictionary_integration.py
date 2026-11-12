@@ -7,6 +7,7 @@ from verbsExtractor import (
     extract_verbs_and_terms_from_text_file,
     merge_entries_with_same_name,
     renumber_definition_subscripts,
+    normalize_leading_definition_headwords,
 )
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -19,9 +20,11 @@ class FullDictionaryIntegrationTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         path = ROOT / "extracted_dictionary_micro1.txt"
-        cls.entries = renumber_definition_subscripts(
-            merge_entries_with_same_name(
-                extract_verbs_and_terms_from_text_file(path)
+        cls.entries = normalize_leading_definition_headwords(
+            renumber_definition_subscripts(
+                merge_entries_with_same_name(
+                    extract_verbs_and_terms_from_text_file(path)
+                )
             )
         )
         cls.names = {entry["name"] for entry in cls.entries}
@@ -104,6 +107,17 @@ class FullDictionaryIntegrationTests(unittest.TestCase):
         self.assertEqual(headwords, ["dhī₁", "dhī₂", "dhī₃"])
         self.assertIn("[act. dhī₂]", dhi["definitions"][1]["definition"])
         self.assertIn("cf. dhā₁.", dhi["definitions"][2]["definition"])
+
+    def test_nash_ocr_leading_headword_is_corrected(self):
+        by_name = {entry["name"]: entry for entry in self.entries}
+        nash = by_name["naś"]
+        nas = by_name["nas"]
+        self.assertEqual(nash["sanskrit"], "नश्")
+        self.assertEqual(nas["sanskrit"], "नस्")
+        self.assertEqual(len(nash["definitions"]), 2)
+        self.assertEqual(len(nas["definitions"]), 2)
+        self.assertTrue(nash["definitions"][0]["definition"].startswith("√ naś₁ "))
+        self.assertTrue(nas["definitions"][0]["definition"].startswith("nas₁ "))
 
     def test_flat_search_keys_and_definition_schema(self):
         for entry in self.entries:
