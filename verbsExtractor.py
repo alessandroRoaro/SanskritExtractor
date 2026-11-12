@@ -783,6 +783,36 @@ def renumber_definition_subscripts(entries):
     return entries
 
 
+
+def normalize_leading_definition_headwords(entries):
+    """Repair OCR diacritic errors in the leading lemma using the grouped IAST.
+
+    A nonempty Devanagari headword anchors the entry's canonical IAST name.
+    Only correct a different *normalized* leading word if its ASCII search
+    spelling agrees with the entry's flat key. This fixes "√ nas₁" under
+    नश् / naś without changing cross-references, subscripts, unrelated
+    OCR headings, or legitimate Vedic accents.
+    """
+    for entry in entries:
+        if not entry["sanskrit"]:
+            continue
+        canonical = entry["name"]
+        for definition in entry["definitions"]:
+            text = definition["definition"]
+            match = LEADING_IAST_HEAD_RE.match(text)
+            if match is None:
+                continue
+            leading = match.group("headword")
+            if (clean_name(leading) != canonical
+                    and flatten_name(clean_name(leading)) == entry["flat"]):
+                definition["definition"] = (
+                    text[:match.start("headword")]
+                    + canonical
+                    + text[match.end("headword"):]
+                )
+    return entries
+
+
 def main():
     parser = argparse.ArgumentParser(description="Extract Sanskrit dictionary entries from OCR text")
     parser.add_argument("input", nargs="?", default="extracted_dictionary_micro1.txt")
@@ -792,6 +822,7 @@ def main():
     extracted = extract_verbs_and_terms_from_text_file(args.input)
     entries = merge_entries_with_same_name(extracted)
     renumber_definition_subscripts(entries)
+    normalize_leading_definition_headwords(entries)
     with open(args.output, "w", encoding="utf-8") as json_file:
         json.dump(entries, json_file, ensure_ascii=False, indent=4)
     definitions = sum(len(entry["definitions"]) for entry in entries)
