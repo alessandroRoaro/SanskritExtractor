@@ -421,6 +421,60 @@ class DictionaryParserTests(unittest.TestCase):
             ["dhāv₁", "dhāv₂"],
         )
 
+    def test_leading_ocr_nas_is_repaired_to_nash_not_other_sense(self):
+        entries = self.parse(
+            "√ नश् nas₁ v. [4] périr; cf. nas₁.\n"
+            "नश् naś₂ [act. naś₂] a. détruit.\n"
+            "नस् nas₁ pron. nous.\n"
+            "नस् nas₂ m. nez.\n"
+        )
+        extractor.renumber_definition_subscripts(entries)
+        extractor.normalize_leading_definition_headwords(entries)
+        by_spelling = {e["sanskrit"]: e for e in entries}
+        self.assertEqual(set(by_spelling), {"नश्", "नस्"})
+        self.assertEqual(
+            [d["definition"] for d in by_spelling["नश्"]["definitions"]],
+            ["√ naś₁ v. [4] périr; cf. nas₁.",
+             "naś₂ [act. naś₂] a. détruit."],
+        )
+        self.assertEqual(
+            [d["definition"].split()[0] for d in by_spelling["नस्"]["definitions"]],
+            ["nas₁", "nas₂"],
+        )
+
+    def test_leading_headword_repair_does_not_overwrite_vedic_accents(self):
+        entries = [{
+            "sanskrit": "धूत", "name": "dhūta", "flat": "dhuta",
+            "definitions": [
+                {"definition": "dhūtá [pp. dhū₁] a. agité.",
+                 "isVerb": False, "isRootVerb": False},
+                {"definition": "dhūta₂ a. secoué.",
+                 "isVerb": False, "isRootVerb": False},
+            ],
+        }]
+        extractor.normalize_leading_definition_headwords(entries)
+        self.assertEqual(
+            [d["definition"] for d in entries[0]["definitions"]],
+            ["dhūtá [pp. dhū₁] a. agité.", "dhūta₂ a. secoué."],
+        )
+
+    def test_no_devanagari_or_conflicting_headword_not_rewritten(self):
+        entries = [
+            {
+                "sanskrit": "", "name": "naś", "flat": "nas",
+                "definitions": [{"definition": "nas₁ v. périr.",
+                                 "isVerb": True, "isRootVerb": False}],
+            },
+            {
+                "sanskrit": "नाक", "name": "nāka", "flat": "naka",
+                "definitions": [{"definition": "nāku₂ m. colline.",
+                                 "isVerb": False, "isRootVerb": False}],
+            },
+        ]
+        extractor.normalize_leading_definition_headwords(entries)
+        self.assertEqual(entries[0]["definitions"][0]["definition"], "nas₁ v. périr.")
+        self.assertEqual(entries[1]["definitions"][0]["definition"], "nāku₂ m. colline.")
+
     def test_iast_and_flat_normalization(self):
         self.assertEqual(extractor.clean_name("DHIŞAṆA₂"), "dhiṣaṇa")
         self.assertEqual(extractor.flatten_name("dhṛtarāṣṭra"), "dhrtarastra")
