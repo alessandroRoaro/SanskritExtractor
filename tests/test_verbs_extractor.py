@@ -19,6 +19,45 @@ class DictionaryParserTests(unittest.TestCase):
             entries = extractor.extract_verbs_and_terms_from_text_file(path)
             return extractor.merge_entries_with_same_name(entries)
 
+    def test_variant_headword_after_naravahanadatta_is_separate(self):
+        entries = self.parse(
+            "Naravāhanadatta [datta] m. lit. [KSS.] np. du prince\n"
+            "ses amours; Vasudeva le remplace dans la version jaina Vasudevahindi.\n"
+            "nárasimha var. nṛṣiṃha [siṃha] m. myth. np. de\n"
+            'Narasimha ou Nrsimha "Homme-lion", 4ᵉ avatāra.\n'
+            "narasimhagupta | gupta | m. hist. empereur.\n"
+        )
+        self.assertEqual(
+            [entry["name"] for entry in entries],
+            ["naravāhanadatta", "narasimha", "narasimhagupta"],
+        )
+        self.assertEqual(
+            [len(entry["definitions"]) for entry in entries], [1, 1, 1]
+        )
+        self.assertNotIn("nárasimha", entries[0]["definitions"][0]["definition"])
+        self.assertTrue(
+            entries[1]["definitions"][0]["definition"].startswith(
+                "nárasimha var. nṛṣiṃha [siṃha] m."
+            )
+        )
+
+    def test_variant_headword_with_pipe_etymology(self):
+        entries = self.parse(
+            "नर nara m. homme.\n"
+            "dhuta var. dhūta |dhū₁| a. secoué.\n"
+        )
+        self.assertEqual([entry["name"] for entry in entries],
+                         ["nara", "dhuta"])
+
+    def test_variant_mentions_without_grammar_do_not_split_prose(self):
+        entries = self.parse(
+            "नर nara m. homme.\n"
+            "une var. dhūta [siṃha] m. explication française.\n"
+            "dhuta var. dhūta [dhū₁] sous une forme non étiquetée.\n"
+        )
+        self.assertEqual([entry["name"] for entry in entries], ["nara"])
+        self.assertIn("dhuta var.", entries[0]["definitions"][0]["definition"])
+
     def test_latin_subentries_are_separate_and_have_no_inherited_sanskrit(self):
         entries = self.parse(
             "धिक dhik ind. malheur\n"
