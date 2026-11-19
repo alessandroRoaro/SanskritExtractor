@@ -21,6 +21,7 @@ class DictionaryParserTests(unittest.TestCase):
 
     def test_variant_headword_after_naravahanadatta_is_separate(self):
         entries = self.parse(
+            "नर nara m. homme.\n"
             "Naravāhanadatta [datta] m. lit. [KSS.] np. du prince\n"
             "ses amours; Vasudeva le remplace dans la version jaina Vasudevahindi.\n"
             "nárasimha var. nṛṣiṃha [siṃha] m. myth. np. de\n"
@@ -29,14 +30,14 @@ class DictionaryParserTests(unittest.TestCase):
         )
         self.assertEqual(
             [entry["name"] for entry in entries],
-            ["naravāhanadatta", "narasimha", "narasimhagupta"],
+            ["nara", "naravāhanadatta", "narasimha", "narasimhagupta"],
         )
         self.assertEqual(
-            [len(entry["definitions"]) for entry in entries], [1, 1, 1]
+            [len(entry["definitions"]) for entry in entries], [1, 1, 1, 1]
         )
-        self.assertNotIn("nárasimha", entries[0]["definitions"][0]["definition"])
+        self.assertNotIn("nárasimha", entries[1]["definitions"][0]["definition"])
         self.assertTrue(
-            entries[1]["definitions"][0]["definition"].startswith(
+            entries[2]["definitions"][0]["definition"].startswith(
                 "nárasimha var. nṛṣiṃha [siṃha] m."
             )
         )
