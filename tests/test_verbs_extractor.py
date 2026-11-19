@@ -21,11 +21,11 @@ class DictionaryParserTests(unittest.TestCase):
 
     def test_variant_headword_after_naravahanadatta_is_separate(self):
         entries = self.parse(
-            "Naravāhanadatta [datta] m. lit. [KSS.] np. du prince\\n"
-            "ses amours; Vasudeva le remplace dans la version jaina Vasudevahindi.\\n"
-            "nárasimha var. nṛṣiṃha [siṃha] m. myth. np. de\\n"
-            'Narasimha ou Nrsimha "Homme-lion", 4ᵉ avatāra.\\n'
-            "narasimhagupta | gupta | m. hist. empereur.\\n"
+            "Naravāhanadatta [datta] m. lit. [KSS.] np. du prince\n"
+            "ses amours; Vasudeva le remplace dans la version jaina Vasudevahindi.\n"
+            "nárasimha var. nṛṣiṃha [siṃha] m. myth. np. de\n"
+            'Narasimha ou Nrsimha "Homme-lion", 4ᵉ avatāra.\n'
+            "narasimhagupta | gupta | m. hist. empereur.\n"
         )
         self.assertEqual(
             [entry["name"] for entry in entries],
@@ -43,17 +43,17 @@ class DictionaryParserTests(unittest.TestCase):
 
     def test_variant_headword_with_pipe_etymology(self):
         entries = self.parse(
-            "नर nara m. homme.\\n"
-            "dhuta var. dhūta |dhū₁| a. secoué.\\n"
+            "नर nara m. homme.\n"
+            "dhuta var. dhūta |dhū₁| a. secoué.\n"
         )
         self.assertEqual([entry["name"] for entry in entries],
                          ["nara", "dhuta"])
 
     def test_variant_mentions_without_grammar_do_not_split_prose(self):
         entries = self.parse(
-            "नर nara m. homme.\\n"
-            "une var. dhūta [siṃha] m. explication française.\\n"
-            "dhuta var. dhūta [dhū₁] sous une forme non étiquetée.\\n"
+            "नर nara m. homme.\n"
+            "une var. dhūta [siṃha] m. explication française.\n"
+            "dhuta var. dhūta [dhū₁] sous une forme non étiquetée.\n"
         )
         self.assertEqual([entry["name"] for entry in entries], ["nara"])
         self.assertIn("dhuta var.", entries[0]["definitions"][0]["definition"])
