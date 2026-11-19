@@ -36,6 +36,15 @@ MALFORMED_SUB_ENTRY_RE = re.compile(
 # Latin-only subentries without etymology: adverbs are often printed as
 # "dhīram adv. tranquillement." rather than "dhīram [..] adv. ...".
 # Do not interpret arbitrary French prose as dictionary headwords.
+# IAST headwords with an explicitly documented variant and etymology,
+# e.g. "nárasimha var. nṛṣiṃha [siṃha] m. myth. ...".
+# Require both the annotation and a grammatical label to avoid French prose.
+VARIANT_HEAD_RE = re.compile(
+    rf"^(?P<name>[{IAST_CHARS}]+)\\s+var\\.\\s+"
+    rf"[{IAST_CHARS}]+\\s*"
+    rf"(?:\\[[^\\]]+\\]|\\|[^|]+\\|)\\s+"
+    rf"(?:a\\.|m\\.|n\\.|f\\.|v\\.|adv\\.|ind\\.)(?=\\s|$)"
+)
 BARE_GRAMMATICAL_HEAD_RE = re.compile(
     rf"^(?P<name>[{IAST_CHARS}]+)\s+"
     rf"(?:adv\.|ind\.|m\.|n\.|f\.|a\.\s*m\.)\s+\S"
@@ -112,6 +121,12 @@ def sub_entry_match(line, next_line=""):
         if (SUB_ENTRY_SQUARE_BRACKET.match(candidate_line)
                 or BARE_GRAMMATICAL_HEAD_RE.match(candidate_line)):
             line = candidate_line
+
+    variant = VARIANT_HEAD_RE.match(line)
+    if variant:
+        name = variant.group("name")
+        if is_valid_name(clean_name(name)):
+            return name
 
     bare = BARE_GRAMMATICAL_HEAD_RE.match(line)
     if bare:
