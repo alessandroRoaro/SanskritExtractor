@@ -40,10 +40,10 @@ MALFORMED_SUB_ENTRY_RE = re.compile(
 # e.g. "nárasimha var. nṛṣiṃha [siṃha] m. myth. ...".
 # Require both the annotation and a grammatical label to avoid French prose.
 VARIANT_HEAD_RE = re.compile(
-    rf"^(?P<name>[{IAST_CHARS}]+)\\s+var\\.\\s+"
-    rf"[{IAST_CHARS}]+\\s*"
-    rf"(?:\\[[^\\]]+\\]|\\|[^|]+\\|)\\s+"
-    rf"(?:a\\.|m\\.|n\\.|f\\.|v\\.|adv\\.|ind\\.)(?=\\s|$)"
+    rf"^(?P<name>[{IAST_CHARS}]+)\s+var\.\s+"
+    rf"[{IAST_CHARS}]+\s*"
+    rf"(?:\[[^\]]+\]|\|[^|]+\|)\s+"
+    rf"(?:a\.|m\.|n\.|f\.|v\.|adv\.|ind\.)(?=\s|$)"
 )
 BARE_GRAMMATICAL_HEAD_RE = re.compile(
     rf"^(?P<name>[{IAST_CHARS}]+)\s+"
