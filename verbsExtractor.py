@@ -125,7 +125,12 @@ def sub_entry_match(line, next_line=""):
     variant = VARIANT_HEAD_RE.match(line)
     if variant:
         name = variant.group("name")
-        if is_valid_name(clean_name(name)):
+        normalized = clean_name(name)
+        if (is_valid_name(normalized) and len(normalized) >= 4
+                and not re.search(r"[éèêëàâîïôöùûüç]", name, re.I)
+                and normalized not in {"dans", "pour", "avec", "sans", "plus",
+                                       "tout", "tous", "mais", "dont", "leur",
+                                       "elle", "elles", "nous", "vous", "une"}):
             return name
 
     bare = BARE_GRAMMATICAL_HEAD_RE.match(line)
